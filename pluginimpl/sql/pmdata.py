@@ -14,7 +14,6 @@ for line in cursor.fetchall():
         # cursor.execute('desc sa.topology_network_element')
         # for line in cursor.fetchall():
         #     print (line)
-        cursor.execute('select * from sa.topology_network_element where profileId like "%ciena%";')
+        cursor.execute('select id,profileId  from sa.topology_network_element where profileId like "%ciena%";')
         for l in cursor.fetchall():
             print(l)
-
