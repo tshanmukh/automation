@@ -1,0 +1,1222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mib-repository id="eltek-mib-repository">
+  <entry id="1" name="iso" type="node">
+    <entry id="3" name="org" type="node">
+      <entry id="6" name="dod" type="node">
+        <entry id="1" name="internet" type="node">
+          <entry id="1" name="directory" type="node">
+          </entry>
+          <entry id="2" name="mgmt" type="node">
+            <entry id="1" name="mib-2" type="node">
+              <entry id="10" name="transmission" type="node">
+              </entry>
+            </entry>
+          </entry>
+          <entry id="3" name="experimental" type="node">
+          </entry>
+          <entry id="4" name="private" type="node">
+            <entry id="1" name="enterprises" type="node">
+              <entry id="12148" name="eltek" type="node">
+                <entry id="7" name="eltekPlant" type="node">
+                  <entry id="1" name="controlSystem" type="node">
+                    <entry id="1" name="systemTime" type="node">
+                      <entry id="1" name="systemTimeTime" type="string"></entry>
+                    </entry>
+                    <entry id="2" name="systemInfoRefresh" type="int">
+                      <list id = "0" value = "pushbutton(0)"/>
+                      <list id = "1" value = "refreshdata(1)"/>
+                    </entry>
+                    <entry id="3" name="systemTrapRepeatRate" type="int"></entry>
+                    <entry id="4" name="systemSendOffTrap" type="int">
+                      <list id = "0" value = "off(0)"/>
+                      <list id = "1" value = "on(1)"/>
+                    </entry>
+                  </entry>
+                  <entry id="2" name="dcSystem" type="node">
+                    <entry id="1" name="dcPlant" type="node">
+                      <entry id="3" name="systemSiteInfo" type="node">
+                        <entry id="1" name="systemSiteInfoCustomer" type="string"></entry>
+                        <entry id="2" name="systemSiteInfoLocation" type="string"></entry>
+                        <entry id="3" name="systemSiteInfoMessage1" type="string"></entry>
+                        <entry id="4" name="systemSiteInfoMessage2" type="string"></entry>
+                        <entry id="5" name="systemSiteInfoInstalledDate" type="string"></entry>
+                        <entry id="6" name="systemSiteInfoControllerType" type="int">
+                          <list id = "0" value = "al175(0)"/>
+                          <list id = "1" value = "al4000(1)"/>
+                          <list id = "2" value = "al6000(2)"/>
+                          <list id = "3" value = "enexus(3)"/>
+                        </entry>
+                        <entry id="7" name="systemSiteInfoSystemSeriaNum" type="string"></entry>
+                        <entry id="8" name="systemSiteInfoControllerSeriaNum" type="string"></entry>
+                      </entry>
+                      <entry id="4" name="systemNominalVoltage" type="int">
+                        <list id = "0" value = "prs48v(0)"/>
+                        <list id = "1" value = "prs24v(1)"/>
+                        <list id = "2" value = "prs12v(2)"/>
+                        <list id = "3" value = "prs26v(3)"/>
+                        <list id = "4" value = "prs60v(4)"/>
+                      </entry>
+                    </entry>
+                    <entry id="2" name="systemOperationalStatus" type="int">
+                      <list id = "0" value = "floatvoltreg(0)"/>
+                      <list id = "1" value = "floattempcomp(1)"/>
+                      <list id = "2" value = "batteryboost(2)"/>
+                      <list id = "3" value = "batterytest(3)"/>
+                    </entry>
+                  </entry>
+                  <entry id="3" name="battery" type="node">
+                    <entry id="1" name="batteryName" type="string"></entry>
+                    <entry id="2" name="batteryVoltage" type="int"></entry>
+                    <entry id="3" name="batteryCurrent" type="int"></entry>
+                    <entry id="4" name="batteryTemp" type="int"></entry>
+                    <entry id="5" name="batteryBreakerStatus" type="int">
+                      <list id = "0" value = "closed(0)"/>
+                      <list id = "1" value = "open(1)"/>
+                    </entry>
+                    <entry id="6" name="batteryChargeCurrentLimitCtrl" type="int">
+                      <list id = "0" value = "deactivate(0)"/>
+                      <list id = "1" value = "activate(1)"/>
+                    </entry>
+                    <entry id="7" name="batteryChargeCurrentLimitValue" type="int"></entry>
+                    <entry id="8" name="batteryTempCompEnable" type="int">
+                      <list id = "0" value = "disable(0)"/>
+                      <list id = "1" value = "enable(1)"/>
+                    </entry>
+                    <entry id="9" name="batteryFloatVoltConfig" type="int"></entry>
+                    <entry id="10" name="batteryEqualizeVoltConfig" type="int"></entry>
+                    <entry id="11" name="batteryHighMajorAlarmVoltageConfig" type="int"></entry>
+                    <entry id="12" name="batteryHighMinorAlarmVoltageConfig" type="int"></entry>
+                    <entry id="13" name="batteryLowMajorAlarmVoltageConfig" type="int"></entry>
+                    <entry id="14" name="batteryLowMinorAlarmVoltageConfig" type="int"></entry>
+                    <entry id="15" name="batteryStartManualTest" type="int">
+                      <list id = "0" value = "pushbutton(0)"/>
+                      <list id = "1" value = "starttest(1)"/>
+                      <list id = "2" value = "stoptest(2)"/>
+                    </entry>
+                    <entry id="16" name="batteryStartManualBoost" type="int">
+                      <list id = "0" value = "pushbutton(0)"/>
+                      <list id = "1" value = "startboost(1)"/>
+                      <list id = "2" value = "stopboost(2)"/>
+                    </entry>
+                    <entry id="17" name="batteryLVD" type="node">
+                      <entry id="1" name="batteryLVDStatus" type="int">
+                        <list id = "0" value = "connect(0)"/>
+                        <list id = "1" value = "disconnect(1)"/>
+                        <list id = "2" value = "disable(2)"/>
+                      </entry>
+                      <entry id="2" name="batteryLVDDisconnectVoltage" type="int"></entry>
+                      <entry id="3" name="batteryLVDConnectVoltage" type="int"></entry>
+                    </entry>
+                    <entry id="18" name="batteryMidpoint" type="node">
+                      <entry id="1" name="batteryMidpointDeltaLimitVoltage" type="int"></entry>
+                      <entry id="2" name="batteryMidpointIndex" type="int"></entry>
+                      <entry id="3" name="batteryMidpointControlTable" type="node">
+                        <entry id="1" name="batteryMidpointControlEntry" type="node">
+                          <entry id="1" name="midpointEnableID" type="int"></entry>
+                          <entry id="2" name="midpointEnable" type="int">
+                            <list id = "0" value = "disable(0)"/>
+                            <list id = "1" value = "enable(1)"/>
+                          </entry>
+                        </entry>
+                      </entry>
+                      <entry id="4" name="batteryMidpointStatusTable" type="node">
+                        <entry id="1" name="batteryMidpointStatusEntry" type="node">
+                          <entry id="1" name="midpointStatusID" type="int"></entry>
+                          <entry id="2" name="midpointStatus" type="int">
+                            <list id = "0" value = "ok(0)"/>
+                            <list id = "1" value = "alarm(1)"/>
+                            <list id = "2" value = "disable(2)"/>
+                          </entry>
+                          <entry id="3" name="midpointDeltaVoltage" type="int"></entry>
+                        </entry>
+                      </entry>
+                    </entry>
+                  </entry>
+                  <entry id="4" name="loadDistribution" type="node">
+                    <entry id="1" name="loadDistributionCurrent" type="int"></entry>
+                    <entry id="2" name="loadDistributionBreakerStatus" type="int">
+                      <list id = "0" value = "closed(0)"/>
+                      <list id = "1" value = "open(1)"/>
+                    </entry>
+                    <entry id="3" name="loadDistributionLVDStatus" type="node">
+                      <entry id="1" name="loadLVD1EnableStatus" type="int">
+                        <list id = "0" value = "disabled(0)"/>
+                        <list id = "1" value = "enabled(1)"/>
+                      </entry>
+                      <entry id="2" name="loadLVD1Status" type="int">
+                        <list id = "0" value = "connect(0)"/>
+                        <list id = "1" value = "disconnect(1)"/>
+                        <list id = "2" value = "disable(2)"/>
+                      </entry>
+                      <entry id="3" name="loadLVD1ConnectVoltage" type="int"></entry>
+                      <entry id="4" name="loadLVD1DisconnectVoltage" type="int"></entry>
+                      <entry id="5" name="loadLVD2EnableStatus" type="int">
+                        <list id = "0" value = "disabled(0)"/>
+                        <list id = "1" value = "enabled(1)"/>
+                      </entry>
+                      <entry id="6" name="loadLVD2Status" type="int">
+                        <list id = "0" value = "connect(0)"/>
+                        <list id = "1" value = "disconnect(1)"/>
+                        <list id = "2" value = "disable(2)"/>
+                      </entry>
+                      <entry id="7" name="loadLVD2ConnectVoltage" type="int"></entry>
+                      <entry id="8" name="loadLVD2DisconnectVoltage" type="int"></entry>
+                      <entry id="9" name="loadLVD3EnableStatus" type="int">
+                        <list id = "0" value = "disabled(0)"/>
+                        <list id = "1" value = "enabled(1)"/>
+                      </entry>
+                      <entry id="10" name="loadLVD3Status" type="int">
+                        <list id = "0" value = "connect(0)"/>
+                        <list id = "1" value = "disconnect(1)"/>
+                        <list id = "2" value = "disable(2)"/>
+                      </entry>
+                      <entry id="11" name="loadLVD3ConnectVoltage" type="int"></entry>
+                      <entry id="12" name="loadLVD3DisconnectVoltage" type="int"></entry>
+                    </entry>
+                  </entry>
+                  <entry id="5" name="rectifier" type="node">
+                    <entry id="1" name="rectifierInstalledRectifiers" type="int"></entry>
+                    <entry id="2" name="rectifierRectifiersActive" type="int"></entry>
+                    <entry id="3" name="rectifierTotalCurrent" type="int"></entry>
+                    <entry id="4" name="rectifierUtilization" type="int"></entry>
+                    <entry id="5" name="rectifierStatus" type="node">
+                      <entry id="1" name="rectifierStatusNoIndex" type="int"></entry>
+                      <entry id="2" name="rectifierStatusTable" type="node">
+                        <entry id="1" name="rectifierStatusEntry" type="node">
+                          <entry id="1" name="rectifierStatusID" type="int"></entry>
+                          <entry id="2" name="rectifierStatusStatus" type="int">
+                            <list id = "0" value = "absent(0)"/>
+                            <list id = "1" value = "active(1)"/>
+                            <list id = "2" value = "failed(2)"/>
+                            <list id = "3" value = "walkin(3)"/>
+                            <list id = "4" value = "disabledbycommand(4)"/>
+                          </entry>
+                          <entry id="3" name="rectifierStatusOutputCurrent" type="int"></entry>
+                          <entry id="4" name="rectifierStatusOutputVoltage" type="int"></entry>
+                          <entry id="5" name="rectifierStatusTemp" type="int"></entry>
+                          <entry id="6" name="rectifierStatusType" type="string"></entry>
+                          <entry id="7" name="rectifierStatusSKU" type="string"></entry>
+                          <entry id="8" name="rectifierStatusSerialNo" type="string"></entry>
+                          <entry id="9" name="rectifierStatusRevisionLevel" type="string"></entry>
+                        </entry>
+                      </entry>
+                    </entry>
+                  </entry>
+                  <entry id="6" name="acDistribution" type="node">
+                    <entry id="1" name="acVoltage1" type="int"></entry>
+                    <entry id="2" name="acVoltage2" type="int"></entry>
+                    <entry id="3" name="acVoltage3" type="int"></entry>
+                  </entry>
+                  <entry id="7" name="alarmGroup" type="node">
+                    <entry id="1" name="alarmWellknownAlarms" type="node">
+                      <entry id="1" name="alarmMajorHighBattVolt" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="2" name="alarmMinorHighBattVolt" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="3" name="alarmMajorLowBattVolt" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="4" name="alarmMinorLowBattVolt" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="5" name="alarmMajorBatteryHighTemp" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="6" name="alarmMinorBatteryHighTemp" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="7" name="alarmBatteryDisconnectOpen" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="8" name="alarmLVD1open" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="9" name="alarmLVD2open" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="10" name="alarmLVD3open" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="11" name="alarmACmains" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="12" name="alarmBatteryBreakerOpen" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="13" name="alarmDistributionBreakerOpen" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="14" name="alarmMajorRectifier" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="15" name="alarmMinorRectifier" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="16" name="alarmMajorBatteryMidpoint" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="17" name="alarmMinorBatteryMidpoint" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="18" name="alarmBatteryLifeEnded" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="19" name="alarmBatteryTestmodeEntered" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="20" name="alarmBatteryBoostmodeEntered" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="21" name="alarmUserConfigurable1" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="22" name="alarmUserConfigurable2" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="23" name="alarmUserConfigurable3" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="24" name="alarmUserConfigurable4" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="25" name="alarmUserConfigurable5" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="26" name="alarmUserConfigurable6" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="27" name="alarmUserConfigurable7" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="28" name="alarmUserConfigurable8" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="29" name="alarmUserConfigurable9" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="30" name="alarmUserConfigurable10" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="31" name="alarmUserConfigurable11" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="32" name="alarmUserConfigurable12" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="33" name="alarmUserConfigurable13" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="34" name="alarmUserConfigurable14" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                    </entry>
+                  </entry>
+                  <entry id="8" name="dcSystemTraps" type="node">
+                    <entry id="1" name="alarmMajorHighBattVoltTrap" type="node">
+                    </entry>
+                    <entry id="2" name="alarmMinorHighBattVoltTrap" type="node">
+                    </entry>
+                    <entry id="3" name="alarmMajorLowBattVoltTrap" type="node">
+                    </entry>
+                    <entry id="4" name="alarmMinorLowBattVoltTrap" type="node">
+                    </entry>
+                    <entry id="5" name="alarmMajorBatteryHighTempTrap" type="node">
+                    </entry>
+                    <entry id="6" name="alarmMinorBatteryHighTempTrap" type="node">
+                    </entry>
+                    <entry id="7" name="alarmBatteryDisconnectOpenTrap" type="node">
+                    </entry>
+                    <entry id="8" name="alarmLVD1openTrap" type="node">
+                    </entry>
+                    <entry id="9" name="alarmLVD2openTrap" type="node">
+                    </entry>
+                    <entry id="10" name="alarmLVD3openTrap" type="node">
+                    </entry>
+                    <entry id="11" name="alarmACmainsTrap" type="node">
+                    </entry>
+                    <entry id="12" name="alarmBatteryBreakerOpenTrap" type="node">
+                    </entry>
+                    <entry id="13" name="alarmDistributionBreakerOpenTrap" type="node">
+                    </entry>
+                    <entry id="14" name="alarmMajorRectifierTrap" type="node">
+                    </entry>
+                    <entry id="15" name="alarmMinorRectifierTrap" type="node">
+                    </entry>
+                    <entry id="16" name="alarmMajorBatteryMidpointTrap" type="node">
+                    </entry>
+                    <entry id="17" name="alarmMinorBatteryMidpointTrap" type="node">
+                    </entry>
+                    <entry id="18" name="alarmBatteryLifeEndedTrap" type="node">
+                    </entry>
+                    <entry id="19" name="alarmBatteryTestmodeEnteredTrap" type="node">
+                    </entry>
+                    <entry id="20" name="alarmBatteryBoostmodeEnteredTrap" type="node">
+                    </entry>
+                    <entry id="21" name="alarmUserConfigurable1Trap" type="node">
+                    </entry>
+                    <entry id="22" name="alarmUserConfigurable2Trap" type="node">
+                    </entry>
+                    <entry id="23" name="alarmUserConfigurable3Trap" type="node">
+                    </entry>
+                    <entry id="24" name="alarmUserConfigurable4Trap" type="node">
+                    </entry>
+                    <entry id="25" name="alarmUserConfigurable5Trap" type="node">
+                    </entry>
+                    <entry id="26" name="alarmUserConfigurable6Trap" type="node">
+                    </entry>
+                    <entry id="27" name="alarmUserConfigurable7Trap" type="node">
+                    </entry>
+                    <entry id="28" name="alarmUserConfigurable8Trap" type="node">
+                    </entry>
+                    <entry id="29" name="alarmUserConfigurable9Trap" type="node">
+                    </entry>
+                    <entry id="30" name="alarmUserConfigurable10Trap" type="node">
+                    </entry>
+                    <entry id="31" name="shan" type="node">
+                    </entry>
+                    <entry id="32" name="shan" type="node">
+                    </entry>
+                    <entry id="33" name="shan" type="node">
+                    </entry>
+                    <entry id="34" name="shan" type="node">
+                    </entry>
+                  </entry>
+                </entry>
+                <entry id="9" name="eltekDistributedPlantV7" type="node">
+                  <entry id="1" name="controlSystem" type="node">
+                    <entry id="1" name="systemTime" type="node">
+                      <entry id="1" name="systemTimeTime" type="string"></entry>
+                    </entry>
+                    <entry id="2" name="systemInfoRefresh" type="int">
+                      <list id = "0" value = "pushbutton(0)"/>
+                      <list id = "1" value = "refreshdata(1)"/>
+                    </entry>
+                    <entry id="3" name="systemTrapRepeatRate" type="int"></entry>
+                    <entry id="4" name="systemSendOffTrap" type="int">
+                      <list id = "0" value = "off(0)"/>
+                      <list id = "1" value = "on(1)"/>
+                    </entry>
+                    <entry id="5" name="systemNumOfControlUnits" type="int"></entry>
+                    <entry id="6" name="systemControlUnitIndex" type="int"></entry>
+                    <entry id="7" name="systemControlUnitTable" type="node">
+                      <entry id="1" name="systemControlUnitEntry" type="node">
+                        <entry id="1" name="inputControlUnitID" type="int"></entry>
+                        <entry id="2" name="inputUserConfigurable1" type="int">
+                          <list id = "0" value = "normal(0)"/>
+                          <list id = "1" value = "alarm(1)"/>
+                        </entry>
+                        <entry id="3" name="inputUserConfigurable2" type="int">
+                          <list id = "0" value = "normal(0)"/>
+                          <list id = "1" value = "alarm(1)"/>
+                        </entry>
+                        <entry id="4" name="inputUserConfigurable3" type="int">
+                          <list id = "0" value = "normal(0)"/>
+                          <list id = "1" value = "alarm(1)"/>
+                        </entry>
+                        <entry id="5" name="inputUserConfigurable4" type="int">
+                          <list id = "0" value = "normal(0)"/>
+                          <list id = "1" value = "alarm(1)"/>
+                        </entry>
+                        <entry id="6" name="inputUserConfigurable5" type="int">
+                          <list id = "0" value = "normal(0)"/>
+                          <list id = "1" value = "alarm(1)"/>
+                        </entry>
+                        <entry id="7" name="inputUserConfigurable6" type="int">
+                          <list id = "0" value = "normal(0)"/>
+                          <list id = "1" value = "alarm(1)"/>
+                        </entry>
+                        <entry id="8" name="inputUserConfigurable7" type="int">
+                          <list id = "0" value = "normal(0)"/>
+                          <list id = "1" value = "alarm(1)"/>
+                        </entry>
+                        <entry id="9" name="inputUserConfigurable8" type="int">
+                          <list id = "0" value = "normal(0)"/>
+                          <list id = "1" value = "alarm(1)"/>
+                        </entry>
+                        <entry id="10" name="inputUserConfigurable9" type="int">
+                          <list id = "0" value = "normal(0)"/>
+                          <list id = "1" value = "alarm(1)"/>
+                        </entry>
+                        <entry id="11" name="inputUserConfigurable10" type="int">
+                          <list id = "0" value = "normal(0)"/>
+                          <list id = "1" value = "alarm(1)"/>
+                        </entry>
+                      </entry>
+                    </entry>
+                    <entry id="8" name="systemLinkStatus" type="int">
+                      <list id = "0" value = "linkdown(0)"/>
+                      <list id = "1" value = "linkup(1)"/>
+                    </entry>
+                    <entry id="9" name="systemInitiateEEPROM" type="int">
+                      <list id = "0" value = "pushbutton(0)"/>
+                      <list id = "1" value = "start(1)"/>
+                    </entry>
+                    <entry id="10" name="systemLastDigInput" type="int"></entry>
+                    <entry id="11" name="systemTrapCounter" type="int"></entry>
+                    <entry id="12" name="systemHeartBeatTrapRepeatRate" type="int"></entry>
+                    <entry id="13" name="systemResetManualAlarms" type="int">
+                      <list id = "0" value = "pushbutton(0)"/>
+                      <list id = "1" value = "apply(1)"/>
+                    </entry>
+                    <entry id="14" name="systemControlUnitInputIndex" type="int"></entry>
+                    <entry id="15" name="systemControlUnitInputTable" type="node">
+                      <entry id="1" name="systemControlUnitInputEntry" type="node">
+                        <entry id="1" name="inputUnitID" type="int"></entry>
+                        <entry id="2" name="inputUserConfigurableText1" type="string"></entry>
+                        <entry id="3" name="inputUserConfigurableText2" type="string"></entry>
+                        <entry id="4" name="inputUserConfigurableText3" type="string"></entry>
+                        <entry id="5" name="inputUserConfigurableText4" type="string"></entry>
+                        <entry id="6" name="inputUserConfigurableText5" type="string"></entry>
+                        <entry id="7" name="inputUserConfigurableText6" type="string"></entry>
+                        <entry id="8" name="inputUserConfigurableText7" type="string"></entry>
+                        <entry id="9" name="inputUserConfigurableText8" type="string"></entry>
+                        <entry id="10" name="inputUserConfigurableText9" type="string"></entry>
+                        <entry id="11" name="inputUserConfigurableText10" type="string"></entry>
+                      </entry>
+                    </entry>
+                    <entry id="16" name="systemResetCtrlSystem" type="int">
+                      <list id = "0" value = "pushbutton(0)"/>
+                      <list id = "1" value = "reboot(1)"/>
+                    </entry>
+                    <entry id="17" name="ioUnits" type="node">
+                      <entry id="1" name="ioUnitNumberOfUnits" type="int"></entry>
+                      <entry id="2" name="ioUnitsIndex" type="int"></entry>
+                      <entry id="3" name="ioUnitsTable" type="node">
+                        <entry id="1" name="ioUnitsEntry" type="node">
+                          <entry id="1" name="ioUnitID" type="int"></entry>
+                          <entry id="2" name="ioUnitOutDoorTemp1" type="int"></entry>
+                          <entry id="3" name="ioUnitOutDoorTemp2" type="int"></entry>
+                          <entry id="4" name="ioUnitFanSpeed1" type="int"></entry>
+                          <entry id="5" name="ioUnitFanSpeedDeltaValue1" type="int"></entry>
+                          <entry id="6" name="ioUnitFanSpeed2" type="int"></entry>
+                          <entry id="7" name="ioUnitFanSpeedDeltaValue2" type="int"></entry>
+                          <entry id="8" name="ioUnitProgInputText1" type="string"></entry>
+                          <entry id="9" name="ioUnitProgInputStatus1" type="int">
+                            <list id = "0" value = "normal(0)"/>
+                            <list id = "1" value = "alarm(1)"/>
+                          </entry>
+                          <entry id="10" name="ioUnitProgInputText2" type="string"></entry>
+                          <entry id="11" name="ioUnitProgInputStatus2" type="int">
+                            <list id = "0" value = "normal(0)"/>
+                            <list id = "1" value = "alarm(1)"/>
+                          </entry>
+                          <entry id="12" name="ioUnitProgInputText3" type="string"></entry>
+                          <entry id="13" name="ioUnitProgInputStatus3" type="int">
+                            <list id = "0" value = "normal(0)"/>
+                            <list id = "1" value = "alarm(1)"/>
+                          </entry>
+                          <entry id="14" name="ioUnitProgInputText4" type="string"></entry>
+                          <entry id="15" name="ioUnitProgInputStatus4" type="int">
+                            <list id = "0" value = "normal(0)"/>
+                            <list id = "1" value = "alarm(1)"/>
+                          </entry>
+                          <entry id="16" name="ioUnitProgInputText5" type="string"></entry>
+                          <entry id="17" name="ioUnitProgInputStatus5" type="int">
+                            <list id = "0" value = "normal(0)"/>
+                            <list id = "1" value = "alarm(1)"/>
+                          </entry>
+                          <entry id="18" name="ioUnitProgInputText6" type="string"></entry>
+                          <entry id="19" name="ioUnitProgInputStatus6" type="int">
+                            <list id = "0" value = "normal(0)"/>
+                            <list id = "1" value = "alarm(1)"/>
+                          </entry>
+                          <entry id="20" name="ioUnitProgInputValue1" type="int"></entry>
+                          <entry id="21" name="ioUnitProgInputValue2" type="int"></entry>
+                          <entry id="22" name="ioUnitProgInputValue3" type="int"></entry>
+                          <entry id="23" name="ioUnitProgInputValue4" type="int"></entry>
+                          <entry id="24" name="ioUnitProgInputValue5" type="int"></entry>
+                          <entry id="25" name="ioUnitProgInputValue6" type="int"></entry>
+                        </entry>
+                      </entry>
+                    </entry>
+                    <entry id="18" name="systemServiceMode" type="int">
+                      <list id = "0" value = "deactivate(0)"/>
+                      <list id = "1" value = "activate(1)"/>
+                    </entry>
+                  </entry>
+                  <entry id="2" name="dcSystem" type="node">
+                    <entry id="1" name="dcPlant" type="node">
+                      <entry id="3" name="systemSiteInfo" type="node">
+                        <entry id="1" name="systemSiteInfoCustomer" type="string"></entry>
+                        <entry id="2" name="systemSiteInfoLocation" type="string"></entry>
+                        <entry id="3" name="systemSiteInfoMessage1" type="string"></entry>
+                        <entry id="4" name="systemSiteInfoMessage2" type="string"></entry>
+                        <entry id="5" name="systemSiteInfoInstalledDate" type="string"></entry>
+                        <entry id="6" name="systemSiteInfoControllerType" type="int">
+                          <list id = "0" value = "al175(0)"/>
+                          <list id = "1" value = "al4000(1)"/>
+                          <list id = "2" value = "al6000(2)"/>
+                          <list id = "3" value = "al175oem(3)"/>
+                          <list id = "4" value = "mcu(4)"/>
+                          <list id = "5" value = "smartpack(5)"/>
+                          <list id = "6" value = "compack(6)"/>
+                          <list id = "7" value = "smartpack2(7)"/>
+                        </entry>
+                        <entry id="7" name="systemSiteInfoSystemSeriaNum" type="string"></entry>
+                        <entry id="8" name="systemSiteInfoControllerSeriaNum" type="string"></entry>
+                      </entry>
+                      <entry id="4" name="systemNominalVoltage" type="int">
+                        <list id = "0" value = "prs48v(0)"/>
+                        <list id = "1" value = "prs24v(1)"/>
+                        <list id = "2" value = "prs12v(2)"/>
+                        <list id = "3" value = "prs26v(3)"/>
+                        <list id = "4" value = "prs60v(4)"/>
+                      </entry>
+                    </entry>
+                    <entry id="2" name="systemOperationalStatus" type="int">
+                      <list id = "0" value = "floatvoltreg(0)"/>
+                      <list id = "1" value = "floattempcomp(1)"/>
+                      <list id = "2" value = "batteryboost(2)"/>
+                      <list id = "3" value = "batterytest(3)"/>
+                    </entry>
+                  </entry>
+                  <entry id="3" name="battery" type="node">
+                    <entry id="1" name="batteryName" type="string"></entry>
+                    <entry id="2" name="batteryVoltage" type="int"></entry>
+                    <entry id="3" name="batteryCurrent" type="int"></entry>
+                    <entry id="4" name="batteryTemp" type="int"></entry>
+                    <entry id="5" name="batteryBreakerStatus" type="int">
+                      <list id = "0" value = "normal(0)"/>
+                      <list id = "1" value = "alarm(1)"/>
+                    </entry>
+                    <entry id="6" name="batteryChargeCurrentLimitCtrl" type="int">
+                      <list id = "0" value = "disable(0)"/>
+                      <list id = "1" value = "enable(1)"/>
+                    </entry>
+                    <entry id="7" name="batteryChargeCurrentLimitValue" type="int"></entry>
+                    <entry id="8" name="batteryTempCompEnable" type="int">
+                      <list id = "0" value = "disable(0)"/>
+                      <list id = "1" value = "enable(1)"/>
+                    </entry>
+                    <entry id="9" name="batteryFloatVoltConfig" type="int"></entry>
+                    <entry id="10" name="batteryBoostVoltConfig" type="int"></entry>
+                    <entry id="11" name="batteryHighMajorAlarmVoltageConfig" type="int"></entry>
+                    <entry id="12" name="batteryHighMinorAlarmVoltageConfig" type="int"></entry>
+                    <entry id="13" name="batteryLowMajorAlarmVoltageConfig" type="int"></entry>
+                    <entry id="14" name="batteryLowMinorAlarmVoltageConfig" type="int"></entry>
+                    <entry id="15" name="batteryStartManualTest" type="int">
+                      <list id = "0" value = "pushbutton(0)"/>
+                      <list id = "1" value = "starttest(1)"/>
+                      <list id = "2" value = "stoptest(2)"/>
+                    </entry>
+                    <entry id="16" name="batteryStartManualBoost" type="int">
+                      <list id = "0" value = "pushbutton(0)"/>
+                      <list id = "1" value = "startboost(1)"/>
+                      <list id = "2" value = "stopboost(2)"/>
+                    </entry>
+                    <entry id="17" name="batteryLVD" type="node">
+                      <entry id="1" name="batteryLVDStatus" type="int">
+                        <list id = "0" value = "connected(0)"/>
+                        <list id = "1" value = "disconnected(1)"/>
+                        <list id = "2" value = "disabled(2)"/>
+                      </entry>
+                      <entry id="2" name="batteryLVDDisconnectVoltage" type="int"></entry>
+                      <entry id="3" name="batteryLVDConnectVoltage" type="int"></entry>
+                    </entry>
+                    <entry id="18" name="batteryBanksNumofBanks" type="int"></entry>
+                    <entry id="19" name="batteryBanks" type="node">
+                      <entry id="1" name="batterySymmetryDeltaLimitVoltage" type="int"></entry>
+                      <entry id="2" name="batteryBanksIndex" type="int"></entry>
+                      <entry id="3" name="batteryBanksTable" type="node">
+                        <entry id="1" name="batteryBanksEntry" type="node">
+                          <entry id="1" name="batteryBankID" type="int"></entry>
+                          <entry id="2" name="batteryBanksSymmetry1enable" type="int">
+                            <list id = "0" value = "disable(0)"/>
+                            <list id = "1" value = "enable(1)"/>
+                          </entry>
+                          <entry id="3" name="batteryBanksSymmetry1status" type="int">
+                            <list id = "0" value = "ok(0)"/>
+                            <list id = "1" value = "minorAlarm(1)"/>
+                            <list id = "2" value = "majorAlarm(2)"/>
+                            <list id = "3" value = "disabled(3)"/>
+                            <list id = "4" value = "error(4)"/>
+                          </entry>
+                          <entry id="4" name="batteryBanksSymmetry1deltaVoltage" type="int"></entry>
+                          <entry id="5" name="batteryBanksSymmetry2enable" type="int">
+                            <list id = "0" value = "disable(0)"/>
+                            <list id = "1" value = "enable(1)"/>
+                          </entry>
+                          <entry id="6" name="batteryBanksSymmetry2status" type="int">
+                            <list id = "0" value = "ok(0)"/>
+                            <list id = "1" value = "minorAlarm(1)"/>
+                            <list id = "2" value = "majorAlarm(2)"/>
+                            <list id = "3" value = "disabled(3)"/>
+                            <list id = "4" value = "error(4)"/>
+                          </entry>
+                          <entry id="7" name="batteryBanksSymmetry2deltaVoltage" type="int"></entry>
+                          <entry id="8" name="batteryBanksSymmetry3enable" type="int">
+                            <list id = "0" value = "disable(0)"/>
+                            <list id = "1" value = "enable(1)"/>
+                          </entry>
+                          <entry id="9" name="batteryBanksSymmetry3status" type="int">
+                            <list id = "0" value = "ok(0)"/>
+                            <list id = "1" value = "minorAlarm(1)"/>
+                            <list id = "2" value = "majorAlarm(2)"/>
+                            <list id = "3" value = "disabled(3)"/>
+                            <list id = "4" value = "error(4)"/>
+                          </entry>
+                          <entry id="10" name="batteryBanksSymmetry3deltaVoltage" type="int"></entry>
+                          <entry id="11" name="batteryBanksSymmetry4enable" type="int">
+                            <list id = "0" value = "disable(0)"/>
+                            <list id = "1" value = "enable(1)"/>
+                          </entry>
+                          <entry id="12" name="batteryBanksSymmetry4status" type="int">
+                            <list id = "0" value = "ok(0)"/>
+                            <list id = "1" value = "minorAlarm(1)"/>
+                            <list id = "2" value = "majorAlarm(2)"/>
+                            <list id = "3" value = "disabled(3)"/>
+                            <list id = "4" value = "error(4)"/>
+                          </entry>
+                          <entry id="13" name="batteryBanksSymmetry4deltaVoltage" type="int"></entry>
+                          <entry id="14" name="batteryBanksSymmetry5enable" type="int">
+                            <list id = "0" value = "disable(0)"/>
+                            <list id = "1" value = "enable(1)"/>
+                          </entry>
+                          <entry id="15" name="batteryBanksSymmetry5status" type="int">
+                            <list id = "0" value = "ok(0)"/>
+                            <list id = "1" value = "minorAlarm(1)"/>
+                            <list id = "2" value = "majorAlarm(2)"/>
+                            <list id = "3" value = "disabled(3)"/>
+                            <list id = "4" value = "error(4)"/>
+                          </entry>
+                          <entry id="16" name="batteryBanksSymmetry5deltaVoltage" type="int"></entry>
+                          <entry id="17" name="batteryBanksSymmetry6enable" type="int">
+                            <list id = "0" value = "disable(0)"/>
+                            <list id = "1" value = "enable(1)"/>
+                          </entry>
+                          <entry id="18" name="batteryBanksSymmetry6status" type="int">
+                            <list id = "0" value = "ok(0)"/>
+                            <list id = "1" value = "minorAlarm(1)"/>
+                            <list id = "2" value = "majorAlarm(2)"/>
+                            <list id = "3" value = "disabled(3)"/>
+                            <list id = "4" value = "error(4)"/>
+                          </entry>
+                          <entry id="19" name="batteryBanksSymmetry6deltaVoltage" type="int"></entry>
+                          <entry id="20" name="batteryBanksSymmetry7enable" type="int">
+                            <list id = "0" value = "disable(0)"/>
+                            <list id = "1" value = "enable(1)"/>
+                          </entry>
+                          <entry id="21" name="batteryBanksSymmetry7status" type="int">
+                            <list id = "0" value = "ok(0)"/>
+                            <list id = "1" value = "minorAlarm(1)"/>
+                            <list id = "2" value = "majorAlarm(2)"/>
+                            <list id = "3" value = "disabled(3)"/>
+                            <list id = "4" value = "error(4)"/>
+                          </entry>
+                          <entry id="22" name="batteryBanksSymmetry7deltaVoltage" type="int"></entry>
+                          <entry id="23" name="batteryBanksSymmetry8enable" type="int">
+                            <list id = "0" value = "disable(0)"/>
+                            <list id = "1" value = "enable(1)"/>
+                          </entry>
+                          <entry id="24" name="batteryBanksSymmetry8status" type="int">
+                            <list id = "0" value = "ok(0)"/>
+                            <list id = "1" value = "minorAlarm(1)"/>
+                            <list id = "2" value = "majorAlarm(2)"/>
+                            <list id = "3" value = "disabled(3)"/>
+                            <list id = "4" value = "error(4)"/>
+                          </entry>
+                          <entry id="25" name="batteryBanksSymmetry8deltaVoltage" type="int"></entry>
+                        </entry>
+                      </entry>
+                      <entry id="4" name="batteryBanksNumberOfStrings" type="int"></entry>
+                      <entry id="5" name="batteryBanksExtensionIndex" type="int"></entry>
+                      <entry id="6" name="batteryBanksExtensionTable" type="node">
+                        <entry id="1" name="batteryBanksExtensionEntry" type="node">
+                          <entry id="1" name="batteryBanksExtensionID" type="int"></entry>
+                          <entry id="2" name="batteryBanksExtensionSymmetryInputValue1" type="int"></entry>
+                          <entry id="3" name="batteryBanksExtensionSymmetryInputValue2" type="int"></entry>
+                          <entry id="4" name="batteryBanksExtensionSymmetryInputValue3" type="int"></entry>
+                          <entry id="5" name="batteryBanksExtensionSymmetryInputValue4" type="int"></entry>
+                          <entry id="6" name="batteryBanksExtensionSymmetryInputValue5" type="int"></entry>
+                          <entry id="7" name="batteryBanksExtensionSymmetryInputValue6" type="int"></entry>
+                          <entry id="8" name="batteryBanksExtensionSymmetryInputValue7" type="int"></entry>
+                          <entry id="9" name="batteryBanksExtensionSymmetryInputValue8" type="int"></entry>
+                        </entry>
+                      </entry>
+                    </entry>
+                    <entry id="20" name="batteryCapacityData" type="node">
+                      <entry id="1" name="batteryTimeToDisconnect" type="int"></entry>
+                      <entry id="2" name="batteryCapacityLeft" type="int"></entry>
+                      <entry id="3" name="batteryCapacityUsed" type="int"></entry>
+                      <entry id="4" name="batteryCapacityTotal" type="int"></entry>
+                      <entry id="5" name="batteryQuality" type="int"></entry>
+                    </entry>
+                    <entry id="21" name="batteryMonitorUnits" type="node">
+                      <entry id="1" name="battmonNumberOfUnits" type="int"></entry>
+                      <entry id="2" name="battmonUnitsIndex" type="int"></entry>
+                      <entry id="3" name="battmonUnitsTable" type="node">
+                        <entry id="1" name="battmonUnitsEntry" type="node">
+                          <entry id="1" name="batteryMonitorID" type="int"></entry>
+                          <entry id="2" name="batteryMonitorSymmetry1status" type="int">
+                            <list id = "0" value = "ok(0)"/>
+                            <list id = "1" value = "minorAlarm(1)"/>
+                            <list id = "2" value = "majorAlarm(2)"/>
+                            <list id = "3" value = "disabled(3)"/>
+                            <list id = "4" value = "error(4)"/>
+                          </entry>
+                          <entry id="3" name="batteryMonitorSymmetry1InputValue" type="int"></entry>
+                          <entry id="4" name="batteryMonitorSymmetry2status" type="int">
+                            <list id = "0" value = "ok(0)"/>
+                            <list id = "1" value = "minorAlarm(1)"/>
+                            <list id = "2" value = "majorAlarm(2)"/>
+                            <list id = "3" value = "disabled(3)"/>
+                            <list id = "4" value = "error(4)"/>
+                          </entry>
+                          <entry id="5" name="batteryMonitorSymmetry2InputValue" type="int"></entry>
+                          <entry id="6" name="batteryMonitorSymmetry3status" type="int">
+                            <list id = "0" value = "ok(0)"/>
+                            <list id = "1" value = "minorAlarm(1)"/>
+                            <list id = "2" value = "majorAlarm(2)"/>
+                            <list id = "3" value = "disabled(3)"/>
+                            <list id = "4" value = "error(4)"/>
+                          </entry>
+                          <entry id="7" name="batteryMonitorSymmetry3InputValue" type="int"></entry>
+                          <entry id="8" name="batteryMonitorSymmetry4status" type="int">
+                            <list id = "0" value = "ok(0)"/>
+                            <list id = "1" value = "minorAlarm(1)"/>
+                            <list id = "2" value = "majorAlarm(2)"/>
+                            <list id = "3" value = "disabled(3)"/>
+                            <list id = "4" value = "error(4)"/>
+                          </entry>
+                          <entry id="9" name="batteryMonitorSymmetry4InputValue" type="int"></entry>
+                          <entry id="10" name="batteryMonitorCurrentValue" type="int"></entry>
+                          <entry id="11" name="batteryMonitorFuseStatus" type="int">
+                            <list id = "0" value = "normal(0)"/>
+                            <list id = "1" value = "alarm(1)"/>
+                          </entry>
+                          <entry id="12" name="batteryMonitorTemperature" type="int"></entry>
+                        </entry>
+                      </entry>
+                    </entry>
+                    <entry id="22" name="batteryHighMajorTempAlarmLevel" type="int"></entry>
+                    <entry id="23" name="batteryHighMinorTempAlarmLevel" type="int"></entry>
+                  </entry>
+                  <entry id="4" name="loadDistribution" type="node">
+                    <entry id="1" name="loadDistributionCurrent" type="int"></entry>
+                    <entry id="2" name="loadDistributionBreakerStatus" type="int">
+                      <list id = "0" value = "normal(0)"/>
+                      <list id = "1" value = "alarm(1)"/>
+                    </entry>
+                    <entry id="3" name="loadDistributionLVDStatus" type="node">
+                      <entry id="1" name="loadLVD1Enable" type="int">
+                        <list id = "0" value = "disabled(0)"/>
+                        <list id = "1" value = "enabled(1)"/>
+                      </entry>
+                      <entry id="2" name="loadLVD1Status" type="int">
+                        <list id = "0" value = "connected(0)"/>
+                        <list id = "1" value = "disconnected(1)"/>
+                        <list id = "2" value = "disabled(2)"/>
+                      </entry>
+                      <entry id="3" name="loadLVD1ConnectVoltage" type="int"></entry>
+                      <entry id="4" name="loadLVD1DisconnectVoltage" type="int"></entry>
+                      <entry id="5" name="loadLVD2Enable" type="int">
+                        <list id = "0" value = "disabled(0)"/>
+                        <list id = "1" value = "enabled(1)"/>
+                      </entry>
+                      <entry id="6" name="loadLVD2Status" type="int">
+                        <list id = "0" value = "connected(0)"/>
+                        <list id = "1" value = "disconnected(1)"/>
+                        <list id = "2" value = "disabled(2)"/>
+                      </entry>
+                      <entry id="7" name="loadLVD2ConnectVoltage" type="int"></entry>
+                      <entry id="8" name="loadLVD2DisconnectVoltage" type="int"></entry>
+                      <entry id="9" name="loadLVD3Enable" type="int">
+                        <list id = "0" value = "disabled(0)"/>
+                        <list id = "1" value = "enabled(1)"/>
+                      </entry>
+                      <entry id="10" name="loadLVD3Status" type="int">
+                        <list id = "0" value = "connected(0)"/>
+                        <list id = "1" value = "disconnected(1)"/>
+                        <list id = "2" value = "disabled(2)"/>
+                      </entry>
+                      <entry id="11" name="loadLVD3ConnectVoltage" type="int"></entry>
+                      <entry id="12" name="loadLVD3DisconnectVoltage" type="int"></entry>
+                    </entry>
+                    <entry id="4" name="loadMonitorUnits" type="node">
+                      <entry id="1" name="loadmonitorNumberOfUnits" type="int"></entry>
+                      <entry id="2" name="loadMonitorUnitsIndex" type="int"></entry>
+                      <entry id="3" name="loadMonitorUnitsTable" type="node">
+                        <entry id="1" name="loadMonitorUnitsEntry" type="node">
+                          <entry id="1" name="loadMonitorID" type="int"></entry>
+                          <entry id="2" name="loadMonitorFuseStatus1" type="int">
+                            <list id = "0" value = "normal(0)"/>
+                            <list id = "1" value = "alarm(1)"/>
+                          </entry>
+                          <entry id="3" name="loadMonitorCurrent1" type="int"></entry>
+                          <entry id="4" name="loadMonitorFuseStatus2" type="int">
+                            <list id = "0" value = "normal(0)"/>
+                            <list id = "1" value = "alarm(1)"/>
+                          </entry>
+                          <entry id="5" name="loadMonitorCurrent2" type="int"></entry>
+                          <entry id="6" name="loadMonitorFuseStatus3" type="int">
+                            <list id = "0" value = "normal(0)"/>
+                            <list id = "1" value = "alarm(1)"/>
+                          </entry>
+                          <entry id="7" name="loadMonitorCurrent3" type="int"></entry>
+                          <entry id="8" name="loadMonitorFuseStatus4" type="int">
+                            <list id = "0" value = "normal(0)"/>
+                            <list id = "1" value = "alarm(1)"/>
+                          </entry>
+                          <entry id="9" name="loadMonitorCurrent4" type="int"></entry>
+                          <entry id="10" name="loadMonitorFuseStatus5" type="int">
+                            <list id = "0" value = "normal(0)"/>
+                            <list id = "1" value = "alarm(1)"/>
+                          </entry>
+                          <entry id="11" name="loadMonitorCurrent5" type="int"></entry>
+                          <entry id="12" name="loadMonitorFuseStatus6" type="int">
+                            <list id = "0" value = "normal(0)"/>
+                            <list id = "1" value = "alarm(1)"/>
+                          </entry>
+                          <entry id="13" name="loadMonitorCurrent6" type="int"></entry>
+                          <entry id="14" name="loadMonitorFuseStatus7" type="int">
+                            <list id = "0" value = "normal(0)"/>
+                            <list id = "1" value = "alarm(1)"/>
+                          </entry>
+                          <entry id="15" name="loadMonitorCurrent7" type="int"></entry>
+                          <entry id="16" name="loadMonitorFuseStatus8" type="int">
+                            <list id = "0" value = "normal(0)"/>
+                            <list id = "1" value = "alarm(1)"/>
+                          </entry>
+                          <entry id="17" name="loadMonitorCurrent8" type="int"></entry>
+                        </entry>
+                      </entry>
+                    </entry>
+                  </entry>
+                  <entry id="5" name="rectifier" type="node">
+                    <entry id="1" name="rectifierInstalledRectifiers" type="int"></entry>
+                    <entry id="2" name="rectifierRectifiersActive" type="int"></entry>
+                    <entry id="3" name="rectifierTotalCurrent" type="int"></entry>
+                    <entry id="4" name="rectifierUtilization" type="int"></entry>
+                    <entry id="5" name="rectifierStatus" type="node">
+                      <entry id="1" name="rectifierStatusNoIndex" type="int"></entry>
+                      <entry id="2" name="rectifierStatusTable" type="node">
+                        <entry id="1" name="rectifierStatusEntry" type="node">
+                          <entry id="1" name="rectifierStatusID" type="int"></entry>
+                          <entry id="2" name="rectifierStatusStatus" type="int">
+                            <list id = "0" value = "notPresent(0)"/>
+                            <list id = "1" value = "normal(1)"/>
+                            <list id = "2" value = "alarm(2)"/>
+                            <list id = "3" value = "notUsed(3)"/>
+                            <list id = "4" value = "disabled(4)"/>
+                          </entry>
+                          <entry id="3" name="rectifierStatusOutputCurrent" type="int"></entry>
+                          <entry id="4" name="rectifierStatusOutputVoltage" type="int"></entry>
+                          <entry id="5" name="rectifierStatusTemp" type="int"></entry>
+                          <entry id="6" name="rectifierStatusType" type="string"></entry>
+                          <entry id="7" name="rectifierStatusSKU" type="string"></entry>
+                          <entry id="8" name="rectifierStatusSerialNo" type="string"></entry>
+                          <entry id="9" name="rectifierStatusRevisionLevel" type="string"></entry>
+                        </entry>
+                      </entry>
+                    </entry>
+                  </entry>
+                  <entry id="6" name="acDistribution" type="node">
+                    <entry id="1" name="acVoltage1" type="int"></entry>
+                    <entry id="2" name="acVoltage2" type="int"></entry>
+                    <entry id="3" name="acVoltage3" type="int"></entry>
+                  </entry>
+                  <entry id="7" name="alarmGroup" type="node">
+                    <entry id="1" name="alarmWellknownAlarms" type="node">
+                      <entry id="1" name="alarmMajorHighBattVolt" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="2" name="alarmMinorHighBattVolt" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="3" name="alarmMajorLowBattVolt" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="4" name="alarmMinorLowBattVolt" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="5" name="alarmMajorBatteryHighTemp" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="6" name="alarmMinorBatteryHighTemp" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="7" name="alarmBatteryDisconnectOpen" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="8" name="alarmLVD1open" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="9" name="alarmLVD2open" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="10" name="alarmLVD3open" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="11" name="alarmACmains" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="12" name="alarmBatteryBreakerOpen" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="13" name="alarmDistributionBreakerOpen" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="14" name="alarmMajorRectifier" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="15" name="alarmMinorRectifier" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="16" name="alarmMajorBatterySymmetry" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="17" name="alarmMinorBatterySymmetry" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="18" name="alarmBatteryLifeEnded" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="19" name="alarmBatteryTestmodeEntered" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="20" name="alarmBatteryBoostmodeEntered" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="21" name="alarmIoUnitTemp1" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="22" name="alarmIoUnitTemp2" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="23" name="alarmIoUnitDeltaFanSpeed1" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="24" name="alarmIoUnitDeltaFanSpeed2" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="25" name="alarmMajorSolar" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="26" name="alarmMinorSolar" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="27" name="alarmMajorRectifierCapacity" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                      <entry id="28" name="alarmMinorRectifierCapacity" type="int">
+                        <list id = "0" value = "normal(0)"/>
+                        <list id = "1" value = "alarm(1)"/>
+                      </entry>
+                    </entry>
+                  </entry>
+                  <entry id="8" name="dcSystemTraps" type="node">
+                    <entry id="1" name="alarmMajorHighBattVoltTrap" type="node">
+                    </entry>
+                    <entry id="2" name="alarmMinorHighBattVoltTrap" type="node">
+                    </entry>
+                    <entry id="3" name="alarmMajorLowBattVoltTrap" type="node">
+                    </entry>
+                    <entry id="4" name="alarmMinorLowBattVoltTrap" type="node">
+                    </entry>
+                    <entry id="5" name="alarmMajorBatteryHighTempTrap" type="node">
+                    </entry>
+                    <entry id="6" name="alarmMinorBatteryHighTempTrap" type="node">
+                    </entry>
+                    <entry id="7" name="alarmBatteryDisconnectOpenTrap" type="node">
+                    </entry>
+                    <entry id="8" name="alarmLVD1openTrap" type="node">
+                    </entry>
+                    <entry id="9" name="alarmLVD2openTrap" type="node">
+                    </entry>
+                    <entry id="10" name="alarmLVD3openTrap" type="node">
+                    </entry>
+                    <entry id="11" name="alarmACmainsTrap" type="node">
+                    </entry>
+                    <entry id="12" name="alarmBatteryBreakerOpenTrap" type="node">
+                    </entry>
+                    <entry id="13" name="alarmDistributionBreakerOpenTrap" type="node">
+                    </entry>
+                    <entry id="14" name="alarmMajorRectifierTrap" type="node">
+                    </entry>
+                    <entry id="15" name="alarmMinorRectifierTrap" type="node">
+                    </entry>
+                    <entry id="16" name="alarmMajorBatterySymmetryTrap" type="node">
+                    </entry>
+                    <entry id="17" name="alarmMinorBatterySymmetryTrap" type="node">
+                    </entry>
+                    <entry id="18" name="alarmBatteryLifeEndedTrap" type="node">
+                    </entry>
+                    <entry id="19" name="alarmBatteryTestmodeEnteredTrap" type="node">
+                    </entry>
+                    <entry id="20" name="alarmBatteryBoostmodeEnteredTrap" type="node">
+                    </entry>
+                    <entry id="21" name="alarmController1proginputTrap" type="node">
+                    </entry>
+                    <entry id="22" name="alarmController2proginputTrap" type="node">
+                    </entry>
+                    <entry id="23" name="alarmController3proginputTrap" type="node">
+                    </entry>
+                    <entry id="24" name="alarmController4proginputTrap" type="node">
+                    </entry>
+                    <entry id="25" name="alarmController5proginputTrap" type="node">
+                    </entry>
+                    <entry id="26" name="alarmController6proginputTrap" type="node">
+                    </entry>
+                    <entry id="27" name="alarmController7proginputTrap" type="node">
+                    </entry>
+                    <entry id="28" name="alarmController8proginputTrap" type="node">
+                    </entry>
+                    <entry id="29" name="infoHeartBeatTrap" type="node">
+                    </entry>
+                    <entry id="30" name="alarmIoUnitTemp1Trap" type="node">
+                    </entry>
+                    <entry id="31" name="alarmIoUnitTemp2Trap" type="node">
+                    </entry>
+                    <entry id="32" name="alarmIoUnitDeltaFanSpeed1Trap" type="node">
+                    </entry>
+                    <entry id="33" name="alarmIoUnitDeltaFanSpeed2Trap" type="node">
+                    </entry>
+                    <entry id="34" name="alarmIoUnit1proginputTrap" type="node">
+                    </entry>
+                    <entry id="35" name="alarmIoUnit2proginputTrap" type="node">
+                    </entry>
+                    <entry id="36" name="alarmIoUnit3proginputTrap" type="node">
+                    </entry>
+                    <entry id="37" name="alarmIoUnit4proginputTrap" type="node">
+                    </entry>
+                    <entry id="38" name="alarmIoUnit5proginputTrap" type="node">
+                    </entry>
+                    <entry id="39" name="alarmIoUnit6proginputTrap" type="node">
+                    </entry>
+                    <entry id="40" name="alarmIoUnit7proginputTrap" type="node">
+                    </entry>
+                    <entry id="41" name="alarmIoUnit8proginputTrap" type="node">
+                    </entry>
+                    <entry id="42" name="alarmIoUnit9proginputTrap" type="node">
+                    </entry>
+                    <entry id="43" name="alarmIoUnit10proginputTrap" type="node">
+                    </entry>
+                    <entry id="44" name="alarmIoUnit11proginputTrap" type="node">
+                    </entry>
+                    <entry id="45" name="alarmIoUnit12proginputTrap" type="node">
+                    </entry>
+                    <entry id="46" name="alarmIoUnit13proginputTrap" type="node">
+                    </entry>
+                    <entry id="47" name="alarmIoUnit14proginputTrap" type="node">
+                    </entry>
+                    <entry id="48" name="alarmMajorSolarChargerTrap" type="node">
+                    </entry>
+                    <entry id="49" name="alarmMinorSolarChargerTrap" type="node">
+                    </entry>
+                    <entry id="50" name="alarmMajorRectifierCapacityTrap" type="node">
+                    </entry>
+                    <entry id="51" name="alarmMinorRectifierCapacityTrap" type="node">
+                    </entry>
+                  </entry>
+                  <entry id="9" name="solarCharger" type="node">
+                    <entry id="1" name="solarChargerInstalledsolarChargers" type="int"></entry>
+                    <entry id="2" name="solarChargersActive" type="int"></entry>
+                    <entry id="3" name="solarChargerTotalCurrent" type="int"></entry>
+                    <entry id="4" name="solarChargerUtilization" type="int"></entry>
+                    <entry id="5" name="solarChargerStatus" type="node">
+                      <entry id="1" name="solarChargerStatusNoIndex" type="int"></entry>
+                      <entry id="2" name="solarChargerStatusTable" type="node">
+                        <entry id="1" name="solarChargerStatusEntry" type="node">
+                          <entry id="1" name="solarChargerStatusID" type="int"></entry>
+                          <entry id="2" name="solarChargerStatusStatus" type="int">
+                            <list id = "0" value = "notPresent(0)"/>
+                            <list id = "1" value = "normal(1)"/>
+                            <list id = "2" value = "alarm(2)"/>
+                            <list id = "3" value = "notUsed(3)"/>
+                            <list id = "4" value = "disabled(4)"/>
+                          </entry>
+                          <entry id="3" name="solarChargerOutputCurrent" type="int"></entry>
+                          <entry id="4" name="solarChargerOutputVoltage" type="int"></entry>
+                          <entry id="5" name="solarChargerTemp" type="int"></entry>
+                          <entry id="6" name="solarChargerType" type="string"></entry>
+                          <entry id="7" name="solarChargerSKU" type="string"></entry>
+                          <entry id="8" name="solarChargerSerialNo" type="string"></entry>
+                          <entry id="9" name="solarChargerRevisionLevel" type="string"></entry>
+                        </entry>
+                      </entry>
+                    </entry>
+                  </entry>
+                </entry>
+              </entry>
+            </entry>
+          </entry>
+          <entry id="5" name="security" type="node">
+          </entry>
+          <entry id="6" name="snmpV2" type="node">
+            <entry id="1" name="snmpDomains" type="node">
+            </entry>
+            <entry id="2" name="snmpProxys" type="node">
+            </entry>
+            <entry id="3" name="snmpModules" type="node">
+            </entry>
+          </entry>
+        </entry>
+      </entry>
+    </entry>
+  </entry>
+</mib-repository>
+
