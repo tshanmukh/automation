@@ -1,4 +1,5 @@
-import xml.dom.minidom
+# Script to pick specific problem and corresponding classification in normal switch cases
+
 from lxml import etree
 
 profileXml='/home/sthummala/frx.xml'
