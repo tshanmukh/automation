@@ -1,3 +1,4 @@
+import os
 from lxml import etree
 
 """ Script to generate the metric details for each metric group id per template in a profile-xml 
@@ -37,9 +38,15 @@ def printfields(id, templateName):
         print("No pm xml files present while parsing" + templateName)
 
 
+# to clean files in the results folder if they are already present
+files=os.listdir("results/")
+for file in files:
+    os.remove("results/"+file)
+
 pmFiles = []
 metricGroupId = []
 pluginName = input("Please enter the plugin name: ")
+# todo modification to have a generic path
 profileXml = '/home/sthummala/workspace/vsure/centina/sa/profiles/' + pluginName + '.xml'
 parser = etree.XMLParser(strip_cdata=False)
 root = etree.parse(profileXml, parser)
