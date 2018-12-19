@@ -25,10 +25,15 @@ def printfields(id, templateName):
                     name = temp1[0]
                     f = open("results/" + name + ".csv", "a")  # opening file with template name in append mode
                     try:
-                        for m in metric:
-                            f.write(str(groupId.get("id")) + "," + str(m.get("name")) + "," + str(
-                                m.find("parameter").get("oid")) + "," + str(m.get("location")) + "," + str(
-                                m.get("direction")) + "\n")
+                        if protocol == "SNMP":
+                            for m in metric:
+                                f.write(str(groupId.get("id")) + "," + str(m.get("name")) + "\n")
+                        else:
+                            # todo if multiple parameters are present
+                            for m in metric:
+                                f.write(str(groupId.get("id")) + "," + str(m.get("name")) + "," + str(
+                                    m.find("parameter").get("oid")) + "," + str(m.get("location")) + "," + str(
+                                    m.get("direction")) + "\n")
                     except:
                         print("Exception while looping through the metricgroup id", str(groupId.get("id")))
                         exit()
