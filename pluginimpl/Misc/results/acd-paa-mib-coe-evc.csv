@@ -1,0 +1,8 @@
+acd-paa-coe-mib.Packets,ACD PAA Packet Lossacd-paa-coe-mib
+acd-paa-coe-mib.Packets,ACD PAA FE Packet Lossacd-paa-coe-mib
+acd-paa-coe-mib.Packets,ACD PAA One-way Delay Variationacd-paa-coe-mib
+acd-paa-coe-mib.Packets,ACD PAA Two-way Delayacd-paa-coe-mib
+acd-paa-coe-mib.Packets,ACD PAA Two-way Delay Variationacd-paa-coe-mib
+acd-paa-coe-mib.Packets,ACD PAA One-way Delayacd-paa-coe-mib
+acd-paa-coe-mib.Packets,ACD PAA IGMP Join Delayacd-paa-coe-mib
+acd-paa-coe-mib.Packets,ACD PAA IGMP Leave Delayacd-paa-coe-mib

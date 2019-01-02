@@ -1,0 +1,8 @@
+acd-paa-mib.Packets,Accedian PAA Packet Lossacd-paa-mib
+acd-paa-mib.Packets,Accedian PAA FE Packet Lossacd-paa-mib
+acd-paa-mib.Packets,Accedian PAA One-way Delay Variationacd-paa-mib
+acd-paa-mib.Packets,Accedian PAA Two-way Delayacd-paa-mib
+acd-paa-mib.Packets,Accedian PAA Two-way Delay Variationacd-paa-mib
+acd-paa-mib.Packets,Accedian PAA One-way Delayacd-paa-mib
+acd-paa-mib.Packets,Accedian PAA IGMP Join Delayacd-paa-mib
+acd-paa-mib.Packets,Accedian PAA IGMP Leave Delayacd-paa-mib

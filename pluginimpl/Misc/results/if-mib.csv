@@ -1,0 +1,16 @@
+if-mib.errors,Ethernet Rx Errorsif-mib
+if-mib.errors,Ethernet Tx Errorsif-mib
+if-mib.discards,Ethernet Rx Discardsif-mib
+if-mib.discards,Ethernet Tx Discardsif-mib
+if-mib.percent utilization 64,Ethernet Rx Avg Utilization (64 bit)if-mib
+if-mib.percent utilization 64,Ethernet Tx Avg Utilization (64 bit)if-mib
+if-mib.average bits per second 64,Ethernet Rx Avg Bits Per Second (64 bit)if-mib
+if-mib.average bits per second 64,Ethernet Tx Avg Bits Per Second (64 bit)if-mib
+if-mib.bytes transferred 64,Ethernet Rx Bytes (64 bit)if-mib
+if-mib.bytes transferred 64,Ethernet Tx Bytes (64 bit)if-mib
+if-mib.average packets per second 64,Ethernet Rx Avg Packets Per Second (64 bit)if-mib
+if-mib.average packets per second 64,Ethernet Tx Avg Packets Per Second (64 bit)if-mib
+if-mib.packets transferred 64,Ethernet Rx Packets (64 bit)if-mib
+if-mib.packets transferred 64,Ethernet Tx Packets (64 bit)if-mib
+if-mib.ethernet availability-1,Ethernet Interface Availabilityif-mib
+if-mib.node availability-1,NODE Ethernet Interface Availabilityif-mib

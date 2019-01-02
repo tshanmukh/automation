@@ -14,6 +14,9 @@ def printfields(id, templateName):
     if pmFiles:
         for i in pmFiles:
             filePath = "/home/sthummala/workspace/vsure/centina/sa/profiles/" + i
+            ref=i.split("/")
+            reference=ref[1].replace(".xml","")
+
             parser = etree.XMLParser(strip_cdata=False)
             pmfile = etree.parse(filePath, parser)
             for groupId in pmfile.iter("metricGroup"):
@@ -27,7 +30,8 @@ def printfields(id, templateName):
                     try:
                         if protocol == "SNMP":
                             for m in metric:
-                                f.write(str(groupId.get("id")) + "," + str(m.get("name")) + "\n")
+                                f.write(str(groupId.get("id")) + "," + str(m.get("name")) +reference+ "\n")
+                                print(m.get("name"),groupId.get("name"),reference)
                         else:
                             # todo if multiple parameters are present
                             for m in metric:
