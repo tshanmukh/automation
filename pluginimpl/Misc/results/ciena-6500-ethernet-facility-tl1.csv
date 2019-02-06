@@ -1,0 +1,86 @@
+ciena-6500-eth-sfx-util-tl1.percent utilization,ciena-6500-eth-sfx-util-tl1.Receive average utilization,Ciena-6500 Ethernet RX NA Avg Utilization,INOCTETS,%,NA,NA
+ciena-6500-eth-sfx-util-tl1.percent utilization,ciena-6500-eth-sfx-util-tl1.Transmit average utilization,Ciena-6500 Ethernet TX NA Avg Utilization,OUTOCTETS,%,NA,NA
+ciena-6500-eth-sfx-avgbits-tl1.average bits per second,ciena-6500-eth-sfx-avgbits-tl1.Receive average bits per second,Ciena-6500 Ethernet Rx NA Avg Bits Per Second,INOCTETS,bps,NA,NA
+ciena-6500-eth-sfx-avgbits-tl1.average bits per second,ciena-6500-eth-sfx-avgbits-tl1.Transmit average bits per second,Ciena-6500 Ethernet Tx NA Avg Bits Per Second,OUTOCTETS,bps,NA,NA
+ciena-6500-eth-sfx-bytes-tl1.Ethernet bytes,ciena-6500-eth-sfx-tl1.ETH RX BYTES,ciena-6500 Ethernet RX NA Bytes,INOCTETS,BYTES,NA,NA
+ciena-6500-eth-sfx-bytes-tl1.Ethernet bytes,ciena-6500-eth-sfx-tl1.ETH TX BYTES,ciena-6500 Ethernet TX NA Bytes,OUTOCTETS,BYTES,NA,NA
+ciena-6500-eth-sfx-tl1,ciena-6500-eth-sfx-tl1.ES-E,ciena-6500 Ethernet NA NE ES-E,ES-E,SECONDS,NEAR_END,NA
+ciena-6500-eth-sfx-tl1,ciena-6500-eth-sfx-tl1.SES-E,ciena-6500 Ethernet NA NE SES-E,SES-E,SECONDS,NEAR_END,NA
+ciena-6500-eth-sfx-tl1,ciena-6500-eth-sfx-tl1.UAS-E,ciena-6500 Ethernet NA NE UAS-E,UAS-E,SECONDS,NEAR_END,NA
+ciena-6500-eth-sfx-tl1,ciena-6500-eth-sfx-tl1.INFRAMES-E,ciena-6500 Ethernet RX NE INFRAMES-E,INFRAMES-E,FRAMES,NEAR_END,RECEIVE
+ciena-6500-eth-sfx-tl1,ciena-6500-eth-sfx-tl1.INFRAMESERR-E,ciena-6500 Ethernet RX NE INFRAMESERR-E,INFRAMESERR-E,FRAMES,NEAR_END,RECEIVE
+ciena-6500-eth-sfx-tl1,ciena-6500-eth-sfx-tl1.DFR-E,ciena-6500 Ethernet NA NE DFR-E,DFR-E,FRAMES,NEAR_END,NA
+ciena-6500-eth-sfx-tl1,ciena-6500-eth-sfx-tl1.OUTFRAMES-E,ciena-6500 Ethernet TX NE OUTFRAMES-E,OUTFRAMES-E,FRAMES,NEAR_END,TRANSMIT
+ciena-6500-eth-sfx-tl1,ciena-6500-eth-sfx-tl1.FCSERR-E,ciena-6500 Ethernet NA NE FCSERR-E,FCSERR-E,FRAMES,NEAR_END,NA
+ciena-6500-eth-sfx-tl1,ciena-6500-eth-sfx-tl1.OUTFRAMESERR-E,ciena-6500 Ethernet TX NE OUTFRAMESERR-E,OUTFRAMESERR-E,FRAMES,NEAR_END,TRANSMIT
+ciena-6500-eth-sfx-tl1,ciena-6500-eth-sfx-tl1.INFRAMESDISCDS-E,ciena-6500 Ethernet RX NE INFRAMESDISCDS-E,INFRAMESDISCDS-E,FRAMES,NEAR_END,RECEIVE
+ciena-6500-eth-sfx-tl1,ciena-6500-eth-sfx-tl1.INFRAMEDISCDS-E,ciena-6500 Ethernet RX NE INFRAMEDISCDS-E,INFRAMEDISCDS-E,FRAMES,NEAR_END,RECEIVE
+ciena-6500-eth-sfx-tl1,ciena-6500-eth-sfx-tl1.OUTFRAMESDISCDS-E,ciena-6500 Ethernet TX NE OUTFRAMESDISCDS-E,OUTFRAMESDISCDS-E,FRAMES,NEAR_END,TRANSMIT
+ciena-6500-eth-sfx-tl1.fe,ciena-6500-eth-sfx-tl1.ES-E.fe,ciena-6500 Ethernet FE ES-E,ES-E,SECONDS,FAR_END,NA
+ciena-6500-eth-sfx-tl1.fe,ciena-6500-eth-sfx-tl1.SES-E.fe,ciena-6500 Ethernet FE SES-E,SES-E,SECONDS,FAR_END,NA
+ciena-6500-eth-sfx-tl1.fe,ciena-6500-eth-sfx-tl1.UAS-E.fe,ciena-6500 Ethernet FE UAS-E,UAS-E,SECONDS,FAR_END,NA
+ciena-6500-eth-sfx-tl1.fe,ciena-6500-eth-sfx-tl1.INFRAMES-E.fe,ciena-6500 Ethernet FE INFRAMES-E,INFRAMES-E,FRAMES,FAR_END,RECEIVE
+ciena-6500-eth-sfx-tl1.fe,ciena-6500-eth-sfx-tl1.INFRAMESERR-E.fe,ciena-6500 Ethernet FE INFRAMESERR-E,INFRAMESERR-E,FRAMES,FAR_END,RECEIVE
+ciena-6500-eth-sfx-tl1.fe,ciena-6500-eth-sfx-tl1.DFR-E.fe,ciena-6500 Ethernet FE DFR-E,DFR-E,FRAMES,FAR_END,NA
+ciena-6500-eth-sfx-tl1.fe,ciena-6500-eth-sfx-tl1.OUTFRAMES-E.fe,ciena-6500 Ethernet FE OUTFRAMES-E,OUTFRAMES-E,FRAMES,FAR_END,TRANSMIT
+ciena-6500-eth-sfx-tl1.fe,ciena-6500-eth-sfx-tl1.FCSERR-E.fe,ciena-6500 Ethernet FE FCSERR-E,FCSERR-E,FRAMES,FAR_END,TRANSMIT
+ciena-6500-eth-sfx-tl1.fe,ciena-6500-eth-sfx-tl1.OUTFRAMESERR-E.fe,ciena-6500 Ethernet FE OUTFRAMESERR-E,OUTFRAMESERR-E,FRAMES,FAR_END,TRANSMIT
+ciena-6500-eth-sfx-tl1.fe,ciena-6500-eth-sfx-tl1.INFRAMESDISCDS-E.fe,ciena-6500 Ethernet FE INFRAMESDISCDS-E,INFRAMESDISCDS-E,FRAMES,FAR_END,RECEIVE
+ciena-6500-eth-sfx-tl1.fe,ciena-6500-eth-sfx-tl1.INFRAMEDISCDS-E.fe,ciena-6500 Ethernet FE INFRAMEDISCDS-E,INFRAMEDISCDS-E,FRAMES,FAR_END,RECEIVE
+ciena-6500-eth-sfx-tl1.fe,ciena-6500-eth-sfx-tl1.OUTFRAMESDISCDS-E.fe,ciena-6500 Ethernet FE OUTFRAMESDISCDS-E,OUTFRAMESDISCDS-E,FRAMES,FAR_END,TRANSMIT
+ciena-6500-eth-sfx-tl1.rx,ciena-6500-eth-sfx-tl1.ES-E.rx,ciena-6500 Ethernet Rx NE ES-E,ES-E,SECONDS,NEAR_END,RECEIVE
+ciena-6500-eth-sfx-tl1.rx,ciena-6500-eth-sfx-tl1.SES-E.rx,ciena-6500 Ethernet Rx NE SES-E,SES-E,SECONDS,NEAR_END,RECEIVE
+ciena-6500-eth-sfx-tl1.rx,ciena-6500-eth-sfx-tl1.UAS-E.rx,ciena-6500 Ethernet Rx NE UAS-E,UAS-E,SECONDS,NEAR_END,RECEIVE
+ciena-6500-eth-sfx-tl1.rx,ciena-6500-eth-sfx-tl1.DFR-E.rx,ciena-6500 Ethernet Rx NE DFR-E,DFR-E,FRAMES,NEAR_END,RECEIVE
+ciena-6500-eth-sfx-tl1.rx,ciena-6500-eth-sfx-tl1.FCSERR-E.rx,ciena-6500 Ethernet Rx NE FCSERR-E,FCSERR-E,FRAMES,NEAR_END,RECEIVE
+ciena-6500-eth-sfx-tl1.rx.fe,ciena-6500-eth-sfx-tl1.ES-E.rx.fe,ciena-6500 Ethernet Rx FE ES-E,ES-E,SECONDS,FAR_END,RECEIVE
+ciena-6500-eth-sfx-tl1.rx.fe,ciena-6500-eth-sfx-tl1.SES-E.rx.fe,ciena-6500 Ethernet Rx FE SES-E,SES-E,SECONDS,FAR_END,RECEIVE
+ciena-6500-eth-sfx-tl1.rx.fe,ciena-6500-eth-sfx-tl1.UAS-E.rx.fe,ciena-6500 Ethernet Rx FE UAS-E,UAS-E,SECONDS,FAR_END,RECEIVE
+ciena-6500-eth-sfx-tl1.rx.fe,ciena-6500-eth-sfx-tl1.DFR-E.rx.fe,ciena-6500 Ethernet Rx FE DFR-E,DFR-E,FRAMES,FAR_END,RECEIVE
+ciena-6500-eth-sfx-tl1.rx.fe,ciena-6500-eth-sfx-tl1.FCSERR-E.rx.fe,ciena-6500 Ethernet Rx FE FCSERR-E,FCSERR-E,FRAMES,FAR_END,RECEIVE
+ciena-6500-eth-sfx-tl1.tx,ciena-6500-eth-sfx-tl1.ES-E.tx,ciena-6500 Ethernet Tx NE ES-E,ES-E,SECONDS,NEAR_END,TRANSMIT
+ciena-6500-eth-sfx-tl1.tx,ciena-6500-eth-sfx-tl1.SES-E.tx,ciena-6500 Ethernet Tx NE SES-E,SES-E,SECONDS,NEAR_END,TRANSMIT
+ciena-6500-eth-sfx-tl1.tx,ciena-6500-eth-sfx-tl1.UAS-E.tx,ciena-6500 Ethernet Tx NE UAS-E,UAS-E,SECONDS,NEAR_END,TRANSMIT
+ciena-6500-eth-sfx-tl1.tx,ciena-6500-eth-sfx-tl1.DFR-E.tx,ciena-6500 Ethernet Tx NE DFR-E,DFR-E,FRAMES,NEAR_END,TRANSMIT
+ciena-6500-eth-sfx-tl1.tx,ciena-6500-eth-sfx-tl1.FCSERR-E.tx,ciena-6500 Ethernet Tx NE FCSERR-E,FCSERR-E,FRAMES,NEAR_END,TRANSMIT
+ciena-6500-eth-sfx-tl1.tx.fe,ciena-6500-eth-sfx-tl1.ES-E.tx.fe,ciena-6500 Ethernet Tx FE ES-E,ES-E,SECONDS,FAR_END,TRANSMIT
+ciena-6500-eth-sfx-tl1.tx.fe,ciena-6500-eth-sfx-tl1.SES-E.tx.fe,ciena-6500 Ethernet Tx FE SES-E,SES-E,SECONDS,FAR_END,TRANSMIT
+ciena-6500-eth-sfx-tl1.tx.fe,ciena-6500-eth-sfx-tl1.UAS-E.tx.fe,ciena-6500 Ethernet Tx FE UAS-E,UAS-E,SECONDS,FAR_END,TRANSMIT
+ciena-6500-eth-sfx-tl1.tx.fe,ciena-6500-eth-sfx-tl1.DFR-E.tx.fe,ciena-6500 Ethernet Tx FE DFR-E,DFR-E,FRAMES,FAR_END,TRANSMIT
+ciena-6500-eth-sfx-tl1.tx.fe,ciena-6500-eth-sfx-tl1.FCSERR-E.tx.fe,ciena-6500 Ethernet Tx FE FCSERR-E,FCSERR-E,FRAMES,FAR_END,TRANSMIT
+ciena-6500-eth-sfx-remote-tl1,ciena-6500-eth-sfx-remote-tl1.REMOTEINFRAMES-E,ciena-6500 Ethernet NE REMOTEINFRAMES-E,REMOTEINFRAMES-E,FRAMES,NEAR_END,NA
+ciena-6500-eth-sfx-remote-tl1,ciena-6500-eth-sfx-remote-tl1.REMOTEINFRAMESERR-E,ciena-6500 Ethernet NE REMOTEINFRAMESERR-E,REMOTEINFRAMESERR-E,FRAMES,NEAR_END,NA
+ciena-6500-eth-sfx-remote-tl1,ciena-6500-eth-sfx-remote-tl1.REMOTEOUTFRAMES-E,ciena-6500 Ethernet NE REMOTEOUTFRAMES-E,REMOTEOUTFRAMES-E,FRAMES,NEAR_END,NA
+ciena-6500-eth-sfx-remote-tl1,ciena-6500-eth-sfx-remote-tl1.FCSERR-E,ciena-6500 Ethernet NE REMOTEFCSERR-E,REMOTEFCSERR-E,FRAMES,NEAR_END,NA
+ciena-6500-eth-sfx-remote-tl1,ciena-6500-eth-sfx-remote-tl1.FCSERR-R,ciena-6500 Ethernet NE REMOTEFCSERR-R,REMOTEFCSERR-R,FRAMES,NEAR_END,NA
+ciena-6500-eth-sfx-remote-tl1,ciena-6500-eth-sfx-remote-tl1.REMOTEOUTFRAMESDISCDS-E,ciena-6500 Ethernet NE REMOTEOUTFRAMESDISCDS-E,REMOTEOUTFRAMESDISCDS-E,FRAMES,NEAR_END,NA
+ciena-6500-eth-sfx-remote-tl1.fe,ciena-6500-eth-sfx-remote-tl1.REMOTEINFRAMES-E.fe,ciena-6500 Ethernet FE REMOTEINFRAMES-E,REMOTEINFRAMES-E,FRAMES,FAR_END,NA
+ciena-6500-eth-sfx-remote-tl1.fe,ciena-6500-eth-sfx-remote-tl1.REMOTEINFRAMESERR-E.fe,ciena-6500 Ethernet FE REMOTEINFRAMESERR-E,REMOTEINFRAMESERR-E,FRAMES,FAR_END,NA
+ciena-6500-eth-sfx-remote-tl1.fe,ciena-6500-eth-sfx-remote-tl1.REMOTEOUTFRAMES-E.fe,ciena-6500 Ethernet FE REMOTEOUTFRAMES-E,REMOTEOUTFRAMES-E,FRAMES,FAR_END,NA
+ciena-6500-eth-sfx-remote-tl1.fe,ciena-6500-eth-sfx-remote-tl1.FCSERR-E.fe,ciena-6500 Ethernet FE REMOTEFCSERR-E,REMOTEFCSERR-E,FRAMES,FAR_END,NA
+ciena-6500-eth-sfx-remote-tl1.fe,ciena-6500-eth-sfx-remote-tl1.FCSERR-R.fe,ciena-6500 Ethernet FE REMOTEFCSERR-R,REMOTEFCSERR-R,FRAMES,FAR_END,NA
+ciena-6500-eth-sfx-remote-tl1.fe,ciena-6500-eth-sfx-remote-tl1.REMOTEOUTFRAMESDISCDS-E.fe,ciena-6500 Ethernet FE REMOTEOUTFRAMESDISCDS-E,REMOTEOUTFRAMESDISCDS-E,FRAMES,FAR_END,NA
+ciena-6500-eth-sfx-remote-tl1.rx,ciena-6500-eth-sfx-remote-tl1.REMOTEINFRAMES-E.rx,ciena-6500 Ethernet Rx NE REMOTEINFRAMES-E,REMOTEINFRAMES-E,FRAMES,NEAR_END,RECEIVE
+ciena-6500-eth-sfx-remote-tl1.rx,ciena-6500-eth-sfx-remote-tl1.REMOTEINFRAMESERR-E.rx,ciena-6500 Ethernet Rx NE REMOTEINFRAMESERR-E,REMOTEINFRAMESERR-E,FRAMES,NEAR_END,RECEIVE
+ciena-6500-eth-sfx-remote-tl1.rx,ciena-6500-eth-sfx-remote-tl1.REMOTEOUTFRAMES-E.rx,ciena-6500 Ethernet Rx NE REMOTEOUTFRAMES-E,REMOTEOUTFRAMES-E,FRAMES,NEAR_END,RECEIVE
+ciena-6500-eth-sfx-remote-tl1.rx,ciena-6500-eth-sfx-remote-tl1.FCSERR-E.rx,ciena-6500 Ethernet Rx NE REMOTEFCSERR-E,REMOTEFCSERR-E,FRAMES,NEAR_END,RECEIVE
+ciena-6500-eth-sfx-remote-tl1.rx,ciena-6500-eth-sfx-remote-tl1.FCSERR-R.rx,ciena-6500 Ethernet Rx NE REMOTEFCSERR-R,REMOTEFCSERR-R,FRAMES,NEAR_END,RECEIVE
+ciena-6500-eth-sfx-remote-tl1.rx,ciena-6500-eth-sfx-remote-tl1.REMOTEOUTFRAMESDISCDS-E.rx,ciena-6500 Ethernet Rx NE REMOTEOUTFRAMESDISCDS-E,REMOTEOUTFRAMESDISCDS-E,FRAMES,NEAR_END,RECEIVE
+ciena-6500-eth-sfx-remote-tl1.rx.fe,ciena-6500-eth-sfx-remote-tl1.REMOTEINFRAMES-E.rx.fe,ciena-6500 Ethernet Rx FE REMOTEINFRAMES-E,REMOTEINFRAMES-E,FRAMES,FAR_END,RECEIVE
+ciena-6500-eth-sfx-remote-tl1.rx.fe,ciena-6500-eth-sfx-remote-tl1.REMOTEINFRAMESERR-E.rx.fe,ciena-6500 Ethernet Rx FE REMOTEINFRAMESERR-E,REMOTEINFRAMESERR-E,FRAMES,FAR_END,RECEIVE
+ciena-6500-eth-sfx-remote-tl1.rx.fe,ciena-6500-eth-sfx-remote-tl1.REMOTEOUTFRAMES-E.rx.fe,ciena-6500 Ethernet Rx FE REMOTEOUTFRAMES-E,REMOTEOUTFRAMES-E,FRAMES,FAR_END,RECEIVE
+ciena-6500-eth-sfx-remote-tl1.rx.fe,ciena-6500-eth-sfx-remote-tl1.FCSERR-E.rx.fe,ciena-6500 Ethernet Rx FE REMOTEFCSERR-E,REMOTEFCSERR-E,FRAMES,FAR_END,RECEIVE
+ciena-6500-eth-sfx-remote-tl1.rx.fe,ciena-6500-eth-sfx-remote-tl1.FCSERR-R.rx.fe,ciena-6500 Ethernet Rx FE REMOTEFCSERR-R,REMOTEFCSERR-R,FRAMES,FAR_END,RECEIVE
+ciena-6500-eth-sfx-remote-tl1.rx.fe,ciena-6500-eth-sfx-remote-tl1.REMOTEOUTFRAMESDISCDS-E.rx.fe,ciena-6500 Ethernet Rx FE REMOTEOUTFRAMESDISCDS-E,REMOTEOUTFRAMESDISCDS-E,FRAMES,FAR_END,RECEIVE
+ciena-6500-eth-sfx-remote-tl1.tx,ciena-6500-eth-sfx-remote-tl1.REMOTEINFRAMES-E.tx,ciena-6500 Ethernet Tx NE REMOTEINFRAMES-E,REMOTEINFRAMES-E,FRAMES,NEAR_END,TRANSMIT
+ciena-6500-eth-sfx-remote-tl1.tx,ciena-6500-eth-sfx-remote-tl1.REMOTEINFRAMESERR-E.tx,ciena-6500 Ethernet Tx NE REMOTEINFRAMESERR-E,REMOTEINFRAMESERR-E,FRAMES,NEAR_END,TRANSMIT
+ciena-6500-eth-sfx-remote-tl1.tx,ciena-6500-eth-sfx-remote-tl1.REMOTEOUTFRAMES-E.tx,ciena-6500 Ethernet Tx NE REMOTEOUTFRAMES-E,REMOTEOUTFRAMES-E,FRAMES,NEAR_END,TRANSMIT
+ciena-6500-eth-sfx-remote-tl1.tx,ciena-6500-eth-sfx-remote-tl1.FCSERR-E.tx,ciena-6500 Ethernet Tx NE REMOTEFCSERR-E,REMOTEFCSERR-E,FRAMES,NEAR_END,TRANSMIT
+ciena-6500-eth-sfx-remote-tl1.tx,ciena-6500-eth-sfx-remote-tl1.FCSERR-R.tx,ciena-6500 Ethernet Tx NE REMOTEFCSERR-R,REMOTEFCSERR-R,FRAMES,NEAR_END,TRANSMIT
+ciena-6500-eth-sfx-remote-tl1.tx,ciena-6500-eth-sfx-remote-tl1.REMOTEOUTFRAMESDISCDS-E.tx,ciena-6500 Ethernet Tx NE REMOTEOUTFRAMESDISCDS-E,REMOTEOUTFRAMESDISCDS-E,FRAMES,NEAR_END,TRANSMIT
+ciena-6500-eth-sfx-remote-tl1.tx.fe,ciena-6500-eth-sfx-remote-tl1.REMOTEINFRAMES-E.tx.fe,ciena-6500 Ethernet Tx FE REMOTEINFRAMES-E,REMOTEINFRAMES-E,FRAMES,FAR_END,TRANSMIT
+ciena-6500-eth-sfx-remote-tl1.tx.fe,ciena-6500-eth-sfx-remote-tl1.REMOTEINFRAMESERR-E.tx.fe,ciena-6500 Ethernet Tx FE REMOTEINFRAMESERR-E,REMOTEINFRAMESERR-E,FRAMES,FAR_END,TRANSMIT
+ciena-6500-eth-sfx-remote-tl1.tx.fe,ciena-6500-eth-sfx-remote-tl1.REMOTEOUTFRAMES-E.tx.fe,ciena-6500 Ethernet Tx FE REMOTEOUTFRAMES-E,REMOTEOUTFRAMES-E,FRAMES,FAR_END,TRANSMIT
+ciena-6500-eth-sfx-remote-tl1.tx.fe,ciena-6500-eth-sfx-remote-tl1.FCSERR-E.tx.fe,ciena-6500 Ethernet Tx FE REMOTEFCSERR-E,REMOTEFCSERR-E,FRAMES,FAR_END,TRANSMIT
+ciena-6500-eth-sfx-remote-tl1.tx.fe,ciena-6500-eth-sfx-remote-tl1.FCSERR-R.tx.fe,ciena-6500 Ethernet Tx FE REMOTEFCSERR-R,REMOTEFCSERR-R,FRAMES,FAR_END,TRANSMIT
+ciena-6500-eth-sfx-remote-tl1.tx.fe,ciena-6500-eth-sfx-remote-tl1.REMOTEOUTFRAMESDISCDS-E.tx.fe,ciena-6500 Ethernet Tx FE REMOTEOUTFRAMESDISCDS-E,REMOTEOUTFRAMESDISCDS-E,FRAMES,FAR_END,TRANSMIT

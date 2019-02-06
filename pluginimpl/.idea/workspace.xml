@@ -2,12 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18ebbba0-1839-45e4-83b8-e74a99958932" name="Default Changelist" comment="Adding script to get specific problem and classification">
-      <change afterPath="$PROJECT_DIR$/SocketConnection/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SocketConnection/echo-client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SocketConnection/echo-server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SocketConnection/multiconn-server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Misc/Pmdata.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SocketConnection/telnet_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TL1Captureparser/captureParser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TL1Captureparser/fileNames.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TL1Captureparser/parsetextfiles.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TL1Captureparser/regex.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Misc/Tl1MetricsList.py" beforeDir="false" afterPath="$PROJECT_DIR$/Misc/Tl1MetricsList.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Misc/results/acd-desc-mib-cpu.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Misc/results/acd-paa-mib-acdPaaL2CfgTable.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Misc/results/acd-paa-mib-coe-evc.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Misc/results/acd-paa-mib.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Misc/results/if-mib.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OIDautomation/experiment.py" beforeDir="false" afterPath="$PROJECT_DIR$/OIDautomation/experiment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OIDautomation/oid.py" beforeDir="false" afterPath="$PROJECT_DIR$/OIDautomation/oid.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,87 +29,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Misc/LearningClasses.py">
-          <provider selected="true" editor-type-id="live-pycharm">
-            <state>
-              <first_editor relative-caret-position="135">
-                <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SocketConnection/echo-server.py">
-          <provider selected="true" editor-type-id="live-pycharm">
-            <state>
-              <first_editor relative-caret-position="225">
-                <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SocketConnection/multiconn-server.py">
-          <provider selected="true" editor-type-id="live-pycharm">
-            <state>
-              <first_editor relative-caret-position="315">
-                <caret line="42" column="24" lean-forward="true" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
-                <folding>
-                  <element signature="e#0#16#0" expanded="true" />
-                </folding>
-              </first_editor>
-              <second_editor relative-caret-position="-105" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SocketConnection/echo-client.py">
-          <provider selected="true" editor-type-id="live-pycharm">
-            <state>
-              <first_editor relative-caret-position="165">
-                <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///usr/lib64/python3.5/selectors.py">
-          <provider selected="true" editor-type-id="live-pycharm">
-            <state>
-              <first_editor relative-caret-position="3495">
-                <caret line="237" selection-start-line="237" selection-end-line="237" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///usr/lib64/python3.5/socket.py">
-          <provider selected="true" editor-type-id="live-pycharm">
-            <state>
-              <first_editor relative-caret-position="2880">
-                <caret line="196" column="52" selection-start-line="196" selection-start-column="52" selection-end-line="196" selection-end-column="52" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SocketConnection/types.py">
+        <entry file="file://$PROJECT_DIR$/Misc/Tl1MetricsList.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
               <first_editor relative-caret-position="180">
-                <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+                <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+                <folding>
+                  <element signature="e#0#9#0" expanded="true" />
+                </folding>
               </first_editor>
               <second_editor />
             </state>
@@ -111,8 +48,8 @@
         <entry file="file://$PROJECT_DIR$/OIDautomation/oid.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="1275">
-                <caret line="85" column="48" selection-start-line="85" selection-start-column="48" selection-end-line="85" selection-end-column="48" />
+              <first_editor relative-caret-position="1095">
+                <caret line="73" column="39" selection-start-line="73" selection-start-column="39" selection-end-line="73" selection-end-column="39" />
               </first_editor>
               <second_editor />
             </state>
@@ -120,20 +57,70 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OIDautomation/experiment.py">
+        <entry file="file://$PROJECT_DIR$/Misc/TrapProcessing.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor />
+              <first_editor relative-caret-position="180">
+                <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+              </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OIDautomation/eltek-mib-repository.xml">
+        <entry file="file://$PROJECT_DIR$/sql/pmdata.py">
+          <provider selected="true" editor-type-id="live-pycharm">
+            <state>
+              <first_editor relative-caret-position="210">
+                <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Misc/numpyandmatplotlib.py">
+          <provider selected="true" editor-type-id="live-pycharm">
+            <state>
+              <first_editor relative-caret-position="120">
+                <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+                <folding>
+                  <element signature="e#0#18#0" expanded="true" />
+                </folding>
+              </first_editor>
+              <second_editor relative-caret-position="-30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TL1Captureparser/9500mk">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18120">
-              <caret line="1208" column="45" selection-start-line="1208" selection-start-column="45" selection-end-line="1208" selection-end-column="45" />
+            <state relative-caret-position="195">
+              <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TL1Captureparser/4100esmk">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TL1Captureparser/fileNames.py">
+          <provider selected="true" editor-type-id="live-pycharm">
+            <state>
+              <first_editor relative-caret-position="285">
+                <caret line="19" selection-start-line="19" selection-end-line="19" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -156,9 +143,19 @@
       <find>sthummala</find>
       <find>sys.argv[3]</find>
       <find>outb</find>
+      <find>PRINT</find>
+      <find>912055</find>
+      <find>452913</find>
+      <find>500537</find>
+      <find>500535</find>
+      <find>sys.argv</find>
+      <find>_write_and_close_docx</find>
+      <find>arraySpecificproblem</find>
+      <find>vsure</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;/home/sthummala/workspace/vsure/tools&quot;</replace>
+      <replace>repo</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -177,7 +174,6 @@
         <option value="$PROJECT_DIR$/sql/cube.py" />
         <option value="$PROJECT_DIR$/sql/__init__.py" />
         <option value="$PROJECT_DIR$/sql/pmdata.py" />
-        <option value="$PROJECT_DIR$/OIDautomation/oid.py" />
         <option value="$PROJECT_DIR$/OIDautomation/games.py" />
         <option value="$PROJECT_DIR$/Misc/results/DescriptionCheck.py" />
         <option value="$PROJECT_DIR$/Misc/TrapProcessing.py" />
@@ -186,8 +182,6 @@
         <option value="$PROJECT_DIR$/Misc/createPluginRepository.py" />
         <option value="$PROJECT_DIR$/Misc/excell_classifications.py" />
         <option value="$PROJECT_DIR$/.idea/dictionaries/sthummala.xml" />
-        <option value="$PROJECT_DIR$/Misc/Tl1MetricsList.py" />
-        <option value="$USER_HOME$/workspace/vsure/tools/plugin-tool/plugins/profiledocs/generateProfileDocs.py" />
         <option value="$PROJECT_DIR$/Misc/results/exp.py" />
         <option value="$PROJECT_DIR$/Misc/exp.py" />
         <option value="$PROJECT_DIR$/SocketConnection/ConnectionSocket.py" />
@@ -196,6 +190,21 @@
         <option value="$PROJECT_DIR$/SocketConnection/types.py" />
         <option value="$PROJECT_DIR$/SocketConnection/multiconn-server.py" />
         <option value="$PROJECT_DIR$/SocketConnection/echo-client.py" />
+        <option value="$PROJECT_DIR$/SocketConnection/telnet_test.py" />
+        <option value="$PROJECT_DIR$/OIDautomation/experiment.py" />
+        <option value="$PROJECT_DIR$/TL1Captureparser/cds.txt" />
+        <option value="$PROJECT_DIR$/TL1Captureparser/ciena-6500-otm.txt" />
+        <option value="$PROJECT_DIR$/TL1Captureparser/captureParser.py" />
+        <option value="$PROJECT_DIR$/TL1Captureparser/filenames.py" />
+        <option value="$PROJECT_DIR$/TL1Captureparser/fileNames.py" />
+        <option value="$PROJECT_DIR$/TL1Captureparser/9500mk" />
+        <option value="$PROJECT_DIR$/TL1Captureparser/parsetextfiles.py" />
+        <option value="$PROJECT_DIR$/TL1Captureparser/regex.py" />
+        <option value="$PROJECT_DIR$/Misc/Pmdata.py" />
+        <option value="$USER_HOME$/workspace/vsure/tools/plugin-tool/plugins/profiledocs/generateProfileDocs.py" />
+        <option value="$PROJECT_DIR$/Misc/Tl1MetricsList.py" />
+        <option value="$PROJECT_DIR$/OIDautomation/oid.py" />
+        <option value="$USER_HOME$/workspace/repo/tools/plugin-tool/plugins/profiledocs/generateProfileDocs.py" />
       </list>
     </option>
   </component>
@@ -221,12 +230,7 @@
             <path>
               <item name="pluginimpl" type="b2602c69:ProjectViewProjectNode" />
               <item name="pluginimpl" type="462c0819:PsiDirectoryNode" />
-              <item name="Misc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pluginimpl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pluginimpl" type="462c0819:PsiDirectoryNode" />
-              <item name="SocketConnection" type="462c0819:PsiDirectoryNode" />
+              <item name="OIDautomation" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -236,10 +240,13 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/workspace/vsure/tools/plugin-tool/plugins/profiledocs/generateProfileDocs.py" />
+    <property name="last_opened_file_path" value="$USER_HOME$/workspace/repo/tools/plugin-tool/plugins/profiledocs/generateProfileDocs.py" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$USER_HOME$/workspace/vsure/tools/plugin-tool/plugins/profiledocs" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Misc" />
       <recent name="C:\Users\Pavan\PycharmProjects\automation" />
@@ -258,8 +265,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.echo-client">
-    <configuration name="LearningClasses" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.generateProfileDocs (1)">
+    <configuration name="Pmdata" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pluginimpl" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -271,7 +278,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Misc/LearningClasses.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Misc/Pmdata.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -280,7 +287,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="echo-client" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Tl1MetricsList" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pluginimpl" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -288,53 +295,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SocketConnection" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SocketConnection/echo-client.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="echo-server" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="pluginimpl" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SocketConnection" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SocketConnection/echo-server.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="exp" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="pluginimpl" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="/usr/bin/python2.7" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Misc" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Misc/Tl1MetricsList.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="generateProfileDocs (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pluginimpl" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/workspace/repo/tools/plugin-tool/plugins/profiledocs" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Misc/numpyandmatplotlib.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/workspace/repo/tools/plugin-tool/plugins/profiledocs/generateProfileDocs.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -343,7 +329,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="multiconn-server" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="generateProfileDocs" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pluginimpl" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/Python/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/workspace/vsure/tools/plugin-tool/plugins/profiledocs" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/workspace/vsure/tools/plugin-tool/plugins/profiledocs/generateProfileDocs.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="oid" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pluginimpl" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -351,11 +358,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SocketConnection" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/OIDautomation" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SocketConnection/multiconn-server.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OIDautomation/oid.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -387,19 +394,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.pmdata" />
-      <item itemvalue="Python.exp" />
-      <item itemvalue="Python.echo-server" />
-      <item itemvalue="Python.echo-client" />
-      <item itemvalue="Python.multiconn-server" />
-      <item itemvalue="Python.LearningClasses" />
+      <item itemvalue="Python.Tl1MetricsList" />
+      <item itemvalue="Python.Pmdata" />
+      <item itemvalue="Python.generateProfileDocs" />
+      <item itemvalue="Python.oid" />
+      <item itemvalue="Python.generateProfileDocs (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.echo-client" />
-        <item itemvalue="Python.multiconn-server" />
-        <item itemvalue="Python.LearningClasses" />
-        <item itemvalue="Python.exp" />
-        <item itemvalue="Python.echo-server" />
+        <item itemvalue="Python.generateProfileDocs (1)" />
+        <item itemvalue="Python.oid" />
+        <item itemvalue="Python.generateProfileDocs" />
+        <item itemvalue="Python.Pmdata" />
+        <item itemvalue="Python.Tl1MetricsList" />
       </list>
     </recent_temporary>
   </component>
@@ -479,38 +486,38 @@
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4988399" visible="true" weight="0.17958272" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4988399" weight="0.1833085" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5011601" side_tool="true" weight="0.17958272" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32833335" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49850968" weight="0.28166667" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49776453" weight="0.28166667" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49925485" weight="0.39833334" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49925485" weight="0.32833335" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49925485" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49925485" weight="0.32833335" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5014903" side_tool="true" weight="0.32333332" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5022355" side_tool="true" weight="0.28166667" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49925485" weight="0.32833335" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.17958272" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4988399" visible="true" weight="0.1833085" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Favorites" order="2" sideWeight="0.5011601" side_tool="true" weight="0.17958272" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32833335" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49850968" weight="0.32333332" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49925485" visible="true" weight="0.39833334" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49776453" visible="true" weight="0.28166667" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49925485" weight="0.39833334" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49925485" weight="0.32833335" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49925485" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49925485" weight="0.32833335" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5014903" side_tool="true" weight="0.32333332" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5022355" side_tool="true" weight="0.28166667" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49925485" weight="0.32833335" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -529,13 +536,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$USER_HOME$/workspace/vsure/tools/plugin-tool/plugins/profiledocs/generateProfileDocs.py</url>
-          <line>859</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -544,147 +544,176 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="command" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>i</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../automation/pluginimpl/venv/Lib/tcl8.6/init.tcl" />
-    <entry file="file://$PROJECT_DIR$/../automation/pluginimpl/venv/Lib/site-packages/cffi/lock.py" />
-    <entry file="file://$PROJECT_DIR$/../automation/pluginimpl/venv/Lib/site-packages/cffi/error.py" />
-    <entry file="file://$PROJECT_DIR$/../automation/pluginimpl/venv/Lib/site-packages/cffi/cparser.py" />
-    <entry file="file://$PROJECT_DIR$/../automation/pluginimpl/venv/Lib/site-packages/cffi/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/../automation/pluginimpl/venv/Lib/site-packages/cffi/verifier.py" />
-    <entry file="file://$PROJECT_DIR$/../automation/pluginimpl/sql/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/../automation/pluginimpl/venv/Lib/site-packages/cffi/api.py" />
-    <entry file="file://$PROJECT_DIR$/../automation/pluginimpl/venv/Lib/site-packages/cffi/model.py" />
-    <entry file="file://$PROJECT_DIR$/../automation/pluginimpl/sql/pmdata.py" />
-    <entry file="file://$PROJECT_DIR$/sql/cube.py" />
-    <entry file="file://$PROJECT_DIR$/OIDautomation/games.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="570">
-            <caret line="38" column="45" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/TL1Captureparser/test.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/lib64/python3.5/codecs.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="104">
-            <caret line="268" column="8" selection-start-line="268" selection-start-column="8" selection-end-line="268" selection-end-column="8" />
-          </first_editor>
-          <second_editor relative-caret-position="-105" />
+    <entry file="file://$PROJECT_DIR$/TL1Captureparser/ciena-6500-otm.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="255">
-            <caret line="17" selection-start-line="17" selection-end-line="17" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/TL1Captureparser/cds.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="4054" column="29" selection-start-line="4054" selection-start-column="9" selection-end-line="4054" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sql/__init__.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Misc/TrapProcessing.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="510">
-            <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/TL1Captureparser/4100">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1062">
+          <caret line="4936" column="44" selection-start-line="4936" selection-start-column="44" selection-end-line="4936" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/lib64/python3.5/posixpath.py">
+    <entry file="file://$PROJECT_DIR$/TL1Captureparser/JAMES-ST/RTRV-ALM-ALL.txt" />
+    <entry file="file://$PROJECT_DIR$/TL1Captureparser/JAMES-ST/RTRV-ALM-ENV.txt" />
+    <entry file="file://$PROJECT_DIR$/TL1Captureparser/JAMES-ST/RTRV-COND-ALL.txt" />
+    <entry file="file://$PROJECT_DIR$/TL1Captureparser/JAMES-ST/RTRV-EC1ALL.txt" />
+    <entry file="file://$PROJECT_DIR$/TL1Captureparser/JAMES-ST/RTRV-EPORTALL.txt" />
+    <entry file="file://$PROJECT_DIR$/TL1Captureparser/JAMES-ST/RTRV-EQPTALL.txt" />
+    <entry file="file://$PROJECT_DIR$/TL1Captureparser/JAMES-ST/RTRV-ETHERLANALL.txt" />
+    <entry file="file://$PROJECT_DIR$/TL1Captureparser/JAMES-ST/RTRV-FACLINKALL.txt" />
+    <entry file="file://$PROJECT_DIR$/TL1Captureparser/JAMES-ST/RTRV-OC3ALL.txt" />
+    <entry file="file://$PROJECT_DIR$/TL1Captureparser/JAMES-ST/RTRV-OC12ALL.txt" />
+    <entry file="file://$PROJECT_DIR$/TL1Captureparser/JAMES-ST/RTRV-OC48ALL.txt" />
+    <entry file="file://$PROJECT_DIR$/TL1Captureparser/JAMES-ST/RTRV-PM-EQPTALL.txt" />
+    <entry file="file://$PROJECT_DIR$/TL1Captureparser/captureParser.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="-1470">
-            <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
-          </first_editor>
-          <second_editor relative-caret-position="-105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Misc/DescriptionCheck.py" />
-    <entry file="file://$PROJECT_DIR$/Misc/createPluginRepository.py" />
-    <entry file="file://$PROJECT_DIR$/Misc/buildProfiles_cpy.py" />
-    <entry file="file://$PROJECT_DIR$/Misc/buildProfiles_bkp.py" />
-    <entry file="file://$PROJECT_DIR$/Misc/dummy_app.spec" />
-    <entry file="file://$PROJECT_DIR$/Misc/liliebert-cr-bf.spec" />
-    <entry file="file://$PROJECT_DIR$/Misc/buildProfiles.py" />
-    <entry file="file://$PROJECT_DIR$/Misc/pluginscsvgenerator.py" />
-    <entry file="file://$PROJECT_DIR$/Misc/pluginCsvGenerator.properties" />
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-1097092879/sys.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="165">
-            <caret line="146" column="19" lean-forward="true" selection-start-line="146" selection-start-column="19" selection-end-line="146" selection-end-column="19" />
-          </first_editor>
-          <second_editor relative-caret-position="-105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/workspace/vsure/tools/plugin-tool/plugins/profiledocs/generateProfileDocs.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="511">
-            <caret line="945" selection-start-line="945" selection-end-line="945" />
-          </first_editor>
-          <second_editor relative-caret-position="-105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Misc/Tl1MetricsList.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="1200">
-            <caret line="81" column="81" selection-start-line="81" selection-start-column="81" selection-end-line="81" selection-end-column="81" />
+          <first_editor relative-caret-position="266">
+            <caret line="48" column="17" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
             <folding>
               <element signature="e#0#9#0" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor relative-caret-position="-105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TL1Captureparser/JAMES-ST/RTRV-ALM-ALL-.txt" />
+    <entry file="file://$PROJECT_DIR$/TL1Captureparser/JAMES-ST/RTRV-ALM-ENV-.txt" />
+    <entry file="file://$PROJECT_DIR$/TL1Captureparser/JAMES-ST/RTRV-COND-ALL-.txt" />
+    <entry file="file://$PROJECT_DIR$/TL1Captureparser/JAMES-ST/RTRV-EC1-ALL.txt" />
+    <entry file="file://$PROJECT_DIR$/TL1Captureparser/JAMES-ST/RTRV-EPORT-ALL.txt" />
+    <entry file="file://$PROJECT_DIR$/TL1Captureparser/JAMES-ST/RTRV-EQPT-ALL.txt" />
+    <entry file="file://$PROJECT_DIR$/TL1Captureparser/JAMES-ST/RTRV-ALM-ALL-NULL.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TL1Captureparser/JAMES-ST/RTRV-ALM-ENV-NULL.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TL1Captureparser/JAMES-ST/RTRV-COND-ALL-NULL.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TL1Captureparser/JAMES-ST/RTRV-PM-EQPT-NULL.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TL1Captureparser/JAMES-ST/RTRV-SDCC-NULL.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TL1Captureparser/JAMES-ST/RTRV-STS1-NULL.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3891" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TL1Captureparser/JAMES-ST/RTRV-OC48-NULL.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TL1Captureparser/JAMES-ST/RTRV-EQPT-NULL.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TL1Captureparser/JAMES-ST/RTRV-EPORT-NULL.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-891" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TL1Captureparser/JAMES-ST/RTRV-PM-EPORT-NULL.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-315">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TL1Captureparser/JPTRFLGNDC1-RFW45001/RTRV-EQPT-NULL.txt" />
+    <entry file="file://$PROJECT_DIR$/TL1Captureparser/parsetextfiles.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="75">
+            <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+            <folding>
+              <element signature="e#0#9#0" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor relative-caret-position="-30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TL1Captureparser/regex.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="30">
+            <caret line="2" selection-start-line="2" selection-end-line="2" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Misc/results/lagport-tl1.csv" />
+    <entry file="file://$PROJECT_DIR$/Misc/results/fujitsu-lif-tl1.csv" />
+    <entry file="file://$PROJECT_DIR$/Misc/Pmdata.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="195">
+            <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <folding>
+              <element signature="e#0#10#0" expanded="true" />
             </folding>
           </first_editor>
           <second_editor relative-caret-position="-15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/dictionaries/sthummala.xml">
+    <entry file="file://$USER_HOME$/workspace/vsure/tools/plugin-tool/plugins/profiledocs/generatePDF.py" />
+    <entry file="file://$USER_HOME$/workspace/vsure/tools/plugin-tool/plugins/profiledocs/generateProfileDocs.py" />
+    <entry file="file://$PROJECT_DIR$/Misc/results/ciena-6500-ots-tl1.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        <state relative-caret-position="338">
+          <caret line="23" column="50" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sql/pmdata.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="195">
-            <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Misc/excell_classifications.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="30">
-            <caret line="2" column="109" selection-start-line="2" selection-start-column="109" selection-end-line="2" selection-end-column="109" />
+          <first_editor relative-caret-position="210">
+            <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
           </first_editor>
           <second_editor />
         </state>
@@ -693,8 +722,8 @@
     <entry file="file://$PROJECT_DIR$/Misc/numpyandmatplotlib.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="165">
-            <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+          <first_editor relative-caret-position="120">
+            <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
             <folding>
               <element signature="e#0#18#0" expanded="true" />
             </folding>
@@ -703,41 +732,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Misc/LearningClasses.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="135">
-            <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/TL1Captureparser/9500mk">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SocketConnection/echo-server.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="225">
-            <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/TL1Captureparser/4100esmk">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/lib64/python3.5/selectors.py">
+    <entry file="file://$PROJECT_DIR$/TL1Captureparser/fileNames.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="3495">
-            <caret line="237" selection-start-line="237" selection-end-line="237" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib64/python3.5/socket.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="2880">
-            <caret line="196" column="52" selection-start-line="196" selection-start-column="52" selection-end-line="196" selection-end-column="52" />
+          <first_editor relative-caret-position="285">
+            <caret line="19" selection-start-line="19" selection-end-line="19" />
           </first_editor>
           <second_editor />
         </state>
@@ -746,58 +759,43 @@
     <entry file="file://$PROJECT_DIR$/OIDautomation/oid.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="1275">
-            <caret line="85" column="48" selection-start-line="85" selection-start-column="48" selection-end-line="85" selection-end-column="48" />
+          <first_editor relative-caret-position="1095">
+            <caret line="73" column="39" selection-start-line="73" selection-start-column="39" selection-end-line="73" selection-end-column="39" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OIDautomation/experiment.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OIDautomation/eltek-mib-repository.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18120">
-          <caret line="1208" column="45" selection-start-line="1208" selection-start-column="45" selection-end-line="1208" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SocketConnection/types.py">
+    <entry file="file://$PROJECT_DIR$/Misc/TrapProcessing.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
           <first_editor relative-caret-position="180">
-            <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+            <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SocketConnection/echo-client.py">
+    <entry file="file://$USER_HOME$/workspace/repo/tools/plugin-tool/plugins/profiledocs/generateProfileDocs.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="165">
-            <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <first_editor relative-caret-position="240">
+            <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SocketConnection/multiconn-server.py">
+    <entry file="file://$PROJECT_DIR$/Misc/Tl1MetricsList.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="315">
-            <caret line="42" column="24" lean-forward="true" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+          <first_editor relative-caret-position="180">
+            <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
             <folding>
-              <element signature="e#0#16#0" expanded="true" />
+              <element signature="e#0#9#0" expanded="true" />
             </folding>
           </first_editor>
-          <second_editor relative-caret-position="-105" />
+          <second_editor />
         </state>
       </provider>
     </entry>

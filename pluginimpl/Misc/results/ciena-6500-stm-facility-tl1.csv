@@ -1,0 +1,54 @@
+ciena-6500-sonet-sfx-line-tl1,ciena-6500-sonet-sfx-line-tl1.CV-L,ciena-6500 SONET NE CV-L,CV-L,ERRORS,NEAR_END,NA
+ciena-6500-sonet-sfx-line-tl1,ciena-6500-sonet-sfx-line-tl1.ES-L,ciena-6500 SONET NE ES-L,ES-L,SECONDS,NEAR_END,NA
+ciena-6500-sonet-sfx-line-tl1,ciena-6500-sonet-sfx-line-tl1.SES-L,ciena-6500 SONET NE SES-L,SES-L,SECONDS,NEAR_END,NA
+ciena-6500-sonet-sfx-line-tl1,ciena-6500-sonet-sfx-line-tl1.UAS-L,ciena-6500 SONET NE UAS-L,UAS-L,SECONDS,NEAR_END,NA
+ciena-6500-sonet-sfx-line-tl1,ciena-6500-sonet-sfx-line-tl1.FC-L,ciena-6500 SONET NE FC-L,FC-L,FAILURES,NEAR_END,NA
+ciena-6500-sonet-sfx-line-tl1.fe,ciena-6500-sonet-sfx-line-tl1.CV-L.fe,ciena-6500 SONET FE CV-L,CV-L,ERRORS,FAR_END,NA
+ciena-6500-sonet-sfx-line-tl1.fe,ciena-6500-sonet-sfx-line-tl1.ES-L.fe,ciena-6500 SONET FE ES-L,ES-L,SECONDS,FAR_END,NA
+ciena-6500-sonet-sfx-line-tl1.fe,ciena-6500-sonet-sfx-line-tl1.SES-L.fe,ciena-6500 SONET FE SES-L,SES-L,SECONDS,FAR_END,NA
+ciena-6500-sonet-sfx-line-tl1.fe,ciena-6500-sonet-sfx-line-tl1.UAS-L.fe,ciena-6500 SONET FE UAS-L,UAS-L,SECONDS,FAR_END,NA
+ciena-6500-sonet-sfx-line-tl1.fe,ciena-6500-sonet-sfx-line-tl1.FC-L.fe,ciena-6500 SONET FE FC-L,FC-L,FAILURES,FAR_END,NA
+ciena-6500-sonet-sfx-line-tl1.rx,ciena-6500-sonet-sfx-line-tl1.CV-L.rx,ciena-6500 SONET Rx NE CV-L,CV-L,ERRORS,NEAR_END,RECEIVE
+ciena-6500-sonet-sfx-line-tl1.rx,ciena-6500-sonet-sfx-line-tl1.ES-L.rx,ciena-6500 SONET Rx NE ES-L,ES-L,SECONDS,NEAR_END,RECEIVE
+ciena-6500-sonet-sfx-line-tl1.rx,ciena-6500-sonet-sfx-line-tl1.SES-L.rx,ciena-6500 SONET Rx NE SES-L,SES-L,SECONDS,NEAR_END,RECEIVE
+ciena-6500-sonet-sfx-line-tl1.rx,ciena-6500-sonet-sfx-line-tl1.UAS-L.rx,ciena-6500 SONET Rx NE UAS-L,UAS-L,SECONDS,NEAR_END,RECEIVE
+ciena-6500-sonet-sfx-line-tl1.rx,ciena-6500-sonet-sfx-line-tl1.FC-L.rx,ciena-6500 SONET Rx NE FC-L,FC-L,FAILURES,NEAR_END,RECEIVE
+ciena-6500-sonet-sfx-line-tl1.rx.fe,ciena-6500-sonet-sfx-line-tl1.CV-L.rx.fe,ciena-6500 SONET Rx FE CV-L,CV-L,ERRORS,FAR_END,RECEIVE
+ciena-6500-sonet-sfx-line-tl1.rx.fe,ciena-6500-sonet-sfx-line-tl1.ES-L.rx.fe,ciena-6500 SONET Rx FE ES-L,ES-L,SECONDS,FAR_END,RECEIVE
+ciena-6500-sonet-sfx-line-tl1.rx.fe,ciena-6500-sonet-sfx-line-tl1.SES-L.rx.fe,ciena-6500 SONET Rx FE SES-L,SES-L,SECONDS,FAR_END,RECEIVE
+ciena-6500-sonet-sfx-line-tl1.rx.fe,ciena-6500-sonet-sfx-line-tl1.UAS-L.rx.fe,ciena-6500 SONET Rx FE UAS-L,UAS-L,SECONDS,FAR_END,RECEIVE
+ciena-6500-sonet-sfx-line-tl1.rx.fe,ciena-6500-sonet-sfx-line-tl1.FC-L.rx.fe,ciena-6500 SONET Rx FE FC-L,FC-L,FAILURES,FAR_END,RECEIVE
+ciena-6500-sonet-sfx-line-tl1.tx,ciena-6500-sonet-sfx-line-tl1.CV-L.tx,ciena-6500 SONET Tx NE CV-L,CV-L,ERRORS,NEAR_END,TRANSMIT
+ciena-6500-sonet-sfx-line-tl1.tx,ciena-6500-sonet-sfx-line-tl1.ES-L.tx,ciena-6500 SONET Tx NE ES-L,ES-L,SECONDS,NEAR_END,TRANSMIT
+ciena-6500-sonet-sfx-line-tl1.tx,ciena-6500-sonet-sfx-line-tl1.SES-L.tx,ciena-6500 SONET Tx NE SES-L,SES-L,SECONDS,NEAR_END,TRANSMIT
+ciena-6500-sonet-sfx-line-tl1.tx,ciena-6500-sonet-sfx-line-tl1.UAS-L.tx,ciena-6500 SONET Tx NE UAS-L,UAS-L,SECONDS,NEAR_END,TRANSMIT
+ciena-6500-sonet-sfx-line-tl1.tx,ciena-6500-sonet-sfx-line-tl1.FC-L.tx,ciena-6500 SONET Tx NE FC-L,FC-L,FAILURES,NEAR_END,TRANSMIT
+ciena-6500-sonet-sfx-line-tl1.tx.fe,ciena-6500-sonet-sfx-line-tl1.CV-L.tx.fe,ciena-6500 SONET Tx FE CV-L,CV-L,ERRORS,FAR_END,TRANSMIT
+ciena-6500-sonet-sfx-line-tl1.tx.fe,ciena-6500-sonet-sfx-line-tl1.ES-L.tx.fe,ciena-6500 SONET Tx FE ES-L,ES-L,SECONDS,FAR_END,TRANSMIT
+ciena-6500-sonet-sfx-line-tl1.tx.fe,ciena-6500-sonet-sfx-line-tl1.SES-L.tx.fe,ciena-6500 SONET Tx FE SES-L,SES-L,SECONDS,FAR_END,TRANSMIT
+ciena-6500-sonet-sfx-line-tl1.tx.fe,ciena-6500-sonet-sfx-line-tl1.UAS-L.tx.fe,ciena-6500 SONET Tx FE UAS-L,UAS-L,SECONDS,FAR_END,TRANSMIT
+ciena-6500-sonet-sfx-line-tl1.tx.fe,ciena-6500-sonet-sfx-line-tl1.FC-L.tx.fe,ciena-6500 SONET Tx FE FC-L,FC-L,FAILURES,FAR_END,TRANSMIT
+ciena-6500-sonet-sfx-section-tl1,ciena-6500-sonet-sfx-section-tl1.CV-S,ciena-6500 SONET NA NE CV-S,CV-S,ERRORS,NEAR_END,NA
+ciena-6500-sonet-sfx-section-tl1,ciena-6500-sonet-sfx-section-tl1.ES-S,ciena-6500 NA NE SONET ES-S,ES-S,SECONDS,NEAR_END,NA
+ciena-6500-sonet-sfx-section-tl1,ciena-6500-sonet-sfx-section-tl1.SES-S,ciena-6500 SONET NA NE SES-S,SES-S,SECONDS,NEAR_END,NA
+ciena-6500-sonet-sfx-section-tl1,ciena-6500-sonet-sfx-section-tl1.SEFS-S,ciena-6500 SONET NA NE SEFS-S,SEFS-S,SECONDS,NEAR_END,NA
+ciena-6500-sonet-sfx-section-tl1.fe,ciena-6500-sonet-sfx-section-tl1.CV-S.fe,ciena-6500 SONET FE CV-S,CV-S,ERRORS,FAR_END,NA
+ciena-6500-sonet-sfx-section-tl1.fe,ciena-6500-sonet-sfx-section-tl1.ES-S.fe,ciena-6500 SONET FE ES-S,ES-S,SECONDS,FAR_END,NA
+ciena-6500-sonet-sfx-section-tl1.fe,ciena-6500-sonet-sfx-section-tl1.SES-S.fe,ciena-6500 SONET FE SES-S,SES-S,SECONDS,FAR_END,NA
+ciena-6500-sonet-sfx-section-tl1.fe,ciena-6500-sonet-sfx-section-tl1.SEFS-S.fe,ciena-6500 SONET FE SEFS-S,SEFS-S,SECONDS,FAR_END,NA
+ciena-6500-sonet-sfx-section-tl1.rx,ciena-6500-sonet-sfx-section-tl1.rx.CV-S,ciena-6500 SONET Rx NE CV-S,CV-S,ERRORS,NEAR_END,RECEIVE
+ciena-6500-sonet-sfx-section-tl1.rx,ciena-6500-sonet-sfx-section-tl1.rx.ES-S,ciena-6500 SONET Rx NE ES-S,ES-S,SECONDS,NEAR_END,RECEIVE
+ciena-6500-sonet-sfx-section-tl1.rx,ciena-6500-sonet-sfx-section-tl1.rx.SES-S,ciena-6500 SONET Rx NE SES-S,SES-S,SECONDS,NEAR_END,RECEIVE
+ciena-6500-sonet-sfx-section-tl1.rx,ciena-6500-sonet-sfx-section-tl1.rx.SEFS-S,ciena-6500 SONET Rx NE SEFS-S,SEFS-S,SECONDS,NEAR_END,RECEIVE
+ciena-6500-sonet-sfx-section-tl1.rx.fe,ciena-6500-sonet-sfx-section-tl1.rx.fe.CV-S,ciena-6500 SONET Rx FE CV-S,CV-S,ERRORS,FAR_END,RECEIVE
+ciena-6500-sonet-sfx-section-tl1.rx.fe,ciena-6500-sonet-sfx-section-tl1.rx.fe.ES-S,ciena-6500 SONET Rx FE ES-S,ES-S,SECONDS,FAR_END,RECEIVE
+ciena-6500-sonet-sfx-section-tl1.rx.fe,ciena-6500-sonet-sfx-section-tl1.rx.fe.SES-S,ciena-6500 SONET Rx FE SES-S,SES-S,SECONDS,FAR_END,RECEIVE
+ciena-6500-sonet-sfx-section-tl1.rx.fe,ciena-6500-sonet-sfx-section-tl1.rx.fe.SEFS-S,ciena-6500 SONET Rx FE SEFS-S,SEFS-S,SECONDS,FAR_END,RECEIVE
+ciena-6500-sonet-sfx-section-tl1.tx,ciena-6500-sonet-sfx-section-tl1.tx.CV-S,ciena-6500 SONET Tx NE CV-S,CV-S,ERRORS,NEAR_END,TRANSMIT
+ciena-6500-sonet-sfx-section-tl1.tx,ciena-6500-sonet-sfx-section-tl1.tx.ES-S,ciena-6500 SONET Tx NE ES-S,ES-S,SECONDS,NEAR_END,TRANSMIT
+ciena-6500-sonet-sfx-section-tl1.tx,ciena-6500-sonet-sfx-section-tl1.tx.SES-S,ciena-6500 SONET Tx NE SES-S,SES-S,SECONDS,NEAR_END,TRANSMIT
+ciena-6500-sonet-sfx-section-tl1.tx,ciena-6500-sonet-sfx-section-tl1.tx.SEFS-S,ciena-6500 SONET Tx NE SEFS-S,SEFS-S,SECONDS,NEAR_END,TRANSMIT
+ciena-6500-sonet-sfx-section-tl1.tx.fe,ciena-6500-sonet-sfx-section-tl1.tx.fe.CV-S,ciena-6500 SONET Tx FE CV-S,CV-S,ERRORS,FAR_END,TRANSMIT
+ciena-6500-sonet-sfx-section-tl1.tx.fe,ciena-6500-sonet-sfx-section-tl1.tx.fe.ES-S,ciena-6500 SONET Tx FE ES-S,ES-S,SECONDS,FAR_END,TRANSMIT
+ciena-6500-sonet-sfx-section-tl1.tx.fe,ciena-6500-sonet-sfx-section-tl1.tx.fe.SES-S,ciena-6500 SONET Tx FE SES-S,SES-S,SECONDS,FAR_END,TRANSMIT
+ciena-6500-sonet-sfx-section-tl1.tx.fe,ciena-6500-sonet-sfx-section-tl1.tx.fe.SEFS-S,ciena-6500 SONET Tx FE SEFS-S,SEFS-S,SECONDS,FAR_END,TRANSMIT

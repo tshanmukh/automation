@@ -56,7 +56,7 @@ def get_oid(doc, col):
 
 # Global Initializations
 result = []
-path='/home/sthummala/workspace/vsure/centina/sa/profiles/'
+path='/home/sthummala/workspace/repo/centina/sa/profiles/'
 
 # prompts and stores mib-repo name
 # mib_repository = input('Enter the mib-repository name: ')
@@ -71,7 +71,7 @@ oid = get_oid(doc, 'alarmUserConfigurable8Trap')
 
 print("OID: ", oid)
 
-profileXml='/home/sthummala/workspace/vsure/centina/sa/profiles/eltek.xml'
+profileXml='/home/sthummala/workspace/repo/centina/sa/profiles/eltek.xml'
 parser = etree.XMLParser(strip_cdata=False)
 root = etree.parse(profileXml, parser)
 

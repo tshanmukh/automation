@@ -1,0 +1,98 @@
+ciena-6500-och-tl1,ciena-6500-och-tl1.OPR-OCH,ciena-6500 OCH rx NE OPR-OCH,OPR-OCH,dBm,NEAR_END,RECEIVE
+ciena-6500-och-tl1,ciena-6500-och-tl1.OPT-OCH,ciena-6500 OCH tx NE OPT-OCH,OPT-OCH,dBm,NEAR_END,TRANSMIT
+ciena-6500-och-tl1,ciena-6500-och-tl1.OPTAVG-OCH,ciena-6500 OCH TX NE OPTAVG-OCH,OPTAVG-OCH,dBm,NEAR_END,TRANSMIT
+ciena-6500-och-tl1,ciena-6500-och-tl1.OPRAVG-OCH,ciena-6500 OCH RX NE OPRAVG-OCH,OPRAVG-OCH,dBm,NEAR_END,RECEIVE
+ciena-6500-och-tl1,ciena-6500-och-tl1.OPRN-OCH,ciena-6500 OCH RX NE OPRN-OCH,OPRN-OCH,%,NEAR_END,RECEIVE
+ciena-6500-och-tl1,ciena-6500-och-tl1.OPTN-OCH,ciena-6500 OCH TX NE OPTN-OCH,OPTN-OCH,%,NEAR_END,TRANSMIT
+ciena-6500-och-tl1,ciena-6500-och-tl1.DGDAVG-OCH,ciena-6500 OCH NA NE DGDAVG-OCH,DGDAVG-OCH,microseconds,NEAR_END,NA
+ciena-6500-och-tl1,ciena-6500-och-tl1.DGDMAX-OCH,ciena-6500 OCH NA NE DGDMAX-OCH,DGDMAX-OCH,microseconds,NEAR_END,NA
+ciena-6500-och-tl1.fe,ciena-6500-och-tl1.OPR-OCH.fe,ciena-6500 OCH FE OPR-OCH,OPR-OCH,dBm,FAR_END,RECEIVE
+ciena-6500-och-tl1.fe,ciena-6500-och-tl1.OPT-OCH.fe,ciena-6500 OCH FE OPT-OCH,OPT-OCH,dBm,FAR_END,TRANSMIT
+ciena-6500-och-tl1.fe,ciena-6500-och-tl1.OPTAVG-OCH.fe,ciena-6500 OCH FE OPTAVG-OCH,OPTAVG-OCH,dBm,FAR_END,TRANSMIT
+ciena-6500-och-tl1.fe,ciena-6500-och-tl1.OPRAVG-OCH.fe,ciena-6500 OCH FE OPRAVG-OCH,OPRAVG-OCH,dBm,FAR_END,RECEIVE
+ciena-6500-och-tl1.fe,ciena-6500-och-tl1.OPRN-OCH.fe,ciena-6500 OCH FE OPRN-OCH,OPRN-OCH,%,FAR_END,RECEIVE
+ciena-6500-och-tl1.fe,ciena-6500-och-tl1.OPTN-OCH.fe,ciena-6500 OCH FE OPTN-OCH,OPTN-OCH,%,FAR_END,TRANSMIT
+ciena-6500-och-tl1.fe,ciena-6500-och-tl1.DGDAVG-OCH.fe,ciena-6500 OCH FE DGDAVG-OCH,DGDAVG-OCH,microseconds,FAR_END,NA
+ciena-6500-och-tl1.fe,ciena-6500-och-tl1.DGDMAX-OCH.fe,ciena-6500 OCH FE DGDMAX-OCH,DGDMAX-OCH,microseconds,FAR_END,NA
+ciena-6500-och-tl1.rx,ciena-6500-och-tl1.DGDAVG-OCH.rx,ciena-6500 OCH Rx NE DGDAVG-OCH,DGDAVG-OCH,microseconds,NEAR_END,RECEIVE
+ciena-6500-och-tl1.rx,ciena-6500-och-tl1.DGDMAX-OCH.rx,ciena-6500 OCH Rx NE DGDMAX-OCH,DGDMAX-OCH,microseconds,NEAR_END,RECEIVE
+ciena-6500-och-tl1.rx.fe,ciena-6500-och-tl1.DGDAVG-OCH.rx.fe,ciena-6500 OCH Rx FE DGDAVG-OCH,DGDAVG-OCH,microseconds,FAR_END,RECEIVE
+ciena-6500-och-tl1.rx.fe,ciena-6500-och-tl1.DGDMAX-OCH.rx.fe,ciena-6500 OCH Rx FE DGDMAX-OCH,DGDMAX-OCH,microseconds,FAR_END,RECEIVE
+ciena-6500-och-tl1.tx,ciena-6500-och-tl1.DGDAVG-OCH.tx,ciena-6500 OCH Tx NE DGDAVG-OCH,DGDAVG-OCH,microseconds,NEAR_END,TRANSMIT
+ciena-6500-och-tl1.tx,ciena-6500-och-tl1.DGDMAX-OCH.tx,ciena-6500 OCH Tx NE DGDMAX-OCH,DGDMAX-OCH,microseconds,NEAR_END,TRANSMIT
+ciena-6500-och-tl1.tx.fe,ciena-6500-och-tl1.DGDAVG-OCH.tx.fe,ciena-6500 OCH Tx FE DGDAVG-OCH,DGDAVG-OCH,microseconds,FAR_END,TRANSMIT
+ciena-6500-och-tl1.tx.fe,ciena-6500-och-tl1.DGDMAX-OCH.tx.fe,ciena-6500 OCH Tx FE DGDMAX-OCH,DGDMAX-OCH,microseconds,FAR_END,TRANSMIT
+ciena-6500-eth-sfx-util-tl1.percent utilization,ciena-6500-eth-sfx-util-tl1.Receive average utilization,Ciena-6500 Ethernet RX NA Avg Utilization,INOCTETS,%,NA,NA
+ciena-6500-eth-sfx-util-tl1.percent utilization,ciena-6500-eth-sfx-util-tl1.Transmit average utilization,Ciena-6500 Ethernet TX NA Avg Utilization,OUTOCTETS,%,NA,NA
+ciena-6500-eth-sfx-avgbits-tl1.average bits per second,ciena-6500-eth-sfx-avgbits-tl1.Receive average bits per second,Ciena-6500 Ethernet Rx NA Avg Bits Per Second,INOCTETS,bps,NA,NA
+ciena-6500-eth-sfx-avgbits-tl1.average bits per second,ciena-6500-eth-sfx-avgbits-tl1.Transmit average bits per second,Ciena-6500 Ethernet Tx NA Avg Bits Per Second,OUTOCTETS,bps,NA,NA
+ciena-6500-eth-sfx-bytes-tl1.Ethernet bytes,ciena-6500-eth-sfx-tl1.ETH RX BYTES,ciena-6500 Ethernet RX NA Bytes,INOCTETS,BYTES,NA,NA
+ciena-6500-eth-sfx-bytes-tl1.Ethernet bytes,ciena-6500-eth-sfx-tl1.ETH TX BYTES,ciena-6500 Ethernet TX NA Bytes,OUTOCTETS,BYTES,NA,NA
+ciena-6500-eth-sfx-tl1,ciena-6500-eth-sfx-tl1.ES-E,ciena-6500 Ethernet NA NE ES-E,ES-E,SECONDS,NEAR_END,NA
+ciena-6500-eth-sfx-tl1,ciena-6500-eth-sfx-tl1.SES-E,ciena-6500 Ethernet NA NE SES-E,SES-E,SECONDS,NEAR_END,NA
+ciena-6500-eth-sfx-tl1,ciena-6500-eth-sfx-tl1.UAS-E,ciena-6500 Ethernet NA NE UAS-E,UAS-E,SECONDS,NEAR_END,NA
+ciena-6500-eth-sfx-tl1,ciena-6500-eth-sfx-tl1.INFRAMES-E,ciena-6500 Ethernet RX NE INFRAMES-E,INFRAMES-E,FRAMES,NEAR_END,RECEIVE
+ciena-6500-eth-sfx-tl1,ciena-6500-eth-sfx-tl1.INFRAMESERR-E,ciena-6500 Ethernet RX NE INFRAMESERR-E,INFRAMESERR-E,FRAMES,NEAR_END,RECEIVE
+ciena-6500-eth-sfx-tl1,ciena-6500-eth-sfx-tl1.DFR-E,ciena-6500 Ethernet NA NE DFR-E,DFR-E,FRAMES,NEAR_END,NA
+ciena-6500-eth-sfx-tl1,ciena-6500-eth-sfx-tl1.OUTFRAMES-E,ciena-6500 Ethernet TX NE OUTFRAMES-E,OUTFRAMES-E,FRAMES,NEAR_END,TRANSMIT
+ciena-6500-eth-sfx-tl1,ciena-6500-eth-sfx-tl1.FCSERR-E,ciena-6500 Ethernet NA NE FCSERR-E,FCSERR-E,FRAMES,NEAR_END,NA
+ciena-6500-eth-sfx-tl1,ciena-6500-eth-sfx-tl1.OUTFRAMESERR-E,ciena-6500 Ethernet TX NE OUTFRAMESERR-E,OUTFRAMESERR-E,FRAMES,NEAR_END,TRANSMIT
+ciena-6500-eth-sfx-tl1,ciena-6500-eth-sfx-tl1.INFRAMESDISCDS-E,ciena-6500 Ethernet RX NE INFRAMESDISCDS-E,INFRAMESDISCDS-E,FRAMES,NEAR_END,RECEIVE
+ciena-6500-eth-sfx-tl1,ciena-6500-eth-sfx-tl1.INFRAMEDISCDS-E,ciena-6500 Ethernet RX NE INFRAMEDISCDS-E,INFRAMEDISCDS-E,FRAMES,NEAR_END,RECEIVE
+ciena-6500-eth-sfx-tl1,ciena-6500-eth-sfx-tl1.OUTFRAMESDISCDS-E,ciena-6500 Ethernet TX NE OUTFRAMESDISCDS-E,OUTFRAMESDISCDS-E,FRAMES,NEAR_END,TRANSMIT
+ciena-6500-eth-sfx-tl1.fe,ciena-6500-eth-sfx-tl1.ES-E.fe,ciena-6500 Ethernet FE ES-E,ES-E,SECONDS,FAR_END,NA
+ciena-6500-eth-sfx-tl1.fe,ciena-6500-eth-sfx-tl1.SES-E.fe,ciena-6500 Ethernet FE SES-E,SES-E,SECONDS,FAR_END,NA
+ciena-6500-eth-sfx-tl1.fe,ciena-6500-eth-sfx-tl1.UAS-E.fe,ciena-6500 Ethernet FE UAS-E,UAS-E,SECONDS,FAR_END,NA
+ciena-6500-eth-sfx-tl1.fe,ciena-6500-eth-sfx-tl1.INFRAMES-E.fe,ciena-6500 Ethernet FE INFRAMES-E,INFRAMES-E,FRAMES,FAR_END,RECEIVE
+ciena-6500-eth-sfx-tl1.fe,ciena-6500-eth-sfx-tl1.INFRAMESERR-E.fe,ciena-6500 Ethernet FE INFRAMESERR-E,INFRAMESERR-E,FRAMES,FAR_END,RECEIVE
+ciena-6500-eth-sfx-tl1.fe,ciena-6500-eth-sfx-tl1.DFR-E.fe,ciena-6500 Ethernet FE DFR-E,DFR-E,FRAMES,FAR_END,NA
+ciena-6500-eth-sfx-tl1.fe,ciena-6500-eth-sfx-tl1.OUTFRAMES-E.fe,ciena-6500 Ethernet FE OUTFRAMES-E,OUTFRAMES-E,FRAMES,FAR_END,TRANSMIT
+ciena-6500-eth-sfx-tl1.fe,ciena-6500-eth-sfx-tl1.FCSERR-E.fe,ciena-6500 Ethernet FE FCSERR-E,FCSERR-E,FRAMES,FAR_END,TRANSMIT
+ciena-6500-eth-sfx-tl1.fe,ciena-6500-eth-sfx-tl1.OUTFRAMESERR-E.fe,ciena-6500 Ethernet FE OUTFRAMESERR-E,OUTFRAMESERR-E,FRAMES,FAR_END,TRANSMIT
+ciena-6500-eth-sfx-tl1.fe,ciena-6500-eth-sfx-tl1.INFRAMESDISCDS-E.fe,ciena-6500 Ethernet FE INFRAMESDISCDS-E,INFRAMESDISCDS-E,FRAMES,FAR_END,RECEIVE
+ciena-6500-eth-sfx-tl1.fe,ciena-6500-eth-sfx-tl1.INFRAMEDISCDS-E.fe,ciena-6500 Ethernet FE INFRAMEDISCDS-E,INFRAMEDISCDS-E,FRAMES,FAR_END,RECEIVE
+ciena-6500-eth-sfx-tl1.fe,ciena-6500-eth-sfx-tl1.OUTFRAMESDISCDS-E.fe,ciena-6500 Ethernet FE OUTFRAMESDISCDS-E,OUTFRAMESDISCDS-E,FRAMES,FAR_END,TRANSMIT
+ciena-6500-eth-sfx-tl1.rx,ciena-6500-eth-sfx-tl1.ES-E.rx,ciena-6500 Ethernet Rx NE ES-E,ES-E,SECONDS,NEAR_END,RECEIVE
+ciena-6500-eth-sfx-tl1.rx,ciena-6500-eth-sfx-tl1.SES-E.rx,ciena-6500 Ethernet Rx NE SES-E,SES-E,SECONDS,NEAR_END,RECEIVE
+ciena-6500-eth-sfx-tl1.rx,ciena-6500-eth-sfx-tl1.UAS-E.rx,ciena-6500 Ethernet Rx NE UAS-E,UAS-E,SECONDS,NEAR_END,RECEIVE
+ciena-6500-eth-sfx-tl1.rx,ciena-6500-eth-sfx-tl1.DFR-E.rx,ciena-6500 Ethernet Rx NE DFR-E,DFR-E,FRAMES,NEAR_END,RECEIVE
+ciena-6500-eth-sfx-tl1.rx,ciena-6500-eth-sfx-tl1.FCSERR-E.rx,ciena-6500 Ethernet Rx NE FCSERR-E,FCSERR-E,FRAMES,NEAR_END,RECEIVE
+ciena-6500-eth-sfx-tl1.rx.fe,ciena-6500-eth-sfx-tl1.ES-E.rx.fe,ciena-6500 Ethernet Rx FE ES-E,ES-E,SECONDS,FAR_END,RECEIVE
+ciena-6500-eth-sfx-tl1.rx.fe,ciena-6500-eth-sfx-tl1.SES-E.rx.fe,ciena-6500 Ethernet Rx FE SES-E,SES-E,SECONDS,FAR_END,RECEIVE
+ciena-6500-eth-sfx-tl1.rx.fe,ciena-6500-eth-sfx-tl1.UAS-E.rx.fe,ciena-6500 Ethernet Rx FE UAS-E,UAS-E,SECONDS,FAR_END,RECEIVE
+ciena-6500-eth-sfx-tl1.rx.fe,ciena-6500-eth-sfx-tl1.DFR-E.rx.fe,ciena-6500 Ethernet Rx FE DFR-E,DFR-E,FRAMES,FAR_END,RECEIVE
+ciena-6500-eth-sfx-tl1.rx.fe,ciena-6500-eth-sfx-tl1.FCSERR-E.rx.fe,ciena-6500 Ethernet Rx FE FCSERR-E,FCSERR-E,FRAMES,FAR_END,RECEIVE
+ciena-6500-eth-sfx-tl1.tx,ciena-6500-eth-sfx-tl1.ES-E.tx,ciena-6500 Ethernet Tx NE ES-E,ES-E,SECONDS,NEAR_END,TRANSMIT
+ciena-6500-eth-sfx-tl1.tx,ciena-6500-eth-sfx-tl1.SES-E.tx,ciena-6500 Ethernet Tx NE SES-E,SES-E,SECONDS,NEAR_END,TRANSMIT
+ciena-6500-eth-sfx-tl1.tx,ciena-6500-eth-sfx-tl1.UAS-E.tx,ciena-6500 Ethernet Tx NE UAS-E,UAS-E,SECONDS,NEAR_END,TRANSMIT
+ciena-6500-eth-sfx-tl1.tx,ciena-6500-eth-sfx-tl1.DFR-E.tx,ciena-6500 Ethernet Tx NE DFR-E,DFR-E,FRAMES,NEAR_END,TRANSMIT
+ciena-6500-eth-sfx-tl1.tx,ciena-6500-eth-sfx-tl1.FCSERR-E.tx,ciena-6500 Ethernet Tx NE FCSERR-E,FCSERR-E,FRAMES,NEAR_END,TRANSMIT
+ciena-6500-eth-sfx-tl1.tx.fe,ciena-6500-eth-sfx-tl1.ES-E.tx.fe,ciena-6500 Ethernet Tx FE ES-E,ES-E,SECONDS,FAR_END,TRANSMIT
+ciena-6500-eth-sfx-tl1.tx.fe,ciena-6500-eth-sfx-tl1.SES-E.tx.fe,ciena-6500 Ethernet Tx FE SES-E,SES-E,SECONDS,FAR_END,TRANSMIT
+ciena-6500-eth-sfx-tl1.tx.fe,ciena-6500-eth-sfx-tl1.UAS-E.tx.fe,ciena-6500 Ethernet Tx FE UAS-E,UAS-E,SECONDS,FAR_END,TRANSMIT
+ciena-6500-eth-sfx-tl1.tx.fe,ciena-6500-eth-sfx-tl1.DFR-E.tx.fe,ciena-6500 Ethernet Tx FE DFR-E,DFR-E,FRAMES,FAR_END,TRANSMIT
+ciena-6500-eth-sfx-tl1.tx.fe,ciena-6500-eth-sfx-tl1.FCSERR-E.tx.fe,ciena-6500 Ethernet Tx FE FCSERR-E,FCSERR-E,FRAMES,FAR_END,TRANSMIT
+ciena-6500-eth-pcs-tl1,ciena-6500-eth-pcs-tl1.CV-PCS,ciena-6500 NA NE SONET CV-PCS,CV-PCS,ERRORS,NEAR_END,NA
+ciena-6500-eth-pcs-tl1,ciena-6500-eth-pcs-tl1.ES-PCS,ciena-6500 NA NE SONET ES-PCS,ES-PCS,SECONDS,NEAR_END,NA
+ciena-6500-eth-pcs-tl1,ciena-6500-eth-pcs-tl1.SES-PCS,ciena-6500 SONET NA NE SES-PCS,SES-PCS,SECONDS,NEAR_END,NA
+ciena-6500-eth-pcs-tl1,ciena-6500-eth-pcs-tl1.UAS-PCS,ciena-6500 SONET NE UAS-PCS,UAS-PCS,SECONDS,NEAR_END,NA
+ciena-6500-eth-pcs-tl1.fe,ciena-6500-eth-pcs-tl1.CV-PCS.fe,ciena-6500 SONET FE CV-PCS,CV-PCS,ERRORS,FAR_END,NA
+ciena-6500-eth-pcs-tl1.fe,ciena-6500-eth-pcs-tl1.ES-PCS.fe,ciena-6500 SONET FE ES-PCS,ES-PCS,SECONDS,FAR_END,NA
+ciena-6500-eth-pcs-tl1.fe,ciena-6500-eth-pcs-tl1.SES-PCS.fe,ciena-6500 SONET FE SES-PCS,SES-PCS,SECONDS,FAR_END,NA
+ciena-6500-eth-pcs-tl1.fe,ciena-6500-eth-pcs-tl1.UAS-PCS.fe,ciena-6500 SONET FE UAS-PCS,UAS-PCS,SECONDS,FAR_END,NA
+ciena-6500-eth-pcs-tl1.rx,ciena-6500-eth-pcs-tl1.CV-PCS.rx,ciena-6500 SONET Rx NE CV-PCS,CV-PCS,ERRORS,NEAR_END,RECEIVE
+ciena-6500-eth-pcs-tl1.rx,ciena-6500-eth-pcs-tl1.ES-PCS.rx,ciena-6500 SONET Rx NE ES-PCS,ES-PCS,SECONDS,NEAR_END,RECEIVE
+ciena-6500-eth-pcs-tl1.rx,ciena-6500-eth-pcs-tl1.SES-PCS.rx,ciena-6500 SONET Rx NE SES-PCS,SES-PCS,SECONDS,NEAR_END,RECEIVE
+ciena-6500-eth-pcs-tl1.rx,ciena-6500-eth-pcs-tl1.UAS-PCS.rx,ciena-6500 SONET Rx NE UAS-PCS,UAS-PCS,SECONDS,NEAR_END,RECEIVE
+ciena-6500-eth-pcs-tl1.rx.fe,ciena-6500-eth-pcs-tl1.CV-PCS.rx.fe,ciena-6500 SONET Rx FE CV-PCS,CV-PCS,ERRORS,FAR_END,RECEIVE
+ciena-6500-eth-pcs-tl1.rx.fe,ciena-6500-eth-pcs-tl1.ES-PCS.rx.fe,ciena-6500 SONET Rx FE ES-PCS,ES-PCS,SECONDS,FAR_END,RECEIVE
+ciena-6500-eth-pcs-tl1.rx.fe,ciena-6500-eth-pcs-tl1.SES-PCS.rx.fe,ciena-6500 SONET Rx FE SES-PCS,SES-PCS,SECONDS,FAR_END,RECEIVE
+ciena-6500-eth-pcs-tl1.rx.fe,ciena-6500-eth-pcs-tl1.UAS-PCS.rx.fe,ciena-6500 SONET Rx FE UAS-PCS,UAS-PCS,SECONDS,FAR_END,RECEIVE
+ciena-6500-eth-pcs-tl1.tx,ciena-6500-eth-pcs-tl1.CV-PCS.tx,ciena-6500 SONET Tx NE CV-PCS,CV-PCS,ERRORS,NEAR_END,TRANSMIT
+ciena-6500-eth-pcs-tl1.tx,ciena-6500-eth-pcs-tl1.ES-PCS.tx,ciena-6500 SONET Tx NE ES-PCS,ES-PCS,SECONDS,NEAR_END,TRANSMIT
+ciena-6500-eth-pcs-tl1.tx,ciena-6500-eth-pcs-tl1.SES-PCS.tx,ciena-6500 SONET Tx NE SES-PCS,SES-PCS,SECONDS,NEAR_END,TRANSMIT
+ciena-6500-eth-pcs-tl1.tx,ciena-6500-eth-pcs-tl1.UAS-PCS.tx,ciena-6500 SONET Tx NE UAS-PCS,UAS-PCS,SECONDS,NEAR_END,TRANSMIT
+ciena-6500-eth-pcs-tl1.tx.fe,ciena-6500-eth-pcs-tl1.CV-PCS.tx.fe,ciena-6500 SONET Tx FE CV-PCS,CV-PCS,ERRORS,FAR_END,TRANSMIT
+ciena-6500-eth-pcs-tl1.tx.fe,ciena-6500-eth-pcs-tl1.ES-PCS.tx.fe,ciena-6500 SONET Tx FE ES-PCS,ES-PCS,SECONDS,FAR_END,TRANSMIT
+ciena-6500-eth-pcs-tl1.tx.fe,ciena-6500-eth-pcs-tl1.SES-PCS.tx.fe,ciena-6500 SONET Tx FE SES-PCS,SES-PCS,SECONDS,FAR_END,TRANSMIT
+ciena-6500-eth-pcs-tl1.tx.fe,ciena-6500-eth-pcs-tl1.UAS-PCS.tx.fe,ciena-6500 SONET Tx FE UAS-PCS,UAS-PCS,SECONDS,FAR_END,TRANSMIT

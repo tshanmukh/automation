@@ -1,0 +1,126 @@
+ciena-6500-och-tl1,ciena-6500-och-tl1.OPR-OCH,ciena-6500 OCH rx NE OPR-OCH,OPR-OCH,dBm,NEAR_END,RECEIVE
+ciena-6500-och-tl1,ciena-6500-och-tl1.OPT-OCH,ciena-6500 OCH tx NE OPT-OCH,OPT-OCH,dBm,NEAR_END,TRANSMIT
+ciena-6500-och-tl1,ciena-6500-och-tl1.OPTAVG-OCH,ciena-6500 OCH TX NE OPTAVG-OCH,OPTAVG-OCH,dBm,NEAR_END,TRANSMIT
+ciena-6500-och-tl1,ciena-6500-och-tl1.OPRAVG-OCH,ciena-6500 OCH RX NE OPRAVG-OCH,OPRAVG-OCH,dBm,NEAR_END,RECEIVE
+ciena-6500-och-tl1,ciena-6500-och-tl1.OPRN-OCH,ciena-6500 OCH RX NE OPRN-OCH,OPRN-OCH,%,NEAR_END,RECEIVE
+ciena-6500-och-tl1,ciena-6500-och-tl1.OPTN-OCH,ciena-6500 OCH TX NE OPTN-OCH,OPTN-OCH,%,NEAR_END,TRANSMIT
+ciena-6500-och-tl1,ciena-6500-och-tl1.DGDAVG-OCH,ciena-6500 OCH NA NE DGDAVG-OCH,DGDAVG-OCH,microseconds,NEAR_END,NA
+ciena-6500-och-tl1,ciena-6500-och-tl1.DGDMAX-OCH,ciena-6500 OCH NA NE DGDMAX-OCH,DGDMAX-OCH,microseconds,NEAR_END,NA
+ciena-6500-och-tl1.fe,ciena-6500-och-tl1.OPR-OCH.fe,ciena-6500 OCH FE OPR-OCH,OPR-OCH,dBm,FAR_END,RECEIVE
+ciena-6500-och-tl1.fe,ciena-6500-och-tl1.OPT-OCH.fe,ciena-6500 OCH FE OPT-OCH,OPT-OCH,dBm,FAR_END,TRANSMIT
+ciena-6500-och-tl1.fe,ciena-6500-och-tl1.OPTAVG-OCH.fe,ciena-6500 OCH FE OPTAVG-OCH,OPTAVG-OCH,dBm,FAR_END,TRANSMIT
+ciena-6500-och-tl1.fe,ciena-6500-och-tl1.OPRAVG-OCH.fe,ciena-6500 OCH FE OPRAVG-OCH,OPRAVG-OCH,dBm,FAR_END,RECEIVE
+ciena-6500-och-tl1.fe,ciena-6500-och-tl1.OPRN-OCH.fe,ciena-6500 OCH FE OPRN-OCH,OPRN-OCH,%,FAR_END,RECEIVE
+ciena-6500-och-tl1.fe,ciena-6500-och-tl1.OPTN-OCH.fe,ciena-6500 OCH FE OPTN-OCH,OPTN-OCH,%,FAR_END,TRANSMIT
+ciena-6500-och-tl1.fe,ciena-6500-och-tl1.DGDAVG-OCH.fe,ciena-6500 OCH FE DGDAVG-OCH,DGDAVG-OCH,microseconds,FAR_END,NA
+ciena-6500-och-tl1.fe,ciena-6500-och-tl1.DGDMAX-OCH.fe,ciena-6500 OCH FE DGDMAX-OCH,DGDMAX-OCH,microseconds,FAR_END,NA
+ciena-6500-och-tl1.rx,ciena-6500-och-tl1.DGDAVG-OCH.rx,ciena-6500 OCH Rx NE DGDAVG-OCH,DGDAVG-OCH,microseconds,NEAR_END,RECEIVE
+ciena-6500-och-tl1.rx,ciena-6500-och-tl1.DGDMAX-OCH.rx,ciena-6500 OCH Rx NE DGDMAX-OCH,DGDMAX-OCH,microseconds,NEAR_END,RECEIVE
+ciena-6500-och-tl1.rx.fe,ciena-6500-och-tl1.DGDAVG-OCH.rx.fe,ciena-6500 OCH Rx FE DGDAVG-OCH,DGDAVG-OCH,microseconds,FAR_END,RECEIVE
+ciena-6500-och-tl1.rx.fe,ciena-6500-och-tl1.DGDMAX-OCH.rx.fe,ciena-6500 OCH Rx FE DGDMAX-OCH,DGDMAX-OCH,microseconds,FAR_END,RECEIVE
+ciena-6500-och-tl1.tx,ciena-6500-och-tl1.DGDAVG-OCH.tx,ciena-6500 OCH Tx NE DGDAVG-OCH,DGDAVG-OCH,microseconds,NEAR_END,TRANSMIT
+ciena-6500-och-tl1.tx,ciena-6500-och-tl1.DGDMAX-OCH.tx,ciena-6500 OCH Tx NE DGDMAX-OCH,DGDMAX-OCH,microseconds,NEAR_END,TRANSMIT
+ciena-6500-och-tl1.tx.fe,ciena-6500-och-tl1.DGDAVG-OCH.tx.fe,ciena-6500 OCH Tx FE DGDAVG-OCH,DGDAVG-OCH,microseconds,FAR_END,TRANSMIT
+ciena-6500-och-tl1.tx.fe,ciena-6500-och-tl1.DGDMAX-OCH.tx.fe,ciena-6500 OCH Tx FE DGDMAX-OCH,DGDMAX-OCH,microseconds,FAR_END,TRANSMIT
+ciena-6500-sonet-sfx-protswtch-odu-tl1,ciena-6500-sonet-sfx-protswtch-odu-tl1.PSCW-ODU,ciena-6500 SONET NE PSCW-ODU,PSCW-ODU,Count,NEAR_END,NA
+ciena-6500-sonet-sfx-protswtch-odu-tl1,ciena-6500-sonet-sfx-protswtch-odu-tl1.PSCP-ODU,ciena-6500 SONET NE PSCP-ODU,PSCP-ODU,Count,NEAR_END,NA
+ciena-6500-sonet-sfx-protswtch-odu-tl1,ciena-6500-sonet-sfx-protswtch-odu-tl1.PSD-ODU,ciena-6500 SONET NE PSD-ODU,PSD-ODU,Seconds,NEAR_END,NA
+ciena-6500-sonet-sfx-protswtch-odu-tl1.fe,ciena-6500-sonet-sfx-protswtch-odu-tl1.PSCW-ODU.fe,ciena-6500 SONET FE PSCW-ODU,PSCW-ODU,Count,FAR_END,NA
+ciena-6500-sonet-sfx-protswtch-odu-tl1.fe,ciena-6500-sonet-sfx-protswtch-odu-tl1.PSCP-ODU.fe,ciena-6500 SONET FE PSCP-ODU,PSCP-ODU,Count,FAR_END,NA
+ciena-6500-sonet-sfx-protswtch-odu-tl1.fe,ciena-6500-sonet-sfx-protswtch-odu-tl1.PSD-ODU.fe,ciena-6500 SONET FE PSD-ODU,PSD-ODU,Seconds,FAR_END,NA
+ciena-6500-sonet-sfx-protswtch-odu-tl1.rx,ciena-6500-sonet-sfx-protswtch-odu-tl1.PSCW-ODU.rx,ciena-6500 SONET Rx NE PSCW-ODU,PSCW-ODU,Count,NEAR_END,RECEIVE
+ciena-6500-sonet-sfx-protswtch-odu-tl1.rx,ciena-6500-sonet-sfx-protswtch-odu-tl1.PSCP-ODU.rx,ciena-6500 SONET Rx NE PSCP-ODU,PSCP-ODU,Count,NEAR_END,RECEIVE
+ciena-6500-sonet-sfx-protswtch-odu-tl1.rx,ciena-6500-sonet-sfx-protswtch-odu-tl1.PSD-ODU.rx,ciena-6500 SONET Rx NE PSD-ODU,PSD-ODU,Seconds,NEAR_END,RECEIVE
+ciena-6500-sonet-sfx-protswtch-odu-tl1.rx.fe,ciena-6500-sonet-sfx-protswtch-odu-tl1.PSCW-ODU.rx.fe,ciena-6500 SONET Rx FE PSCW-ODU,PSCW-ODU,Count,FAR_END,RECEIVE
+ciena-6500-sonet-sfx-protswtch-odu-tl1.rx.fe,ciena-6500-sonet-sfx-protswtch-odu-tl1.PSCP-ODU.rx.fe,ciena-6500 SONET Rx FE PSCP-ODU,PSCP-ODU,Count,FAR_END,RECEIVE
+ciena-6500-sonet-sfx-protswtch-odu-tl1.rx.fe,ciena-6500-sonet-sfx-protswtch-odu-tl1.PSD-ODU.rx.fe,ciena-6500 SONET Rx FE PSD-ODU,PSD-ODU,Seconds,FAR_END,RECEIVE
+ciena-6500-sonet-sfx-protswtch-odu-tl1.tx,ciena-6500-sonet-sfx-protswtch-odu-tl1.PSCW-ODU.tx,ciena-6500 SONET Tx NE NE PSCW-ODU,PSCW-ODU,Count,NEAR_END,TRANSMIT
+ciena-6500-sonet-sfx-protswtch-odu-tl1.tx,ciena-6500-sonet-sfx-protswtch-odu-tl1.PSCP-ODU.tx,ciena-6500 SONET Tx NE PSCP-ODU,PSCP-ODU,Count,NEAR_END,TRANSMIT
+ciena-6500-sonet-sfx-protswtch-odu-tl1.tx,ciena-6500-sonet-sfx-protswtch-odu-tl1.PSD-ODU.tx,ciena-6500 SONET Tx NE PSD-ODU,PSD-ODU,Seconds,NEAR_END,TRANSMIT
+ciena-6500-sonet-sfx-protswtch-odu-tl1.tx.fe,ciena-6500-sonet-sfx-protswtch-odu-tl1.PSCW-ODU.tx.fe,ciena-6500 SONET Tx FE PSCW-ODU,PSCW-ODU,Count,FAR_END,TRANSMIT
+ciena-6500-sonet-sfx-protswtch-odu-tl1.tx.fe,ciena-6500-sonet-sfx-protswtch-odu-tl1.PSCP-ODU.tx.fe,ciena-6500 SONET Tx FE PSCP-ODU,PSCP-ODU,Count,FAR_END,TRANSMIT
+ciena-6500-sonet-sfx-protswtch-odu-tl1.tx.fe,ciena-6500-sonet-sfx-protswtch-odu-tl1.PSD-ODU.tx.fe,ciena-6500 SONET Tx FE PSD-ODU,PSD-ODU,Seconds,FAR_END,TRANSMIT
+ciena-6500-sonet-sfx-odu-tl1,ciena-6500-sonet-sfx-odu-tl1.CV-ODU,ciena-6500 SONET NE CV-ODU,CV-ODU,ERRORS,NEAR_END,NA
+ciena-6500-sonet-sfx-odu-tl1,ciena-6500-sonet-sfx-odu-tl1.ES-ODU,ciena-6500 SONET NE ES-ODU,ES-ODU,SECONDS,NEAR_END,NA
+ciena-6500-sonet-sfx-odu-tl1,ciena-6500-sonet-sfx-odu-tl1.SES-ODU,ciena-6500 SONET NE SES-ODU,SES-ODU,SECONDS,NEAR_END,NA
+ciena-6500-sonet-sfx-odu-tl1,ciena-6500-sonet-sfx-odu-tl1.UAS-ODU,ciena-6500 SONET NE UAS-ODU,UAS-ODU,SECONDS,NEAR_END,NA
+ciena-6500-sonet-sfx-odu-tl1,ciena-6500-sonet-sfx-odu-tl1.FC-ODU,ciena-6500 SONET NE FC-ODU,FC-ODU,FAILURES,NEAR_END,NA
+ciena-6500-sonet-sfx-odu-tl1.fe,ciena-6500-sonet-sfx-odu-tl1.CV-ODU.fe,ciena-6500 SONET FE CV-ODU,CV-ODU,ERRORS,FAR_END,NA
+ciena-6500-sonet-sfx-odu-tl1.fe,ciena-6500-sonet-sfx-odu-tl1.ES-ODU.fe,ciena-6500 SONET FE ES-ODU,ES-ODU,SECONDS,FAR_END,NA
+ciena-6500-sonet-sfx-odu-tl1.fe,ciena-6500-sonet-sfx-odu-tl1.SES-ODU.fe,ciena-6500 SONET FE SES-ODU,SES-ODU,SECONDS,FAR_END,NA
+ciena-6500-sonet-sfx-odu-tl1.fe,ciena-6500-sonet-sfx-odu-tl1.UAS-ODU.fe,ciena-6500 SONET FE UAS-ODU,UAS-ODU,SECONDS,FAR_END,NA
+ciena-6500-sonet-sfx-odu-tl1.fe,ciena-6500-sonet-sfx-odu-tl1.FC-ODU.fe,ciena-6500 SONET FE FC-ODU,FC-ODU,FAILURES,FAR_END,NA
+ciena-6500-sonet-sfx-odu-tl1.rx,ciena-6500-sonet-sfx-odu-tl1.rx.CV-ODU,ciena-6500 SONET Rx NE CV-ODU,CV-ODU,ERRORS,NEAR_END,RECEIVE
+ciena-6500-sonet-sfx-odu-tl1.rx,ciena-6500-sonet-sfx-odu-tl1.rx.ES-ODU,ciena-6500 SONET Rx NE ES-ODU,ES-ODU,SECONDS,NEAR_END,RECEIVE
+ciena-6500-sonet-sfx-odu-tl1.rx,ciena-6500-sonet-sfx-odu-tl1.rx.SES-ODU,ciena-6500 SONET Rx NE SES-ODU,SES-ODU,SECONDS,NEAR_END,RECEIVE
+ciena-6500-sonet-sfx-odu-tl1.rx,ciena-6500-sonet-sfx-odu-tl1.rx.UAS-ODU,ciena-6500 SONET Rx NE UAS-ODU,UAS-ODU,SECONDS,NEAR_END,RECEIVE
+ciena-6500-sonet-sfx-odu-tl1.rx,ciena-6500-sonet-sfx-odu-tl1.rx.FC-ODU,ciena-6500 SONET Rx NE FC-ODU,FC-ODU,FAILURES,NEAR_END,RECEIVE
+ciena-6500-sonet-sfx-odu-tl1.rx.fe,ciena-6500-sonet-sfx-odu-tl1.rx.CV-ODU.fe,ciena-6500 SONET Rx FE CV-ODU,CV-ODU,ERRORS,FAR_END,RECEIVE
+ciena-6500-sonet-sfx-odu-tl1.rx.fe,ciena-6500-sonet-sfx-odu-tl1.rx.ES-ODU.fe,ciena-6500 SONET Rx FE ES-ODU,ES-ODU,SECONDS,FAR_END,RECEIVE
+ciena-6500-sonet-sfx-odu-tl1.rx.fe,ciena-6500-sonet-sfx-odu-tl1.rx.SES-ODU.fe,ciena-6500 SONET Rx FE SES-ODU,SES-ODU,SECONDS,FAR_END,RECEIVE
+ciena-6500-sonet-sfx-odu-tl1.rx.fe,ciena-6500-sonet-sfx-odu-tl1.rx.UAS-ODU.fe,ciena-6500 SONET Rx FE UAS-ODU,UAS-ODU,SECONDS,FAR_END,RECEIVE
+ciena-6500-sonet-sfx-odu-tl1.rx.fe,ciena-6500-sonet-sfx-odu-tl1.rx.FC-ODU.fe,ciena-6500 SONET Rx FE FC-ODU,FC-ODU,FAILURES,FAR_END,RECEIVE
+ciena-6500-sonet-sfx-odu-tl1.tx,ciena-6500-sonet-sfx-odu-tl1.tx.CV-ODU,ciena-6500 SONET Tx NE CV-ODU,CV-ODU,ERRORS,NEAR_END,TRANSMIT
+ciena-6500-sonet-sfx-odu-tl1.tx,ciena-6500-sonet-sfx-odu-tl1.tx.ES-ODU,ciena-6500 SONET Tx NE ES-ODU,ES-ODU,SECONDS,NEAR_END,TRANSMIT
+ciena-6500-sonet-sfx-odu-tl1.tx,ciena-6500-sonet-sfx-odu-tl1.tx.SES-ODU,ciena-6500 SONET Tx NE SES-ODU,SES-ODU,SECONDS,NEAR_END,TRANSMIT
+ciena-6500-sonet-sfx-odu-tl1.tx,ciena-6500-sonet-sfx-odu-tl1.tx.UAS-ODU,ciena-6500 SONET Tx NE UAS-ODU,UAS-ODU,SECONDS,NEAR_END,TRANSMIT
+ciena-6500-sonet-sfx-odu-tl1.tx,ciena-6500-sonet-sfx-odu-tl1.tx.FC-ODU,ciena-6500 SONET Tx NE FC-ODU,FC-ODU,FAILURES,NEAR_END,TRANSMIT
+ciena-6500-sonet-sfx-odu-tl1.tx.fe,ciena-6500-sonet-sfx-odu-tl1.tx.CV-ODU.fe,ciena-6500 SONET Tx FE CV-ODU,CV-ODU,ERRORS,FAR_END,TRANSMIT
+ciena-6500-sonet-sfx-odu-tl1.tx.fe,ciena-6500-sonet-sfx-odu-tl1.tx.ES-ODU.fe,ciena-6500 SONET Tx FE ES-ODU,ES-ODU,SECONDS,FAR_END,TRANSMIT
+ciena-6500-sonet-sfx-odu-tl1.tx.fe,ciena-6500-sonet-sfx-odu-tl1.tx.SES-ODU.fe,ciena-6500 SONET Tx FE SES-ODU,SES-ODU,SECONDS,FAR_END,TRANSMIT
+ciena-6500-sonet-sfx-odu-tl1.tx.fe,ciena-6500-sonet-sfx-odu-tl1.tx.UAS-ODU.fe,ciena-6500 SONET Tx FE UAS-ODU,UAS-ODU,SECONDS,FAR_END,TRANSMIT
+ciena-6500-sonet-sfx-odu-tl1.tx.fe,ciena-6500-sonet-sfx-odu-tl1.tx.FC-ODU.fe,ciena-6500 SONET Tx FE FC-ODU,FC-ODU,FAILURES,FAR_END,TRANSMIT
+ciena-6500-sonet-sfx-otu-tl1,ciena-6500-sonet-sfx-otu-tl1.CV-OTU,ciena-6500 SONET NA NE CV-OTU,CV-OTU,ERRORS,NEAR_END,NA
+ciena-6500-sonet-sfx-otu-tl1,ciena-6500-sonet-sfx-otu-tl1.ES-OTU,ciena-6500 NA NE SONET ES-OTU,ES-OTU,SECONDS,NEAR_END,NA
+ciena-6500-sonet-sfx-otu-tl1,ciena-6500-sonet-sfx-otu-tl1.SES-OTU,ciena-6500 SONET NA NE SES-OTU,SES-OTU,SECONDS,NEAR_END,NA
+ciena-6500-sonet-sfx-otu-tl1,ciena-6500-sonet-sfx-otu-tl1.SEFS-OTU,ciena-6500 SONET NA NE SEFS-OTU,SEFS-OTU,SECONDS,NEAR_END,NA
+ciena-6500-sonet-sfx-otu-tl1,ciena-6500-sonet-sfx-otu-tl1.FEC-OTU,ciena-6500 SONET NA NE FEC-OTU,FEC-OTU,SECONDS,NEAR_END,NA
+ciena-6500-sonet-sfx-otu-tl1,ciena-6500-sonet-sfx-otu-tl1.HCCS-OTU,ciena-6500 SONET NA NE HCCS-OTU,HCCS-OTU,SECONDS,NEAR_END,NA
+ciena-6500-sonet-sfx-otu-tl1.fe,ciena-6500-sonet-sfx-otu-tl1.CV-OTU.fe,ciena-6500 SONET FE CV-OTU,CV-OTU,ERRORS,FAR_END,NA
+ciena-6500-sonet-sfx-otu-tl1.fe,ciena-6500-sonet-sfx-otu-tl1.ES-OTU.fe,ciena-6500 SONET FE ES-OTU,ES-OTU,SECONDS,FAR_END,NA
+ciena-6500-sonet-sfx-otu-tl1.fe,ciena-6500-sonet-sfx-otu-tl1.SES-OTU.fe,ciena-6500 SONET FE SES-OTU,SES-OTU,SECONDS,FAR_END,NA
+ciena-6500-sonet-sfx-otu-tl1.fe,ciena-6500-sonet-sfx-otu-tl1.SEFS-OTU.fe,ciena-6500 SONET FE SEFS-OTU,SEFS-OTU,SECONDS,FAR_END,NA
+ciena-6500-sonet-sfx-otu-tl1.fe,ciena-6500-sonet-sfx-otu-tl1.FEC-OTU.fe,ciena-6500 SONET FE FEC-OTU,FEC-OTU,SECONDS,FAR_END,NA
+ciena-6500-sonet-sfx-otu-tl1.fe,ciena-6500-sonet-sfx-otu-tl1.HCCS-OTU.fe,ciena-6500 SONET FE HCCS-OTU,HCCS-OTU,SECONDS,FAR_END,NA
+ciena-6500-sonet-sfx-otu-tl1.rx,ciena-6500-sonet-sfx-otu-tl1.rx.CV-OTU,ciena-6500 SONET Rx NE CV-OTU,CV-OTU,ERRORS,NEAR_END,RECEIVE
+ciena-6500-sonet-sfx-otu-tl1.rx,ciena-6500-sonet-sfx-otu-tl1.rx.ES-OTU,ciena-6500 SONET Rx NE ES-OTU,ES-OTU,SECONDS,NEAR_END,RECEIVE
+ciena-6500-sonet-sfx-otu-tl1.rx,ciena-6500-sonet-sfx-otu-tl1.rx.SES-OTU,ciena-6500 SONET Rx NE SES-OTU,SES-OTU,SECONDS,NEAR_END,RECEIVE
+ciena-6500-sonet-sfx-otu-tl1.rx,ciena-6500-sonet-sfx-otu-tl1.rx.SEFS-OTU,ciena-6500 SONET Rx NE SEFS-OTU,SEFS-OTU,SECONDS,NEAR_END,RECEIVE
+ciena-6500-sonet-sfx-otu-tl1.rx,ciena-6500-sonet-sfx-otu-tl1.rx.FEC-OTU,ciena-6500 SONET Rx NE FEC-OTU,FEC-OTU,SECONDS,NEAR_END,RECEIVE
+ciena-6500-sonet-sfx-otu-tl1.rx,ciena-6500-sonet-sfx-otu-tl1.rx.HCCS-OTU,ciena-6500 SONET Rx NE HCCS-OTU,HCCS-OTU,SECONDS,NEAR_END,RECEIVE
+ciena-6500-sonet-sfx-otu-tl1.rx.fe,ciena-6500-sonet-sfx-otu-tl1.rx.CV-OTU.fe,ciena-6500 SONET Rx FE CV-OTU,CV-OTU,ERRORS,FAR_END,RECEIVE
+ciena-6500-sonet-sfx-otu-tl1.rx.fe,ciena-6500-sonet-sfx-otu-tl1.rx.ES-OTU.fe,ciena-6500 SONET Rx FE ES-OTU,ES-OTU,SECONDS,FAR_END,RECEIVE
+ciena-6500-sonet-sfx-otu-tl1.rx.fe,ciena-6500-sonet-sfx-otu-tl1.rx.SES-OTU.fe,ciena-6500 SONET Rx FE SES-OTU,SES-OTU,SECONDS,FAR_END,RECEIVE
+ciena-6500-sonet-sfx-otu-tl1.rx.fe,ciena-6500-sonet-sfx-otu-tl1.rx.SEFS-OTU.fe,ciena-6500 SONET Rx FE SEFS-OTU,SEFS-OTU,SECONDS,FAR_END,RECEIVE
+ciena-6500-sonet-sfx-otu-tl1.rx.fe,ciena-6500-sonet-sfx-otu-tl1.rx.FEC-OTU.fe,ciena-6500 SONET Rx FE FEC-OTU,FEC-OTU,SECONDS,FAR_END,RECEIVE
+ciena-6500-sonet-sfx-otu-tl1.rx.fe,ciena-6500-sonet-sfx-otu-tl1.rx.HCCS-OTU.fe,ciena-6500 SONET Rx FE HCCS-OTU,HCCS-OTU,SECONDS,FAR_END,RECEIVE
+ciena-6500-sonet-sfx-otu-tl1.tx,ciena-6500-sonet-sfx-otu-tl1.tx.CV-OTU,ciena-6500 SONET Tx NE CV-OTU,CV-OTU,ERRORS,NEAR_END,TRANSMIT
+ciena-6500-sonet-sfx-otu-tl1.tx,ciena-6500-sonet-sfx-otu-tl1.tx.ES-OTU,ciena-6500 SONET Tx NE ES-OTU,ES-OTU,SECONDS,NEAR_END,TRANSMIT
+ciena-6500-sonet-sfx-otu-tl1.tx,ciena-6500-sonet-sfx-otu-tl1.tx.SES-OTU,ciena-6500 SONET Tx NE SES-OTU,SES-OTU,SECONDS,NEAR_END,TRANSMIT
+ciena-6500-sonet-sfx-otu-tl1.tx,ciena-6500-sonet-sfx-otu-tl1.tx.SEFS-OTU,ciena-6500 SONET Tx NE SEFS-OTU,SEFS-OTU,SECONDS,NEAR_END,TRANSMIT
+ciena-6500-sonet-sfx-otu-tl1.tx,ciena-6500-sonet-sfx-otu-tl1.tx.FEC-OTU,ciena-6500 SONET Tx NE FEC-OTU,FEC-OTU,SECONDS,NEAR_END,TRANSMIT
+ciena-6500-sonet-sfx-otu-tl1.tx,ciena-6500-sonet-sfx-otu-tl1.tx.HCCS-OTU,ciena-6500 SONET Tx NE HCCS-OTU,HCCS-OTU,SECONDS,NEAR_END,TRANSMIT
+ciena-6500-sonet-sfx-otu-tl1.tx.fe,ciena-6500-sonet-sfx-otu-tl1.tx.CV-OTU.fe,ciena-6500 SONET Tx FE CV-OTU,CV-OTU,ERRORS,FAR_END,TRANSMIT
+ciena-6500-sonet-sfx-otu-tl1.tx.fe,ciena-6500-sonet-sfx-otu-tl1.tx.ES-OTU.fe,ciena-6500 SONET Tx FE ES-OTU,ES-OTU,SECONDS,FAR_END,TRANSMIT
+ciena-6500-sonet-sfx-otu-tl1.tx.fe,ciena-6500-sonet-sfx-otu-tl1.tx.SES-OTU.fe,ciena-6500 SONET Tx FE SES-OTU,SES-OTU,SECONDS,FAR_END,TRANSMIT
+ciena-6500-sonet-sfx-otu-tl1.tx.fe,ciena-6500-sonet-sfx-otu-tl1.tx.SEFS-OTU.fe,ciena-6500 SONET Tx FE SEFS-OTU,SEFS-OTU,SECONDS,FAR_END,TRANSMIT
+ciena-6500-sonet-sfx-otu-tl1.tx.fe,ciena-6500-sonet-sfx-otu-tl1.tx.FEC-OTU.fe,ciena-6500 SONET Tx FE FEC-OTU,FEC-OTU,SECONDS,FAR_END,TRANSMIT
+ciena-6500-sonet-sfx-otu-tl1.tx.fe,ciena-6500-sonet-sfx-otu-tl1.tx.HCCS-OTU.fe,ciena-6500 SONET Tx FE HCCS-OTU,HCCS-OTU,SECONDS,FAR_END,TRANSMIT
+ciena-6500-sonet-sfx-otu-ber-tl1,ciena-6500-sonet-sfx-otu-ber-tl1.PFBERE-OTU,ciena-6500 SONET NA NE PFBERE-OTU,PFBERE-OTU,%,NEAR_END,NA
+ciena-6500-sonet-sfx-otu-ber-tl1,ciena-6500-sonet-sfx-otu-ber-tl1.PRFBER-OTU,ciena-6500 SONET NA NE PRFBER-OTU,PRFBER-OTU,%,NEAR_END,NA
+ciena-6500-sonet-sfx-otu-ber-tl1,ciena-6500-sonet-sfx-otu-ber-tl1.PRFBERMAX-OTU,ciena-6500 SONET NE PRFBER-OTU,PRFBERMAX-OTU,%,NEAR_END,NA
+ciena-6500-sonet-sfx-otu-ber-tl1.fe,ciena-6500-sonet-sfx-otu-ber-tl1.PFBERE-OTU.fe,ciena-6500 SONET FE PFBERE-OTU,PFBERE-OTU,%,FAR_END,NA
+ciena-6500-sonet-sfx-otu-ber-tl1.fe,ciena-6500-sonet-sfx-otu-ber-tl1.PRFBER-OTU.fe,ciena-6500 SONET FE PRFBER-OTU,PRFBER-OTU,%,FAR_END,NA
+ciena-6500-sonet-sfx-otu-ber-tl1.fe,ciena-6500-sonet-sfx-otu-ber-tl1.PRFBERMAX-OTU.fe,ciena-6500 SONET FE PRFBERMAX-OTU,PRFBERMAX-OTU,%,FAR_END,NA
+ciena-6500-sonet-sfx-otu-ber-tl1.rx,ciena-6500-sonet-sfx-otu-ber-tl1.PFBERE-OTU.rx,ciena-6500 SONET Rx NE PFBERE-OTU,PFBERE-OTU,%,NEAR_END,RECEIVE
+ciena-6500-sonet-sfx-otu-ber-tl1.rx,ciena-6500-sonet-sfx-otu-ber-tl1.PRFBER-OTU.rx,ciena-6500 SONET Rx NE PRFBER-OTU,PRFBER-OTU,%,NEAR_END,RECEIVE
+ciena-6500-sonet-sfx-otu-ber-tl1.rx,ciena-6500-sonet-sfx-otu-ber-tl1.PRFBERMAX-OTU.rx,ciena-6500 SONET Rx NE PRFBERMAX-OTU,PRFBERMAX-OTU,%,NEAR_END,RECEIVE
+ciena-6500-sonet-sfx-otu-ber-tl1.rx.fe,ciena-6500-sonet-sfx-otu-ber-tl1.PFBERE-OTU.rx.fe,ciena-6500 SONET Rx FE PFBERE-OTU,PFBERE-OTU,%,FAR_END,RECEIVE
+ciena-6500-sonet-sfx-otu-ber-tl1.rx.fe,ciena-6500-sonet-sfx-otu-ber-tl1.PRFBER-OTU.rx.fe,ciena-6500 SONET Rx FE PRFBER-OTU,PRFBER-OTU,%,FAR_END,RECEIVE
+ciena-6500-sonet-sfx-otu-ber-tl1.rx.fe,ciena-6500-sonet-sfx-otu-ber-tl1.PRFBERMAX-OTU.rx.fe,ciena-6500 SONET Rx FE PRFBERMAX-OTU,PRFBERMAX-OTU,%,FAR_END,RECEIVE
+ciena-6500-sonet-sfx-otu-ber-tl1.tx,ciena-6500-sonet-sfx-otu-ber-tl1.PFBERE-OTU.tx,ciena-6500 SONET Tx NE PFBERE-OTU,PFBERE-OTU,%,NEAR_END,TRANSMIT
+ciena-6500-sonet-sfx-otu-ber-tl1.tx,ciena-6500-sonet-sfx-otu-ber-tl1.PRFBER-OTU.tx,ciena-6500 SONET Tx NE PRFBER-OTU,PRFBER-OTU,%,NEAR_END,TRANSMIT
+ciena-6500-sonet-sfx-otu-ber-tl1.tx,ciena-6500-sonet-sfx-otu-ber-tl1.PRFBERMAX-OTU.tx,ciena-6500 SONET Tx NE PRFBER-OTU,PRFBERMAX-OTU,%,NEAR_END,TRANSMIT
+ciena-6500-sonet-sfx-otu-ber-tl1.tx.fe,ciena-6500-sonet-sfx-otu-ber-tl1.PFBERE-OTU.tx.fe,ciena-6500 SONET Tx FE PFBERE-OTU,PFBERE-OTU,%,FAR_END,TRANSMIT
+ciena-6500-sonet-sfx-otu-ber-tl1.tx.fe,ciena-6500-sonet-sfx-otu-ber-tl1.PRFBER-OTU.tx.fe,ciena-6500 SONET Tx FE PRFBER-OTU,PRFBER-OTU,%,FAR_END,TRANSMIT
+ciena-6500-sonet-sfx-otu-ber-tl1.tx.fe,ciena-6500-sonet-sfx-otu-ber-tl1.PRFBERMAX-OTU.tx.fe,ciena-6500 SONET Tx FE PRFBERMAX-OTU,PRFBERMAX-OTU,%,FAR_END,TRANSMIT

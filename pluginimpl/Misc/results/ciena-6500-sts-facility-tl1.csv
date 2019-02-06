@@ -1,0 +1,121 @@
+sonet-path-tl1,sonet-path-tl1.SEFS-P,SONET NE SEFS-Path,SEFS-P,SECONDS,NEAR_END,NA
+sonet-path-tl1,sonet-path-tl1.CSS-P,SONET NE CSS-P,CSS-P,SECONDS,NEAR_END,NA
+sonet-path-tl1,sonet-path-tl1.AISSP,SONET NE AISS-P,AISSP,SECONDS,NEAR_END,NA
+sonet-path-tl1,sonet-path-tl1.CVP,SONET NE Path CV-P,CVP,VIOLATIONS,NEAR_END,NA
+sonet-path-tl1,sonet-path-tl1.ESP,SONET TL1 NE ES-P,ESP,SECONDS,NEAR_END,NA
+sonet-path-tl1,sonet-path-tl1.SESP,SONET NE SES-Path,SESP,SECONDS,NEAR_END,NA
+sonet-path-tl1,sonet-path-tl1.FCP,SONET NE FC-P,FCP,FAILURES,NEAR_END,NA
+sonet-path-tl1,sonet-path-tl1.UASP,SONET NE Unavailable Seconds-P,UASP,SECONDS,NEAR_END,NA
+sonet-path-tl1,sonet-path-tl1.UASCPP,SONET NE Unavailable Seconds - Path,UASCPP,SECONDS,NEAR_END,NA
+sonet-path-tl1,sonet-path-tl1.SASP,SONET NE SAS-Path,SASP,SECONDS,NEAR_END,NA
+sonet-path-tl1,sonet-path-tl1.CVCP-P,SONET NE CVCP-P,CVCP-P,VIOLATIONS,NEAR_END,NA
+sonet-path-tl1,sonet-path-tl1.CVCPP,SONET NE CVCPP,CVCPP,VIOLATIONS,NEAR_END,NA
+sonet-path-tl1,sonet-path-tl1.ESCP-P,SONET NE ESCP-P,ESCP-P,SECONDS,NEAR_END,NA
+sonet-path-tl1,sonet-path-tl1.ESCPP,SONET NE ESCPP,ESCPP,SECONDS,NEAR_END,NA
+sonet-path-tl1,sonet-path-tl1.SASCP,SONET NE SAS-CP,SASCP,SECONDS,NEAR_END,NA
+sonet-path-tl1,sonet-path-tl1.SASCPP,SONET NE SAS-CPP,SASCPP,SECONDS,NEAR_END,NA
+sonet-path-tl1,sonet-path-tl1.FC-P,SONET NE FCP,FC-P,FAILURES,NEAR_END,NA
+sonet-path-tl1,sonet-path-tl1.CSSP,SONET NE CSSP,CSSP,SECONDS,NEAR_END,NA
+sonet-path-tl1,sonet-path-tl1.SEFSP,SONET NE SEF-SP,SEFSP,SECONDS,NEAR_END,NA
+sonet-path-tl1.fe,sonet-path-tl1.SEFS-P.fe,SONET FE SEFS-P,SEFS-P,SECONDS,FAR_END,NA
+sonet-path-tl1.fe,sonet-path-tl1.CSS-P.fe,SONET FE CSS-P,CSS-P,SECONDS,FAR_END,NA
+sonet-path-tl1.fe,sonet-path-tl1.AISSP.fe,SONET FE AISS-P,AISSP,SECONDS,FAR_END,NA
+sonet-path-tl1.fe,sonet-path-tl1.CVP.fe,SONET TL1 FE CV-P,CVP,VIOLATIONS,FAR_END,NA
+sonet-path-tl1.fe,sonet-path-tl1.ESP.fe,SONET TL1 FE ES-P,ESP,SECONDS,FAR_END,NA
+sonet-path-tl1.fe,sonet-path-tl1.SESP.fe,SONET TL1 FE SES-P,SESP,SECONDS,FAR_END,NA
+sonet-path-tl1.fe,sonet-path-tl1.FCP.fe,SONET FE FCP,FCP,FAILURES,FAR_END,NA
+sonet-path-tl1.fe,sonet-path-tl1.FC-P.fe,SONET FE FC-P,FC-PFE,FAILURES,FAR_END,NA
+sonet-path-tl1.fe,sonet-path-tl1.UASP.fe,SONET TL1 FE UAS-P,UASP,SECONDS,FAR_END,NA
+sonet-path-tl1.fe,sonet-path-tl1.UASCPP.fe,SONET FE UASCPP,UASCPP,SECONDS,FAR_END,NA
+sonet-path-tl1.fe,sonet-path-tl1.SASP.fe,SONET FE SASP-P,SASP,SECONDS,FAR_END,NA
+sonet-path-tl1.fe,sonet-path-tl1.CSSP.fe,SONET FE CSSP,CSSP,SECONDS,FAR_END,NA
+sonet-path-tl1.fe,sonet-path-tl1.SEFSP.fe,SONET FE SEFSP,SEFSP,SECONDS,FAR_END,NA
+sonet-path-tl1.rx,sonet-path-tl1.AISSP.rx,SONET Rx NE AISS-P,AISSP,SECONDS,NEAR_END,RECEIVE
+sonet-path-tl1.rx,sonet-path-tl1.CVP.rx,SONET Rx NE CVP,CVP,VIOLATIONS,NEAR_END,RECEIVE
+sonet-path-tl1.rx,sonet-path-tl1.CV-P.rx,SONET Rx NE CV-P,CV-P,VIOLATIONS,NEAR_END,RECEIVE
+sonet-path-tl1.rx,sonet-path-tl1.CVCP-P.rx,SONET Rx NE CVCP-P,CVCP-P,VIOLATIONS,NEAR_END,RECEIVE
+sonet-path-tl1.rx,sonet-path-tl1.CVCPP.rx,SONET Rx NE CVCPP,CVCPP,VIOLATIONS,NEAR_END,RECEIVE
+sonet-path-tl1.rx,sonet-path-tl1.ESCP-P.rx,SONET Rx NE ESCP-P,ESCP-P,SECONDS,NEAR_END,RECEIVE
+sonet-path-tl1.rx,sonet-path-tl1.ESCPP.rx,SONET Rx NE ESCPP,ESCPP,SECONDS,NEAR_END,RECEIVE
+sonet-path-tl1.rx,sonet-path-tl1.FCP.rx,SONET Rx NE FC-P,FCP,FAILURES,NEAR_END,RECEIVE
+sonet-path-tl1.rx,sonet-path-tl1.UASCPP.rx,SONET NE Receive UASCPP,UASCPP,SECONDS,NEAR_END,RECEIVE
+sonet-path-tl1.rx,sonet-path-tl1.CSS-P.rx,SONET Rx NE CSS-P,CSS-P,SECONDS,NEAR_END,RECEIVE
+sonet-path-tl1.rx,sonet-path-tl1.SESCP-P.rx,SONET Rx NE SES-CP,SESCP-P,SECONDS,NEAR_END,RECEIVE
+sonet-path-tl1.rx,sonet-path-tl1.SESCPP.rx,SONET NE Receive SESCPP,SESCPP,SECONDS,NEAR_END,RECEIVE
+sonet-path-tl1.rx,sonet-path-tl1.CSSP.rx,SONET Rx NE CSSP,CSSP,SECONDS,NEAR_END,RECEIVE
+sonet-path-tl1.rx,sonet-path-tl1.SEFSP.rx,SONET Rx NE SEFSP,SEFSP,SECONDS,NEAR_END,RECEIVE
+sonet-path-tl1.rx.fe,sonet-path-tl1.AISSP.rx.fe,SONET Rx FE AISS-P,AISSP,SECONDS,FAR_END,RECEIVE
+sonet-path-tl1.rx.fe,sonet-path-tl1.CVP.rx.fe,SONET Rx FE CVP,CVP,VIOLATIONS,FAR_END,RECEIVE
+sonet-path-tl1.rx.fe,sonet-path-tl1.CV-P.rx.fe,SONET Rx FE CV-P,CV-PFE,VIOLATIONS,FAR_END,RECEIVE
+sonet-path-tl1.rx.fe,sonet-path-tl1.ESP.rx.fe,SONET Rx FE ES-P,ESP,SECONDS,FAR_END,RECEIVE
+sonet-path-tl1.rx.fe,sonet-path-tl1.CVCP-P.rx.fe,SONET Rx FE CVCP-P,CVCP-P,VIOLATIONS,FAR_END,RECEIVE
+sonet-path-tl1.rx.fe,sonet-path-tl1.CVCPP.rx.fe,SONET Rx FE CVCPP,CVCPP,VIOLATIONS,FAR_END,RECEIVE
+sonet-path-tl1.rx.fe,sonet-path-tl1.SESP.rx.fe,SONET Rx FE SES-P,SESP,SECONDS,FAR_END,RECEIVE
+sonet-path-tl1.rx.fe,sonet-path-tl1.ESCP-P.rx.fe,SONET Rx FE ESCP-P,ESCP-P,SECONDS,FAR_END,RECEIVE
+sonet-path-tl1.rx.fe,sonet-path-tl1.ESCPP.rx.fe,SONET Rx FE ESCPP,ESCPP,SECONDS,FAR_END,RECEIVE
+sonet-path-tl1.rx.fe,sonet-path-tl1.FCP.rx.fe,SONET Rx FE FC-P,FCP,FAILURES,FAR_END,RECEIVE
+sonet-path-tl1.rx.fe,sonet-path-tl1.UASP.rx.fe,SONET Rx FE UAS-P,UASP,SECONDS,FAR_END,RECEIVE
+sonet-path-tl1.rx.fe,sonet-path-tl1.UASCPP.rx.fe,SONET Rx FE UASCPP,UASCPP,SECONDS,FAR_END,RECEIVE
+sonet-path-tl1.rx.fe,sonet-path-tl1.SASP.rx.fe,SONET Rx FE SASP-P,SASP,SECONDS,FAR_END,RECEIVE
+sonet-path-tl1.rx.fe,sonet-path-tl1.SEFS-P.rx.fe,SONET Rx FE SEFS-P,SEFS-P,SECONDS,FAR_END,RECEIVE
+sonet-path-tl1.rx.fe,sonet-path-tl1.SESCP-P.rx.fe,SONET Rx FE SESCP-P,SESCP-P,SECONDS,FAR_END,RECEIVE
+sonet-path-tl1.rx.fe,sonet-path-tl1.SESCPP.rx.fe,SONET Rx FE SESCPP,SESCPP,SECONDS,FAR_END,RECEIVE
+sonet-path-tl1.rx.fe,sonet-path-tl1.SASCP.rx.fe,SONET Rx FE SASCP,SASCP,SECONDS,FAR_END,RECEIVE
+sonet-path-tl1.rx.fe,sonet-path-tl1.SASCPP.rx.fe,SONET Rx FE SASCPP,SASCPP,SECONDS,FAR_END,RECEIVE
+sonet-path-tl1.rx.fe,sonet-path-tl1.CSSP.rx.fe,SONET Rx FE CSSP,CSSP,SECONDS,FAR_END,RECEIVE
+sonet-path-tl1.rx.fe,sonet-path-tl1.SEFSP.rx.fe,SONET Rx FE SEFSP,SEFSP,SECONDS,FAR_END,RECEIVE
+sonet-path-tl1.tx,sonet-path-tl1.AISSP.tx,SONET Tx NE Alarm Indication Signal Seconds-P,AISSP,SECONDS,NEAR_END,TRANSMIT
+sonet-path-tl1.tx,sonet-path-tl1.CVP.tx,SONET Tx NE Coding Violations - Path,CVP,VIOLATIONS,NEAR_END,TRANSMIT
+sonet-path-tl1.tx,sonet-path-tl1.CV-P.tx,SONET NE Transmit CV-P,CV-P,VIOLATIONS,NEAR_END,TRANSMIT
+sonet-path-tl1.tx,sonet-path-tl1.UASCPP.tx,SONET NE Transmit UASCPP,UASCPP,SECONDS,NEAR_END,TRANSMIT
+sonet-path-tl1.tx,sonet-path-tl1.SESCP-P.tx,SONET NE Transmit SESCP-P,SESCP-P,SECONDS,NEAR_END,TRANSMIT
+sonet-path-tl1.tx,sonet-path-tl1.SESCPP.tx,SONET NE Transmit SESCPP,SESCPP,SECONDS,NEAR_END,TRANSMIT
+sonet-path-tl1.tx,sonet-path-tl1.CVCP-P.tx,SONET Tx NE Count Coding Violations-P,CVCP-P,VIOLATIONS,NEAR_END,TRANSMIT
+sonet-path-tl1.tx,sonet-path-tl1.CVCPP.tx,SONET NE Transmit CVCPP,CVCPP,VIOLATIONS,NEAR_END,TRANSMIT
+sonet-path-tl1.tx,sonet-path-tl1.ESCP-P.tx,SONET NE Transmit ESCP-P,ESCP-P,SECONDS,NEAR_END,TRANSMIT
+sonet-path-tl1.tx,sonet-path-tl1.ESCPP.tx,SONET NE Transmit ESCPP,ESCPP,SECONDS,NEAR_END,TRANSMIT
+sonet-path-tl1.tx,sonet-path-tl1.SASCP.tx,SONET NE Transmit SASCP,SASCP,SECONDS,NEAR_END,TRANSMIT
+sonet-path-tl1.tx,sonet-path-tl1.SASCPP.tx,SONET NE Transmit SASCPP,SASCPP,SECONDS,NEAR_END,TRANSMIT
+sonet-path-tl1.tx,sonet-path-tl1.CSSP.tx,SONET NE Transmit CSSP,CSSP,SECONDS,NEAR_END,TRANSMIT
+sonet-path-tl1.tx,sonet-path-tl1.SEFSP.tx,SONET NE Transmit SEFSP,SEFSP,SECONDS,NEAR_END,TRANSMIT
+sonet-path-tl1.tx.fe,sonet-path-tl1.AISSP.tx.fe,SONET Tx FE Alarm Indication Signal Seconds-P,AISSP,SECONDS,FAR_END,TRANSMIT
+sonet-path-tl1.tx.fe,sonet-path-tl1.CVP.tx.fe,SONET Transmit FE CVP,CVP,VIOLATIONS,FAR_END,TRANSMIT
+sonet-path-tl1.tx.fe,sonet-path-tl1.CV-P.tx.fe,SONET Transmit FE CV-P,CV-PFE,VIOLATIONS,FAR_END,TRANSMIT
+sonet-path-tl1.tx.fe,sonet-path-tl1.ESP.tx.fe,SONET Transmit FE ES-P,ESP,SECONDS,FAR_END,TRANSMIT
+sonet-path-tl1.tx.fe,sonet-path-tl1.SESP.tx.fe,SONET Transmit FE SES-P,SESP,SECONDS,FAR_END,TRANSMIT
+sonet-path-tl1.tx.fe,sonet-path-tl1.CVCP-P.tx.fe,SONET Tx FE Count Coding Violations-P,CVCP-P,VIOLATIONS,FAR_END,TRANSMIT
+sonet-path-tl1.tx.fe,sonet-path-tl1.CVCPP.tx.fe,SONET Transmit FE CVCPP,CVCPP,VIOLATIONS,FAR_END,TRANSMIT
+sonet-path-tl1.tx.fe,sonet-path-tl1.SESCP-P.tx.fe,SONET Transmit FE SESCP-P,SESCP-P,SECONDS,FAR_END,TRANSMIT
+sonet-path-tl1.tx.fe,sonet-path-tl1.SESCPP.tx.fe,SONET Transmit FE SESCPP,SESCPP,SECONDS,FAR_END,TRANSMIT
+sonet-path-tl1.tx.fe,sonet-path-tl1.ESCP-P.tx.fe,SONET Transmit FE ESCP-P,ESCP-P,SECONDS,FAR_END,TRANSMIT
+sonet-path-tl1.tx.fe,sonet-path-tl1.ESCPP.tx.fe,SONET Transmit FE ESCPP,ESCPP,SECONDS,FAR_END,TRANSMIT
+sonet-path-tl1.tx.fe,sonet-path-tl1.FCP.tx.fe,SONET Transmit FE FC-P,FCP,FAILURES,FAR_END,TRANSMIT
+sonet-path-tl1.tx.fe,sonet-path-tl1.UASP.tx.fe,SONET Transmit FE UAS-P,UASP,SECONDS,FAR_END,TRANSMIT
+sonet-path-tl1.tx.fe,sonet-path-tl1.UASCPP.tx.fe,SONET Transmit FE UASCPP,UASCPP,SECONDS,FAR_END,TRANSMIT
+sonet-path-tl1.tx.fe,sonet-path-tl1.SASP.tx.fe,SONET Transmit FE SASP-P,SASP,SECONDS,FAR_END,TRANSMIT
+sonet-path-tl1.tx.fe,sonet-path-tl1.CSSP.tx.fe,SONET Transmit-FE CSSP,CSSP,SECONDS,FAR_END,TRANSMIT
+sonet-path-tl1.tx.fe,sonet-path-tl1.SEFSP.tx.fe,SONET Transmit FE SEFSP,SEFSP,SECONDS,FAR_END,TRANSMIT
+ciena-6500-sonet-path-tl1,ciena-6500-sonet-path-tl1.ALSP,ciena-6500 NE SONET ALS-P,ALSP,SECONDS,NEAR_END,NA
+ciena-6500-sonet-path-tl1,ciena-6500-sonet-path-tl1.CSSP,ciena-6500 NE SONET CSSP,CSSP,SECONDS,NEAR_END,NA
+ciena-6500-sonet-path-tl1,ciena-6500-sonet-path-tl1.SASP,ciena-6500 NE SONET SASP,SASP,SECONDS,NEAR_END,NA
+ciena-6500-sonet-path-tl1,ciena-6500-sonet-path-tl1.SEFSP,ciena-6500 NE SONET SEFSP,SEFSP,SECONDS,NEAR_END,NA
+ciena-6500-sonet-path-tl1.fe,ciena-6500-sonet-path-tl1.ALSP.fe,ciena-6500 SONET FE ALS-P,ALSP,SECONDS,FAR_END,NA
+ciena-6500-sonet-path-tl1.fe,ciena-6500-sonet-path-tl1.CSSP.fe,ciena-6500 SONET FE CSSP,CSSP,SECONDS,FAR_END,NA
+ciena-6500-sonet-path-tl1.fe,ciena-6500-sonet-path-tl1.SASP.fe,ciena-6500 SONET FE SASP,SASP,SECONDS,FAR_END,NA
+ciena-6500-sonet-path-tl1.fe,ciena-6500-sonet-path-tl1.SEFSP.fe,ciena-6500 SONET FE SEFSP,SEFSP,SECONDS,FAR_END,NA
+ciena-6500-sonet-path-tl1.tx,ciena-6500-sonet-path-tl1.ALSP.tx,ciena-6500 NE SONET Tx ALS-P,ALSP,SECONDS,NEAR_END,TRANSMIT
+ciena-6500-sonet-path-tl1.tx,ciena-6500-sonet-path-tl1.CSSP.tx,ciena-6500 NE SONET Tx CSSP,CSSP,SECONDS,NEAR_END,TRANSMIT
+ciena-6500-sonet-path-tl1.tx,ciena-6500-sonet-path-tl1.SASP.tx,ciena-6500 NE SONET Tx SASP,SASP,SECONDS,NEAR_END,TRANSMIT
+ciena-6500-sonet-path-tl1.tx,ciena-6500-sonet-path-tl1.SEFSP.tx,ciena-6500 NE SONET Tx SEFSP,SEFSP,SECONDS,NEAR_END,TRANSMIT
+ciena-6500-sonet-path-tl1.tx.fe,ciena-6500-sonet-path-tl1.ALSP.tx-fe,ciena-6500 SONET Tx FE ALS-P,ALSP,SECONDS,FAR_END,TRANSMIT
+ciena-6500-sonet-path-tl1.tx.fe,ciena-6500-sonet-path-tl1.CSSP.tx-fe,ciena-6500 SONET Tx FE CSSP,CSSP,SECONDS,FAR_END,TRANSMIT
+ciena-6500-sonet-path-tl1.tx.fe,ciena-6500-sonet-path-tl1.SASP.tx-fe,ciena-6500 SONET Tx FE SASP,SASP,SECONDS,FAR_END,TRANSMIT
+ciena-6500-sonet-path-tl1.tx.fe,ciena-6500-sonet-path-tl1.SEFSP.tx-fe,ciena-6500 SONET Tx FE SEFSP,SEFSP,SECONDS,FAR_END,TRANSMIT
+ciena-6500-sonet-path-tl1.rx,ciena-6500-sonet-path-tl1.rx.ALSP,ciena-6500 NE SONET Rx ALS-P,ALSP,SECONDS,NEAR_END,RECEIVE
+ciena-6500-sonet-path-tl1.rx,ciena-6500-sonet-path-tl1.rx.CSSP,ciena-6500 NE SONET Rx CSSP,CSSP,SECONDS,NEAR_END,RECEIVE
+ciena-6500-sonet-path-tl1.rx,ciena-6500-sonet-path-tl1.rx.SASP,ciena-6500 NE SONET Rx SASP,SASP,SECONDS,NEAR_END,RECEIVE
+ciena-6500-sonet-path-tl1.rx,ciena-6500-sonet-path-tl1.rx.SEFSP,ciena-6500 NE SONET Rx SEFSP,SEFSP,SECONDS,NEAR_END,RECEIVE
+ciena-6500-sonet-path-tl1.rx.fe,ciena-6500-sonet-path-tl1.ALSP.rx-fe,ciena-6500 SONET Rx FE ALS-P,ALSP,SECONDS,FAR_END,RECEIVE
+ciena-6500-sonet-path-tl1.rx.fe,ciena-6500-sonet-path-tl1.CSSP.rx-fe,ciena-6500 SONET Rx FE CSSP,CSSP,SECONDS,FAR_END,RECEIVE
+ciena-6500-sonet-path-tl1.rx.fe,ciena-6500-sonet-path-tl1.SASP.rx-fe,ciena-6500 SONET Rx FE SASP,SASP,SECONDS,FAR_END,RECEIVE
+ciena-6500-sonet-path-tl1.rx.fe,ciena-6500-sonet-path-tl1.SEFSP.rx-fe,ciena-6500 SONET Rx FE SEFSP,SEFSP,SECONDS,FAR_END,RECEIVE

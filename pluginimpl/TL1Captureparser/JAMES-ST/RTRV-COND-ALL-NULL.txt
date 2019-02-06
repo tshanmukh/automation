@@ -1,0 +1,33 @@
+2-1,OC48:NR,LOS,SA,02-18,03-26-18,NEND,RCV:\"Loss of Signal\
+2-1,OC48:NR,DCCFAIL-S,NSA,11-30,20-57-10,NEND,RCV:\"Data Communication Channel Failure\
+2-1,OC48:NR,REFFAIL,NSA,02-18,03-26-17,NEND,RCV:\"Reference Fail - Synchronization\
+7-1,T3:NR,AIS,SA,10-19,10-32-04,NEND,RCV:\"Alarm Indication Signal\
+7-3,T3:NR,AIS,SA,10-19,10-32-19,NEND,RCV:\"Alarm Indication Signal\
+3-1,T1:NR,LOS,SA,03-16,01-34-01,NEND,RCV:\"Loss of Signal\
+3-2,T1:NR,LOS,SA,03-16,01-34-01,NEND,RCV:\"Loss of Signal\
+3-3,T1:NR,LOS,SA,03-16,01-34-01,NEND,RCV:\"Loss of Signal\
+3-4,T1:NR,LOS,SA,03-16,01-33-59,NEND,RCV:\"Loss of Signal\
+3-5,T1:NR,LOS,SA,03-16,01-33-59,NEND,RCV:\"Loss of Signal\
+3-6,T1:NR,LOS,SA,10-28,11-21-45,NEND,RCV:\"Loss of Signal\
+3-7,T1:NR,LOS,SA,03-16,01-33-59,NEND,RCV:\"Loss of Signal\
+3-8,T1:NR,LOS,SA,03-16,01-33-59,NEND,RCV:\"Loss of Signal\
+3-9,T1:NR,LOS,SA,11-18,11-48-43,NEND,RCV:\"Loss of Signal\
+3-10,T1:NR,LOS,SA,05-26,09-27-37,NEND,RCV:\"Loss of Signal\
+3-11,T1:NR,LOS,SA,05-20,01-55-53,NEND,RCV:\"Loss of Signal\
+3-12,T1:NR,LOS,SA,05-20,01-55-53,NEND,RCV:\"Loss of Signal\
+3-13,T1:NR,LOS,SA,05-20,01-55-53,NEND,RCV:\"Loss of Signal\
+3-14,T1:NR,LOS,SA,05-20,01-55-53,NEND,RCV:\"Loss of Signal\
+5-1,T1:NR,LOS,SA,05-20,01-55-53,NEND,RCV:\"Loss of Signal\
+5-2,T1:NR,LOS,SA,05-20,01-55-53,NEND,RCV:\"Loss of Signal\
+5-3,T1:NR,LOS,SA,05-20,01-55-53,NEND,RCV:\"Loss of Signal\
+5-4,T1:NR,LOS,SA,05-20,01-55-53,NEND,RCV:\"Loss of Signal\
+5-5,T1:NR,LOS,SA,05-20,01-55-53,NEND,RCV:\"Loss of Signal\
+5-6,T1:NR,LOS,SA,05-20,01-55-53,NEND,RCV:\"Loss of Signal\
+5-7,T1:NR,LOS,SA,05-20,01-55-53,NEND,RCV:\"Loss of Signal\
+5-8,T1:NR,LOS,SA,05-20,01-55-53,NEND,RCV:\"Loss of Signal\
+5-9,T1:NR,LOS,SA,05-20,01-55-53,NEND,RCV:\"Loss of Signal\
+5-10,T1:NR,LOS,SA,05-20,01-55-53,NEND,RCV:\"Loss of Signal\
+5-11,T1:NR,LOS,SA,05-20,01-55-53,NEND,RCV:\"Loss of Signal\
+5-12,T1:NR,LOS,SA,05-20,01-55-53,NEND,RCV:\"Loss of Signal\
+5-13,T1:NR,LOS,SA,05-20,01-55-53,NEND,RCV:\"Loss of Signal\
+5-14,T1:NR,LOS,SA,05-20,01-55-53,NEND,RCV:\"Loss of Signal\

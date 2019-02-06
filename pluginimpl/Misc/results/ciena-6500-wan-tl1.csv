@@ -1,0 +1,84 @@
+ciena-6500-wan-sfx-tl1,ciena-6500-wan-sfx-tl1.ES-W,ciena-6500 WAN NE ES-W,ES-W,SECONDS,NEAR_END,NA
+ciena-6500-wan-sfx-tl1,ciena-6500-wan-sfx-tl1.SES-W,ciena-6500 WAN NE SES-W,SES-W,SECONDS,NEAR_END,NA
+ciena-6500-wan-sfx-tl1,ciena-6500-wan-sfx-tl1.UAS-W,ciena-6500 WAN NE UAS-W,UAS-W,SECONDS,NEAR_END,NA
+ciena-6500-wan-sfx-tl1,ciena-6500-wan-sfx-tl1.LDS-W,ciena-6500 WAN NE LDS-W,LDS-W,SECONDS,NEAR_END,NA
+ciena-6500-wan-sfx-tl1,ciena-6500-wan-sfx-tl1.LSDS-W,ciena-6500 WAN NE LSDS-W,LSDS-W,SECONDS,NEAR_END,NA
+ciena-6500-wan-sfx-tl1,ciena-6500-wan-sfx-tl1.LUAS-W,ciena-6500 WAN NE LUAS-W,LUAS-W,SECONDS,NEAR_END,NA
+ciena-6500-wan-sfx-tl1,ciena-6500-wan-sfx-tl1.UTL-W,ciena-6500 WAN NE UTL-W,UTL-W,%,NEAR_END,NA
+ciena-6500-wan-sfx-tl1,ciena-6500-wan-sfx-tl1.UTLMX-W,ciena-6500 WAN NE UTLMX-W,UTLMX-W,%,NEAR_END,NA
+ciena-6500-wan-sfx-tl1,ciena-6500-wan-sfx-tl1.BRS-W,ciena-6500 WAN NE BRS-W,BRS-W,SECONDS,NEAR_END,NA
+ciena-6500-wan-sfx-tl1,ciena-6500-wan-sfx-tl1.SBRS-W,ciena-6500 WAN NE SBRS-W,SBRS-W,SECONDS,NEAR_END,NA
+ciena-6500-wan-sfx-tl1,ciena-6500-wan-sfx-tl1.LNKDS-W,ciena-6500 WAN NE LNKDS-W,LNKDS-W,SECONDS,NEAR_END,NA
+ciena-6500-wan-sfx-tl1,ciena-6500-wan-sfx-tl1.DFR-W,ciena-6500 WAN NE DFR-W,DFR-W,FRAMES,NEAR_END,NA
+ciena-6500-wan-sfx-tl1,ciena-6500-wan-sfx-tl1.INFRAMES-W,ciena-6500 WAN NE INFRAMES-W,INFRAMES-W,FRAMES,NEAR_END,NA
+ciena-6500-wan-sfx-tl1,ciena-6500-wan-sfx-tl1.OUTFRAMES-W,ciena-6500 WAN NE OUTFRAMES-W,OUTFRAMES-W,FRAMES,NEAR_END,NA
+ciena-6500-wan-sfx-tl1,ciena-6500-wan-sfx-tl1.INFRAMESERR-W,ciena-6500 WAN NE INFRAMESERR-W,INFRAMESERR-W,FRAMES,NEAR_END,NA
+ciena-6500-wan-sfx-tl1.fe,ciena-6500-wan-sfx-tl1.ES-W.fe,ciena-6500 WAN FE ES-W,ES-W,SECONDS,FAR_END,NA
+ciena-6500-wan-sfx-tl1.fe,ciena-6500-wan-sfx-tl1.SES-W.fe,ciena-6500 WAN FE SES-W,SES-W,SECONDS,FAR_END,NA
+ciena-6500-wan-sfx-tl1.fe,ciena-6500-wan-sfx-tl1.UAS-W.fe,ciena-6500 WAN FE UAS-W,UAS-W,SECONDS,FAR_END,NA
+ciena-6500-wan-sfx-tl1.fe,ciena-6500-wan-sfx-tl1.LDS-W.fe,ciena-6500 WAN FE LDS-W,LDS-W,SECONDS,FAR_END,NA
+ciena-6500-wan-sfx-tl1.fe,ciena-6500-wan-sfx-tl1.LSDS-W.fe,ciena-6500 WAN FE LSDS-W,LSDS-W,SECONDS,FAR_END,NA
+ciena-6500-wan-sfx-tl1.fe,ciena-6500-wan-sfx-tl1.LUAS-W.fe,ciena-6500 WAN FE LUAS-W,LUAS-W,SECONDS,FAR_END,NA
+ciena-6500-wan-sfx-tl1.fe,ciena-6500-wan-sfx-tl1.UTL-W.fe,ciena-6500 WAN FE UTL-W,UTL-W,%,FAR_END,NA
+ciena-6500-wan-sfx-tl1.fe,ciena-6500-wan-sfx-tl1.UTLMX-W.fe,ciena-6500 WAN FE UTLMX-W,UTLMX-W,%,FAR_END,NA
+ciena-6500-wan-sfx-tl1.fe,ciena-6500-wan-sfx-tl1.BRS-W.fe,ciena-6500 WAN FE BRS-W,BRS-W,SECONDS,FAR_END,NA
+ciena-6500-wan-sfx-tl1.fe,ciena-6500-wan-sfx-tl1.SBRS-W.fe,ciena-6500 WAN FE SBRS-W,SBRS-W,SECONDS,FAR_END,NA
+ciena-6500-wan-sfx-tl1.fe,ciena-6500-wan-sfx-tl1.LNKDS-W.fe,ciena-6500 WAN FE LNKDS-W,LNKDS-W,SECONDS,FAR_END,NA
+ciena-6500-wan-sfx-tl1.fe,ciena-6500-wan-sfx-tl1.DFR-W.fe,ciena-6500 WAN FE DFR-W,DFR-W,FRAMES,FAR_END,NA
+ciena-6500-wan-sfx-tl1.fe,ciena-6500-wan-sfx-tl1.INFRAMES-W.fe,ciena-6500 WAN FE INFRAMES-W,INFRAMES-W,FRAMES,FAR_END,NA
+ciena-6500-wan-sfx-tl1.fe,ciena-6500-wan-sfx-tl1.OUTFRAMES-W.fe,ciena-6500 WAN FE OUTFRAMES-W,OUTFRAMES-W,FRAMES,FAR_END,NA
+ciena-6500-wan-sfx-tl1.fe,ciena-6500-wan-sfx-tl1.INFRAMESERR-W.fe,ciena-6500 WAN FE INFRAMESERR-W,INFRAMESERR-W,FRAMES,FAR_END,NA
+ciena-6500-wan-sfx-tl1.rx,ciena-6500-wan-sfx-tl1.ES-W.rx,ciena-6500 WAN Rx NE ES-W,ES-W,SECONDS,NEAR_END,RECEIVE
+ciena-6500-wan-sfx-tl1.rx,ciena-6500-wan-sfx-tl1.SES-W.rx,ciena-6500 WAN Rx NE SES-W,SES-W,SECONDS,NEAR_END,RECEIVE
+ciena-6500-wan-sfx-tl1.rx,ciena-6500-wan-sfx-tl1.UAS-W.rx,ciena-6500 WAN Rx NE UAS-W,UAS-W,SECONDS,NEAR_END,RECEIVE
+ciena-6500-wan-sfx-tl1.rx,ciena-6500-wan-sfx-tl1.LDS-W.rx,ciena-6500 WAN Rx NE LDS-W,LDS-W,SECONDS,NEAR_END,RECEIVE
+ciena-6500-wan-sfx-tl1.rx,ciena-6500-wan-sfx-tl1.LSDS-W.rx,ciena-6500 WAN Rx NE LSDS-W,LSDS-W,SECONDS,NEAR_END,RECEIVE
+ciena-6500-wan-sfx-tl1.rx,ciena-6500-wan-sfx-tl1.LUAS-W.rx,ciena-6500 WAN Rx NE LUAS-W,LUAS-W,SECONDS,NEAR_END,RECEIVE
+ciena-6500-wan-sfx-tl1.rx,ciena-6500-wan-sfx-tl1.UTL-W.rx,ciena-6500 WAN Rx NE UTL-W,UTL-W,%,NEAR_END,RECEIVE
+ciena-6500-wan-sfx-tl1.rx,ciena-6500-wan-sfx-tl1.UTLMX-W.rx,ciena-6500 WAN Rx NE UTLMX-W,UTLMX-W,%,NEAR_END,RECEIVE
+ciena-6500-wan-sfx-tl1.rx,ciena-6500-wan-sfx-tl1.BRS-W.rx,ciena-6500 WAN Rx NE BRS-W,BRS-W,SECONDS,NEAR_END,RECEIVE
+ciena-6500-wan-sfx-tl1.rx,ciena-6500-wan-sfx-tl1.SBRS-W.rx,ciena-6500 WAN Rx NE SBRS-W,SBRS-W,SECONDS,NEAR_END,RECEIVE
+ciena-6500-wan-sfx-tl1.rx,ciena-6500-wan-sfx-tl1.LNKDS-W.rx,ciena-6500 WAN Rx NE LNKDS-W,LNKDS-W,SECONDS,NEAR_END,RECEIVE
+ciena-6500-wan-sfx-tl1.rx,ciena-6500-wan-sfx-tl1.DFR-W.rx,ciena-6500 WAN Rx NE DFR-W,DFR-W,FRAMES,NEAR_END,RECEIVE
+ciena-6500-wan-sfx-tl1.rx,ciena-6500-wan-sfx-tl1.INFRAMES-W.rx,ciena-6500 WAN Rx NE INFRAMES-W,INFRAMES-W,FRAMES,NEAR_END,RECEIVE
+ciena-6500-wan-sfx-tl1.rx,ciena-6500-wan-sfx-tl1.INFRAMESERR-W.rx,ciena-6500 WAN Rx NE INFRAMESERR-W,INFRAMESERR-W,FRAMES,NEAR_END,RECEIVE
+ciena-6500-wan-sfx-tl1.rx.fe,ciena-6500-wan-sfx-tl1.ES-W.rx.fe,ciena-6500 WAN Rx FE ES-W,ES-W,SECONDS,FAR_END,RECEIVE
+ciena-6500-wan-sfx-tl1.rx.fe,ciena-6500-wan-sfx-tl1.SES-W.rx.fe,ciena-6500 WAN Rx FE SES-W,SES-W,SECONDS,FAR_END,RECEIVE
+ciena-6500-wan-sfx-tl1.rx.fe,ciena-6500-wan-sfx-tl1.UAS-W.rx.fe,ciena-6500 WAN Rx FE UAS-W,UAS-W,SECONDS,FAR_END,RECEIVE
+ciena-6500-wan-sfx-tl1.rx.fe,ciena-6500-wan-sfx-tl1.LDS-W.rx.fe,ciena-6500 WAN Rx FE LDS-W,LDS-W,SECONDS,FAR_END,RECEIVE
+ciena-6500-wan-sfx-tl1.rx.fe,ciena-6500-wan-sfx-tl1.LSDS-W.rx.fe,ciena-6500 WAN Rx FE LSDS-W,LSDS-W,SECONDS,FAR_END,RECEIVE
+ciena-6500-wan-sfx-tl1.rx.fe,ciena-6500-wan-sfx-tl1.LUAS-W.rx.fe,ciena-6500 WAN Rx FE LUAS-W,LUAS-W,SECONDS,FAR_END,RECEIVE
+ciena-6500-wan-sfx-tl1.rx.fe,ciena-6500-wan-sfx-tl1.UTL-W.rx.fe,ciena-6500 WAN Rx FE UTL-W,UTL-W,%,FAR_END,RECEIVE
+ciena-6500-wan-sfx-tl1.rx.fe,ciena-6500-wan-sfx-tl1.UTLMX-W.rx.fe,ciena-6500 WAN Rx FE UTLMX-W,UTLMX-W,%,FAR_END,RECEIVE
+ciena-6500-wan-sfx-tl1.rx.fe,ciena-6500-wan-sfx-tl1.BRS-W.rx.fe,ciena-6500 WAN Rx FE BRS-W,BRS-W,SECONDS,FAR_END,RECEIVE
+ciena-6500-wan-sfx-tl1.rx.fe,ciena-6500-wan-sfx-tl1.SBRS-W.rx.fe,ciena-6500 WAN Rx FE SBRS-W,SBRS-W,SECONDS,FAR_END,RECEIVE
+ciena-6500-wan-sfx-tl1.rx.fe,ciena-6500-wan-sfx-tl1.LNKDS-W.rx.fe,ciena-6500 WAN Rx FE LNKDS-W,LNKDS-W,SECONDS,FAR_END,RECEIVE
+ciena-6500-wan-sfx-tl1.rx.fe,ciena-6500-wan-sfx-tl1.DFR-W.rx.fe,ciena-6500 WAN Rx FE DFR-W,DFR-W,FRAMES,FAR_END,RECEIVE
+ciena-6500-wan-sfx-tl1.rx.fe,ciena-6500-wan-sfx-tl1.INFRAMES-W.rx.fe,ciena-6500 WAN Rx FE INFRAMES-W,INFRAMES-W,FRAMES,FAR_END,RECEIVE
+ciena-6500-wan-sfx-tl1.rx.fe,ciena-6500-wan-sfx-tl1.INFRAMESERR-W.rx.fe,ciena-6500 WAN Rx FE INFRAMESERR-W,INFRAMESERR-W,FRAMES,FAR_END,RECEIVE
+ciena-6500-wan-sfx-tl1.tx,ciena-6500-wan-sfx-tl1.ES-W.tx,ciena-6500 WAN Tx NE ES-W,ES-W,SECONDS,NEAR_END,TRANSMIT
+ciena-6500-wan-sfx-tl1.tx,ciena-6500-wan-sfx-tl1.SES-W.tx,ciena-6500 WAN Tx NE SES-W,SES-W,SECONDS,NEAR_END,TRANSMIT
+ciena-6500-wan-sfx-tl1.tx,ciena-6500-wan-sfx-tl1.UAS-W.tx,ciena-6500 WAN Tx NE UAS-W,UAS-W,SECONDS,NEAR_END,TRANSMIT
+ciena-6500-wan-sfx-tl1.tx,ciena-6500-wan-sfx-tl1.LDS-W.tx,ciena-6500 WAN Tx NE LDS-W,LDS-W,SECONDS,NEAR_END,TRANSMIT
+ciena-6500-wan-sfx-tl1.tx,ciena-6500-wan-sfx-tl1.LSDS-W.tx,ciena-6500 WAN Tx NE LSDS-W,LSDS-W,SECONDS,NEAR_END,TRANSMIT
+ciena-6500-wan-sfx-tl1.tx,ciena-6500-wan-sfx-tl1.LUAS-W.tx,ciena-6500 WAN Tx NE LUAS-W,LUAS-W,SECONDS,NEAR_END,TRANSMIT
+ciena-6500-wan-sfx-tl1.tx,ciena-6500-wan-sfx-tl1.UTL-W.tx,ciena-6500 WAN Tx NE UTL-W,UTL-W,%,NEAR_END,TRANSMIT
+ciena-6500-wan-sfx-tl1.tx,ciena-6500-wan-sfx-tl1.UTLMX-W.tx,ciena-6500 WAN Tx NE UTLMX-W,UTLMX-W,%,NEAR_END,TRANSMIT
+ciena-6500-wan-sfx-tl1.tx,ciena-6500-wan-sfx-tl1.BRS-W.tx,ciena-6500 WAN Tx NE BRS-W,BRS-W,SECONDS,NEAR_END,TRANSMIT
+ciena-6500-wan-sfx-tl1.tx,ciena-6500-wan-sfx-tl1.SBRS-W.tx,ciena-6500 WAN Tx NE SBRS-W,SBRS-W,SECONDS,NEAR_END,TRANSMIT
+ciena-6500-wan-sfx-tl1.tx,ciena-6500-wan-sfx-tl1.LNKDS-W.tx,ciena-6500 WAN Tx NE LNKDS-W,LNKDS-W,SECONDS,NEAR_END,TRANSMIT
+ciena-6500-wan-sfx-tl1.tx,ciena-6500-wan-sfx-tl1.DFR-W.tx,ciena-6500 WAN Tx NE DFR-W,DFR-W,FRAMES,NEAR_END,TRANSMIT
+ciena-6500-wan-sfx-tl1.tx,ciena-6500-wan-sfx-tl1.OUTFRAMES-W.tx,ciena-6500 WAN Tx NE OUTFRAMES-W,OUTFRAMES-W,FRAMES,NEAR_END,TRANSMIT
+ciena-6500-wan-sfx-tl1.tx.fe,ciena-6500-wan-sfx-tl1.ES-W.tx.fe,ciena-6500 WAN Tx FE ES-W,ES-W,SECONDS,FAR_END,TRANSMIT
+ciena-6500-wan-sfx-tl1.tx.fe,ciena-6500-wan-sfx-tl1.SES-W.tx.fe,ciena-6500 WAN Tx FE SES-W,SES-W,SECONDS,FAR_END,TRANSMIT
+ciena-6500-wan-sfx-tl1.tx.fe,ciena-6500-wan-sfx-tl1.UAS-W.tx.fe,ciena-6500 WAN Tx FE UAS-W,UAS-W,SECONDS,FAR_END,TRANSMIT
+ciena-6500-wan-sfx-tl1.tx.fe,ciena-6500-wan-sfx-tl1.LDS-W.tx.fe,ciena-6500 WAN Tx FE LDS-W,LDS-W,SECONDS,FAR_END,TRANSMIT
+ciena-6500-wan-sfx-tl1.tx.fe,ciena-6500-wan-sfx-tl1.LSDS-W.tx.fe,ciena-6500 WAN Tx FE LSDS-W,LSDS-W,SECONDS,FAR_END,TRANSMIT
+ciena-6500-wan-sfx-tl1.tx.fe,ciena-6500-wan-sfx-tl1.LUAS-W.tx.fe,ciena-6500 WAN Tx FE LUAS-W,LUAS-W,SECONDS,FAR_END,TRANSMIT
+ciena-6500-wan-sfx-tl1.tx.fe,ciena-6500-wan-sfx-tl1.UTL-W.tx.fe,ciena-6500 WAN Tx FE UTL-W,UTL-W,%,FAR_END,TRANSMIT
+ciena-6500-wan-sfx-tl1.tx.fe,ciena-6500-wan-sfx-tl1.UTLMX-W.tx.fe,ciena-6500 WAN Tx FE UTLMX-W,UTLMX-W,%,FAR_END,TRANSMIT
+ciena-6500-wan-sfx-tl1.tx.fe,ciena-6500-wan-sfx-tl1.BRS-W.tx.fe,ciena-6500 WAN Tx FE BRS-W,BRS-W,SECONDS,FAR_END,TRANSMIT
+ciena-6500-wan-sfx-tl1.tx.fe,ciena-6500-wan-sfx-tl1.SBRS-W.tx.fe,ciena-6500 WAN Tx FE SBRS-W,SBRS-W,SECONDS,FAR_END,TRANSMIT
+ciena-6500-wan-sfx-tl1.tx.fe,ciena-6500-wan-sfx-tl1.LNKDS-W.tx.fe,ciena-6500 WAN Tx FE LNKDS-W,LNKDS-W,SECONDS,FAR_END,TRANSMIT
+ciena-6500-wan-sfx-tl1.tx.fe,ciena-6500-wan-sfx-tl1.DFR-W.tx.fe,ciena-6500 WAN Tx FE DFR-W,DFR-W,FRAMES,FAR_END,TRANSMIT
+ciena-6500-wan-sfx-tl1.tx.fe,ciena-6500-wan-sfx-tl1.OUTFRAMES-W.tx.fe,ciena-6500 WAN Tx FE OUTFRAMES-W,OUTFRAMES-W,FRAMES,FAR_END,TRANSMIT

@@ -1,0 +1,9 @@
+ciena-6500-sonet-sfx-section-tl1.na,ciena-6500-sonet-sfx-section-tl1.CV-S.na,ciena-6500 SONET NA NA CV-S,CV-S,ERRORS,NA,NA
+ciena-6500-sonet-sfx-section-tl1.na,ciena-6500-sonet-sfx-section-tl1.ES-S.na,ciena-6500 NA NA SONET ES-S,ES-S,SECONDS,NA,NA
+ciena-6500-sonet-sfx-section-tl1.na,ciena-6500-sonet-sfx-section-tl1.SES-S.na,ciena-6500 SONET NA NA SES-S,SES-S,SECONDS,NA,NA
+ciena-6500-sonet-sfx-section-tl1.na,ciena-6500-sonet-sfx-section-tl1.SEFS-S.na,ciena-6500 SONET NA NA SEFS-S,SEFS-S,SECONDS,NA,NA
+ciena-6500-sonet-sfx-line-tl1.na,ciena-6500-sonet-sfx-line-tl1.CV-L.na,ciena-6500 SONET NA NA CV-L,CV-L,ERRORS,NA,NA
+ciena-6500-sonet-sfx-line-tl1.na,ciena-6500-sonet-sfx-line-tl1.ES-L.na,ciena-6500 SONET NA NA ES-L,ES-L,SECONDS,NA,NA
+ciena-6500-sonet-sfx-line-tl1.na,ciena-6500-sonet-sfx-line-tl1.SES-L.na,ciena-6500 SONET NA NA SES-L,SES-L,SECONDS,NA,NA
+ciena-6500-sonet-sfx-line-tl1.na,ciena-6500-sonet-sfx-line-tl1.UAS-L.na,ciena-6500 SONET NA NA UAS-L,UAS-L,SECONDS,NA,NA
+ciena-6500-sonet-sfx-line-tl1.na,ciena-6500-sonet-sfx-line-tl1.FC-L.na,ciena-6500 SONET NA NA FC-L,FC-L,FAILURES,NA,NA

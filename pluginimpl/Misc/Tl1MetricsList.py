@@ -13,7 +13,7 @@ def printfields(id, templateName):
     """
     if pmFiles:
         for i in pmFiles:
-            filePath = "/home/sthummala/workspace/vsure/centina/sa/profiles/" + i
+            filePath = "/home/sthummala/workspace/repo/centina/sa/profiles/" + i
             ref=i.split("/")
             reference=ref[1].replace(".xml","")
 
@@ -30,13 +30,14 @@ def printfields(id, templateName):
                     try:
                         if protocol == "SNMP":
                             for m in metric:
-                                f.write(str(groupId.get("id")) + "," + str(m.get("name")) +reference+ "\n")
+                                f.write(str(groupId.get("name")) + "," + str(m.get("name")) +reference+ "," + str(
+                                    m.find("parameter").get("oid"))+"\n")
                                 print(m.get("name"),groupId.get("name"),reference)
                         else:
                             # todo if multiple parameters are present
                             for m in metric:
-                                f.write(str(groupId.get("id")) + "," + str(m.get("name")) + "," + str(
-                                    m.find("parameter").get("oid")) + "," + str(m.get("location")) + "," + str(
+                                f.write(str(groupId.get("id")) +','+str(m.get('id'))+ "," + str(m.get("name")) + "," + str(
+                                    m.find("parameter").get("oid")) + "," + str(m.get("units"))+","+str(m.get("location")) + "," + str(
                                     m.get("direction")) + "\n")
                     except:
                         print("Exception while looping through the metricgroup id", str(groupId.get("id")))
@@ -56,7 +57,7 @@ pmFiles = []
 metricGroupId = []
 pluginName = input("Please enter the plugin name: ")
 # todo modification to have a generic path
-profileXml = '/home/sthummala/workspace/vsure/centina/sa/profiles/' + pluginName + '.xml'
+profileXml = '/home/sthummala/workspace/repo/centina/sa/profiles/' + pluginName + '.xml'
 parser = etree.XMLParser(strip_cdata=False)
 root = etree.parse(profileXml, parser)
 meta = root.find("meta")
@@ -68,7 +69,7 @@ for a in file:
     if a.get("path").startswith("pm/templates"):
         if a.get("path").endswith(".dtd"):
             continue
-        pmtemplate = "/home/sthummala/workspace/vsure/centina/sa/profiles/" + a.get("path")
+        pmtemplate = "/home/sthummala/workspace/repo/centina/sa/profiles/" + a.get("path")
         print("Found pm template ", pmtemplate)
         # try:
         # template = getParser(pmtemplate,"template")
