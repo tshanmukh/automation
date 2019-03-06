@@ -6,17 +6,20 @@ import xml.dom.minidom
 from lxml import etree
 
 
-class oid:
+class oid(object):
 
-    def get_oid(self, doc, col):
+    def __init__(self,doc):
+        self.doc = xml.dom.minidom.parse(doc)
+
+    def get_oid(self, col):
         """
         :param col: colomn which requires the oid
         :param doc: The mib repository object
         :return result: returns all possible oid's of col
         """
-        doc = xml.dom.minidom.parse(doc)
+
         result = []
-        entry = doc.getElementsByTagName("entry")
+        entry = self.doc.getElementsByTagName("entry")
         suffix = ''
         for id in entry:
             arg = ''
@@ -63,9 +66,21 @@ if __name__ == '__main__':
     # prompts and stores mib-repo name
     mib_repository = input('Enter the mib-repository name: ')
 
-    searchString = input('Enter the object name')
-    obj = oid()
+    searchString = True
+    obj = oid(mib_repository)
+    while searchString:
+        searchString = input('Enter the object name: ')
+        if searchString is '':
+            continue
 
-    oid = obj.get_oid("eltek-mib-repository.xml", str(searchString))
+        try:
+            oid = obj.get_oid(searchString)
+            if oid is not None:
+                print("OID: ", *oid)
+            else:
+                print("Entry not found")
+        except:
+            print("Exiting")
+            searchString = False
 
-    print("OID: ", oid)
+
