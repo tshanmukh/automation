@@ -1,0 +1,15 @@
+#!/usr/bin/expect
+
+set timeout 20
+
+spawn python generatePluginInfoRPM.py
+
+expect "*change: "
+
+send "y\r";
+
+expect "*change: "
+
+send "y\r";
+
+interact
