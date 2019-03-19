@@ -1,11 +1,8 @@
-from rpmgeneration import builduserutils
-from rpmgeneration import externalutils
-from rpmgeneration import general
-from rpmgeneration import specfile
-from rpmgeneration import profileconfig
-from rpmgeneration import mercurial
-
 import os
+from pexpect import pxssh
+
+from rpmgeneration import builduserutils, externalutils, general, mercurial, profileconfig, specfile
+
 
 print("Copying the profile-configs csv to local")
 copy = general.copy
@@ -60,7 +57,12 @@ if external.findduplicates():  # checks the duplicate entries
     print("Found Duplicate entries. correct it and rerun the code")
     exit(1)
 
-print("Please check the profile-configs and enter done")
+
+print("copying the profile-configs.csv to external")
+
+copy(source="profileConfigs.csv",destinaion="root@172.29.0.6:/var/www/html/repository/vsureplugin/profile-configs.csv")
+
+print("Please check the profile-configs \n copy the generateed rpm to external and enter done")
 
 check = True
 while check:
