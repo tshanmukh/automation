@@ -22,7 +22,7 @@ print("Generating the RPM for the following plugin id's \n ", *profilename)
 
 # Sanity checks on branch
 rep = mercurial.mercurialutil()
-rep.checkbranch()
+# rep.checkbranch()
 if rep.checkbranch() == "VSURE_DEVELOPMENT":
     print("The branch is {}. Pulling the latest changes".format(rep.checkbranch()))
     rep.pullchanges()
@@ -43,6 +43,17 @@ copy(source="builduser@172.31.6.112:/home/builduser/profile-configs.csv", destin
 
 print("\n\nRPM generation done.\nprofile-config.csv generated in local is copied as profile-config-internal.csv")
 # print("Please do the neccessary changes to profile-config.csv and enter done")
+
+print("Update the entry for snmp-discoverytree if needed in the file profile-configs-internal.csv and enter done")
+check = True
+while check:
+    response = input("Response: ")
+
+    if response.lower() == "done":
+        check = False
+    elif response.lower() == "stop":
+        exit(1)
+
 
 external = profileconfig.profileconfigcsv("profile-configs.csv")
 data, dict = external.readfile()
@@ -68,20 +79,6 @@ os.system("rm RPMS/*")
 print(external.updations)
 for i,j in external.updations.items():
     copy(source="builduser@172.31.6.112:/home/builduser/1_Day_RPMS-vSure/netomnia-"+i+"-"+j+"-0.x86_64.rpm" , destinaion="./RPMS")
-
-#
-# print("Check the RPMS and enter done:\n")
-#
-# check = True
-# while check:
-#     response = input("Response: ")
-#
-#     if response.lower() == "done":
-#         check = False
-#     elif response.lower() == "stop":
-#         exit(1)
-
-
 
 print("Please check the profileConfigs and \nCheck the RPMS and enter done:\n")
 
@@ -121,10 +118,10 @@ print("Copying the RPMS to external\n")
 # copy(source="./RPMS/*", destinaion="root@172.29.0.6:/var/www/html/repository/vsureplugin/")
 # copy(source="./RPMS/*", destinaion="repouser@172.31.6.112:/var/www/html/repository/vsureplugin/")
 
-# os.system('gnome-terminal -e \'sh -c "scp ./RPMS/* root@172.29.0.6:/var/www/html/repository/vsureplugin/"\'')
-# os.system('gnome-terminal -e \'sh -c "scp ./RPMS/* repouser@172.31.6.112:/var/www/html/repository/vsureplugin/"\'')
-subprocess.run(['scp','./RPMS/*','root@172.29.0.6:/var/www/html/repository/vsureplugin/'])
-subprocess.run(['scp','./RPMS/*','repouser@172.31.6.112:/var/www/html/repository/vsureplugin/'])
+os.system('gnome-terminal -e \'sh -c "scp ./RPMS/* root@172.29.0.6:/var/www/html/repository/vsureplugin/"\'')
+os.system('gnome-terminal -e \'sh -c "scp ./RPMS/* repouser@172.31.6.112:/var/www/html/repository/vsureplugin/"\'')
+# subprocess.run('scp /home/sthummala/myworkspace/automation/pluginimpl/rpmgeneration/RPMS/* root@172.29.0.6:/var/www/html/repository/vsureplugin/')
+# subprocess.run(['scp','/home/sthummala/myworkspace/automation/pluginimpl/rpmgeneration/RPMS/*','repouser@172.31.6.112:/var/www/html/repository/vsureplugin/'])
 
 
 print("copied the RPMS required to repositories")
