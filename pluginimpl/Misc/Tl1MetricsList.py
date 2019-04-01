@@ -1,5 +1,9 @@
+__author__ = 'shanmukh'
+__status__ = 'Prototype'
+
 import os
 from lxml import etree
+import pickle
 
 """ Script to generate the metric details for each metric group id per template in a profile-xml 
     Creates csv files corresponding to each template with all the metrics supported by it according to the plugin
@@ -13,7 +17,7 @@ def printfields(id, templateName):
     """
     if pmFiles:
         for i in pmFiles:
-            filePath = "/home/sthummala/workspace/repo/centina/sa/profiles/" + i
+            filePath = repopath+"/centina/sa/profiles/" + i
             ref=i.split("/")
             reference=ref[1].replace(".xml","")
 
@@ -23,9 +27,8 @@ def printfields(id, templateName):
                 if groupId.get("id") in id:
                     metric = groupId.findall("metric")
                     parameter = groupId.find
-                    temp = templateName.split(r'/')  # getting the template name to create the results file
-                    temp1 = temp[10].split(r'.')
-                    name = temp1[0]
+                    temp = templateName.split(r'/')[-1]  # getting the template name to create the results file
+                    name = temp.split(r'.')[0]
                     f = open("results/" + name + ".csv", "a")  # opening file with template name in append mode
                     try:
                         if protocol == "SNMP":
@@ -41,7 +44,7 @@ def printfields(id, templateName):
                                     m.get("direction")) + "\n")
                     except:
                         print("Exception while looping through the metricgroup id", str(groupId.get("id")))
-                        exit()
+                        exit(1)
                     finally:
                         f.close()
     else:
@@ -49,15 +52,33 @@ def printfields(id, templateName):
 
 
 # to clean files in the results folder if they are already present
-files=os.listdir("results/")
-for file in files:
-    os.remove("results/"+file)
+if os.path.isdir("results/"):
+    files=os.listdir("results/")
+    for file in files:
+        os.remove("results/"+file)
+else:
+    os.system("mkdir results")
 
 pmFiles = []
 metricGroupId = []
+# pickling the repo
+repopath=None
+if os.path.isfile("../.repopath.pickle"):
+    infile = open("../.repopath.pickle", 'rb')
+    new_dict = pickle.load(infile)
+    infile.close()
+    repopath = new_dict.get("repository")
+    print("Repository path saved is {}".format(repopath))
+else:
+    repopath = input("Enter the path to the repository: ")
+    variable = {"repository":repopath}
+    f = open(".repopath.pickle",'wb')
+    pickle.dump(variable,f)
+    f.close()
+
 pluginName = input("Please enter the plugin name: ")
-# todo modification to have a generic path
-profileXml = '/home/sthummala/workspace/repo/centina/sa/profiles/' + pluginName + '.xml'
+# profileXml = '/home/sthummala/workspace/repo/centina/sa/profiles/' + pluginName + '.xml'
+profileXml = repopath+'/centina/sa/profiles/' + pluginName + '.xml'
 parser = etree.XMLParser(strip_cdata=False)
 root = etree.parse(profileXml, parser)
 meta = root.find("meta")
@@ -69,7 +90,7 @@ for a in file:
     if a.get("path").startswith("pm/templates"):
         if a.get("path").endswith(".dtd"):
             continue
-        pmtemplate = "/home/sthummala/workspace/repo/centina/sa/profiles/" + a.get("path")
+        pmtemplate = repopath+"/centina/sa/profiles/" + a.get("path")
         print("Found pm template ", pmtemplate)
         # try:
         # template = getParser(pmtemplate,"template")
