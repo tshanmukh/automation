@@ -1,17 +1,21 @@
+__author__ = 'shanmukh'
+__status__ = 'Prototype'
+
 import csv
 import numpy as np
 
-# template = input("Enter the file name: ")
-template = "ciena-6500-ots-tl1.csv"
+template = input("Enter the file name: ")
+rows = []
+try:
+    with open("results/"+template,'r') as csvfile:
+        csvreader = csv.reader(csvfile)
+        for row in csvreader:
+            rows.append([row[3],row[5],row[6]])
+except FileNotFoundError:
+    print("File not found")
 
 sourcename = input("Enter the source name: ")
-rows = []
 count=0
-
-with open("results/"+template,'r') as csvfile:
-    csvreader = csv.reader(csvfile)
-    for row in csvreader:
-        rows.append([row[3],row[5],row[6]])
 
 for res in rows:
     if res[1] == "NEAR_END":
