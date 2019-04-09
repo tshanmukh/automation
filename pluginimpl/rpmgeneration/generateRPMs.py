@@ -5,7 +5,8 @@ import os
 from pexpect import pxssh
 import subprocess
 
-from rpmgeneration import builduserutils, externalutils, general, mercurial, profileconfig, specfile
+import builduserutils
+import externalutils, general, mercurial, profileconfig, specfile
 
 
 print("Copying the profile-configs csv to local")
@@ -119,9 +120,6 @@ subprocess.run(['ssh','builduser@172.31.6.112','./test.sh'])
 # copying all the RPMS in the RPMS folder to external
 copy(source="builduser@172.31.6.112:/home/builduser/repository/tools/rpmbuild/vsure-plugininfo-util-3.0-"+str(int(util.getlatestversion())+1)+".x86_64.rpm" , destinaion="./RPMS")
 print("Copying the RPMS to external\n")
-
-# copy(source="./RPMS/*", destinaion="root@172.29.0.6:/var/www/html/repository/vsureplugin/")
-# copy(source="./RPMS/*", destinaion="repouser@172.31.6.112:/var/www/html/repository/vsureplugin/")
 
 os.system('gnome-terminal -e \'sh -c "scp ./RPMS/* root@172.29.0.6:/var/www/html/repository/vsureplugin/"\'')
 os.system('gnome-terminal -e \'sh -c "scp ./RPMS/* repouser@172.31.6.112:/var/www/html/repository/vsureplugin/"\'')
