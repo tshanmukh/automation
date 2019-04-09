@@ -1,3 +1,6 @@
+__author__ = 'shanmukh'
+__status__ = 'Prototype'
+
 import os
 from pexpect import pxssh
 import subprocess
@@ -37,7 +40,9 @@ build.changetimestamp(profilename)
 print("Time stamp modified")
 build = builduserutils.builduser()
 print("Running RPM generation script")
-build.generateRPM(path="/home/builduser/repository/tools/plugin-automation_37_server_final_backup/", script="createPluginRepository.py")
+# build.generateRPM(path="/home/builduser/repository/tools/plugin-automation_37_server_final_backup/", script="createPluginRepository.py")
+
+subprocess.run(['ssh','builduser@172.31.6.112','/home/builduser/repository/tools/plugin-automation_37_server_final_backup/createPluginRepository.py'])
 
 copy(source="builduser@172.31.6.112:/home/builduser/profile-configs.csv", destinaion="profile-configs-internal.csv")  # Copying the internal server profile-configs
 
