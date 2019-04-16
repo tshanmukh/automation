@@ -5,6 +5,7 @@ import xlrd
 from collections import OrderedDict
 import json
 import logging
+import re
 
 """ Lists the specificProblems in the requirements doc"""
 
@@ -54,7 +55,8 @@ class parseexcel():
                 if " " in i:
                     self.logger.error("Null at {} in sheet {}".format(i,sheetname))
                 else:
-                    self.montypedict[i[0]] = (i[1],i[2],i[3])
+                    temp = re.sub('<.*','',i[0])
+                    self.montypedict[temp.strip()] = (i[1].strip(),i[2].strip(),i[3].strip())
         except:
             self.logger.info("For loop skipped")
 
