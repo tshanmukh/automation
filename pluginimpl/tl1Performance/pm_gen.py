@@ -1,16 +1,25 @@
+__author__='Rupesh'
+__status__="Prototype"
+
+
+import glob
+import errno
 import os
 import xml.etree.ElementTree as ET
 from typing import List
+import metricsFromRequirementsdoc
+import subprocess
+
 
 
 class xmlparsing():
     """This class does the job of creating metrics in an xml and formating making it to human readable"""
 
     def __init__(self):
-        # self.path = "/home/rupesh/TL1/pm/"
+        self.path = "/home/rupesh/TL1/pm/"
         # self.xmlname = "pm" + "_tl1_montype.xml"
-        self.path=input("Enter the directory in which you want to generate the pm xml\nFor example: /home/rupesh/TL1/pm/\n")
-        self.xmlname=input("Enter the name of the xml you want to create\nFor example: pm_tl1_2_montypes.xml\n")
+        # self.path=input("Enter the directory in which you want to generate the pm xml\nFor example: /home/rupesh/TL1/pm/\n")
+        # self.xmlname=input("Enter the name of the xml you want to create\nFor example: pm_tl1_2_montypes.xml\n")
 
 
 
@@ -45,7 +54,7 @@ class xmlparsing():
                             min="0",
                             displayType="lineSeries-hist" if (
                                     (Type == 'gauge') or (Type == 'GAUGE')) else "verticalBar-hist",
-                            displayColor="BLUE")
+                            displayColor="BLUE" if ( da[j]== 'Tx') else "DARK_GREEN")
 
                 ET.SubElement(doc, "parameter", name=montype,
                       collector="TL1",
@@ -56,66 +65,125 @@ class xmlparsing():
 
                 ET.SubElement(doc, "value", parameter=montype)
 
-        tree = ET.ElementTree(root)
 
+
+
+
+
+        tree = ET.ElementTree(root)
         print(montype, type(Type))
         cwd = os.getcwd()
         os.chdir(self.path)
-        tree.write(self.xmlname)
+        if montype != "Montype":
+            tree.write(montype+"."+"xml")
+        else:
+            pass
         os.chdir(cwd)
+
+
+
 
 
 
     def format_xml(self):
         """This function will format the  generated xml into human readable"""
-        print(os.getcwd())
-        os.chdir(self.path)
-        with open(self.xmlname) as f:
-            filedata = f.read()
-        filedata = filedata.replace('</metric>', '\n\t</metric>')
-        filedata = filedata.replace('consolidation_function', '\n\t\tconsolidation-function')
-        filedata = filedata.replace('conversion_function', '\n\t\tconversion-function')
-        filedata = filedata.replace("desc=\"", "\n\t\tdesc=\"")
 
-        filedata = filedata.replace("direction=\"", "\n\t\tdirection=\"")
 
-        filedata = filedata.replace("displayColor", "\n\t\tdisplayColor")
+        path = '/home/rupesh/TL1/pm/*.xml'
+        files = glob.glob(path)
+        for name in files:
+            try:
+                with open(name) as f:
+                    filedata = f.read()
 
-        filedata = filedata.replace("\" displayType=\"", "\"\n\t\tdisplayType=\"")
-        filedata = filedata.replace("hist\" id=\"", "hist\" \n\t\tid=\"")
-        filedata = filedata.replace("location=\"", "\n\t\tlocation=\"")
-        filedata = filedata.replace("\" min=\"0\" ", "\"\n\t\tmin=\"0\"\n\t\t")
-        filedata = filedata.replace("protocol=\"TL1\" units=\"", "\n\t\tprotocol=\"TL1\" \n\t\tunits=\"")
-        filedata = filedata.replace("<parameter", "\n\n\t\t <parameter")
-        filedata = filedata.replace("><", ">\n\t<")
-        filedata = filedata.replace("<metricGroup", "\t<metricGroup")
+                filedata = filedata.replace('</metric>', '\n\t</metric>')
+                filedata = filedata.replace('consolidation_function', '\n\t\tconsolidation-function')
+                filedata = filedata.replace('conversion_function', '\n\t\tconversion-function')
+                filedata = filedata.replace("desc=\"", "\n\t\tdesc=\"")
 
-        filedata = filedata.replace("<value parameter", "\t <value parameter")
-        filedata = filedata.replace("<metric", "\t<metric")
-        filedata = filedata.replace("\t\t<metric", "\t<metric")
-        filedata = filedata.replace("</metricGroup", "\t</metricGroup")
-        filedata = filedata.replace("\t<metricGroup", "  <metricGroup")
-        filedata = filedata.replace("\t</metricGroup", "  </metricGroup")
-        filedata = filedata.replace("\t  </metricGroup>", "  </metricGroup>")
-        filedata = filedata.replace(">\n\n\t\t <", "\n\t >\n\n\t\t <")
-        filedata = filedata.replace("Par_Type","type")
+                filedata = filedata.replace("direction=\"", "\n\t\tdirection=\"")
 
-        filedata = filedata.replace("<metricGroup", "\n\n<metricGroup")
+                filedata = filedata.replace("displayColor", "\n\t\tdisplayColor")
+
+                filedata = filedata.replace("\" displayType=\"", "\"\n\t\tdisplayType=\"")
+                filedata = filedata.replace("hist\" id=\"", "hist\" \n\t\tid=\"")
+                filedata = filedata.replace("location=\"", "\n\t\tlocation=\"")
+                filedata = filedata.replace("\" min=\"0\" ", "\"\n\t\tmin=\"0\"\n\t\t")
+                filedata = filedata.replace("protocol=\"TL1\" units=\"", "\n\t\tprotocol=\"TL1\" \n\t\tunits=\"")
+                filedata = filedata.replace("<parameter", "\n\n\t\t <parameter")
+                filedata = filedata.replace("><", ">\n\t<")
+                filedata = filedata.replace("<metricGroup", "\t<metricGroup")
+
+                filedata = filedata.replace("<value parameter", "\t <value parameter")
+                filedata = filedata.replace("<metric", "\t<metric")
+                filedata = filedata.replace("\t\t<metric", "\t<metric")
+                filedata = filedata.replace("</metricGroup", "\t</metricGroup")
+                filedata = filedata.replace("\t<metricGroup", "  <metricGroup")
+                filedata = filedata.replace("\t</metricGroup", "  </metricGroup")
+                filedata = filedata.replace("\t  </metricGroup>", "  </metricGroup>")
+                filedata = filedata.replace(">\n\n\t\t <", "\n\t >\n\n\t\t <")
+                filedata = filedata.replace("Par_Type","type")
+
+                filedata = filedata.replace("<metricGroup", "\n\n<metricGroup")
         # NA is renamed as No in sheet to overcome exception.
         #
         #
         # Hence it has to be renamed after processing the data.
         #
         # Below line to to do the same
-        filedata = filedata.replace(" No\"", " NA\"")
-
-        with open(self.xmlname, 'w') as f:
-            f.write(filedata)
+                filedata = filedata.replace(" No\"", " NA\"")
 
 
+                with open(name,'w') as f:
+                    f.write(filedata)
+            except IOError as exc:
+                if exc.errno != errno.EISDIR:
+                    raise
 
 
 xml = xmlparsing()
 
-xml.montype_result("CVL","description","packets","gauge")
+# xml.montype_result("CVL","description","packets","gauge")
+
+
+sheet = metricsFromRequirementsdoc.parseexcel("SmartPlugin-TestSheet-fw-4100.xlsx")
+data = sheet.montypedict
+print(data)
+
+print("dict keys length {}".format(len(data.keys())))
+
+
+
+# removing the files in the below folder before the generation of pm xmls
+directory= "/home/rupesh/TL1/pm/*"
+files = glob.glob(directory)
+for i in files:
+    os.remove(i)
+
+
+
+# gets all the montyeps from the result.xml
+proc=subprocess.Popen('grep -o oid=.* result.xml | awk -F \'"\' \'{print$2}\' | sort -u', shell=True, stdout=subprocess.PIPE )
+output=proc.communicate()[0].decode().split('\n')
+print(output)
+
+for i,j in data.items():
+    # below condition to ignore the montype if it is already existing
+    if i not in output:
+        xml.montype_result(i,j[0],j[1],j[2])
+        print(i,j[0],j[1],j[2])
+
+
 xml.format_xml()
+
+print(os.getcwd())
+os.chdir('/home/rupesh/TL1/pm/')
+
+
+read_files = glob.glob("*.xml")
+
+with open("result.xml", "wb") as outfile:
+    for g in read_files:
+        with open(g, "rb") as infile:
+            outfile.write(infile.read())
+
