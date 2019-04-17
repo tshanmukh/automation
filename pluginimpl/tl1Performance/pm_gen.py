@@ -25,7 +25,8 @@ class xmlparsing():
 
     def montype_result(self, montype, metric, units, Type):
         """This function generates an xml with one metricgroup for every montype.
-        Each metricgroup contains a metric with all the 9 combinations of direction(Rx,Tx,NA) and location(NE,FE,NA)"""
+        Each metricgroup contains a metric with all the 9 combinations of direction(Rx,Tx,NA) and location(NE,FE,NA)
+        If any of the columns(metric, units and Type) is empty, montype is used in the associated the pm fields."""
 
 
 
@@ -44,11 +45,11 @@ class xmlparsing():
                 doc = ET.SubElement(root, "metric",
                             id=montype + "." + la[i] + " " + da[j],
                             name= montype + " " + la[i] + " " + da[j],
-                            desc=metric,
+                            desc=montype if not metric else metric,
                             protocol="TL1",
-                            units=' ' if units is None else units,
-                            conversion_function="PER_PERIOD" if ((Type == 'counter') or (Type == 'COUNTER') or (Type == 'Counter') or (Type == 'Counter')) else "NONE",
-                            consolidation_function="SUM" if ((Type == 'counter') or (Type == 'COUNTER') or (Type == 'Counter') or (Type == 'Counter')) else "AVG",
+                            units=montype if not units else units,
+                            conversion_function="NONE" if (Type == 'gauge' or 'GAUGE') else "PER_PERIOD",
+                            consolidation_function="AVG" if (Type == 'gauge' or 'GAUGE') else "SUM",
                             location=la_1[i],
                             direction=da_1[j],
                             min="0",
@@ -60,7 +61,7 @@ class xmlparsing():
                       collector="TL1",
                       Par_Type='COUNTER' if ((Type == 'counter') or (Type == 'COUNTER') or (Type == 'Counter')) else 'GAUGE' if (
                               (Type == 'gauge') or (Type == 'GAUGE') or (
-                              Type == 'Gauge')) else 'NA',
+                              Type == 'Gauge')) else 'COUNTER',
                       oid=montype)
 
                 ET.SubElement(doc, "value", parameter=montype)
@@ -146,7 +147,7 @@ xml = xmlparsing()
 # xml.montype_result("CVL","description","packets","gauge")
 
 
-sheet = metricsFromRequirementsdoc.parseexcel("SmartPlugin-TestSheet-fw-4100.xlsx")
+sheet = metricsFromRequirementsdoc.parseexcel("/home/rupesh/TL1/SmartPlugin-TestSheet-fw-4100.xlsx")
 data = sheet.montypedict
 print(data)
 
@@ -182,8 +183,21 @@ os.chdir('/home/rupesh/TL1/pm/')
 
 read_files = glob.glob("*.xml")
 
-with open("result.xml", "wb") as outfile:
+with open("result.xml", "w",encoding='utf-8') as outfile:
+
+    # writing fixed content to the pm xml
+    #
+    # < ?xml version = "1.0" encoding = "UTF-8"? >
+    # < !DOCTYPE pmProfile PUBLIC "pm/pmProfile.dtd" "pmProfile.dtd" >
+    #
+    # < pmProfile name = "fujitsu-flashwave-tl1" version = "UNCLEAN" >
+    #
+    #
+    outfile.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n")
+    outfile.write("<!DOCTYPE pmProfile PUBLIC \"pm/pmProfile.dtd\" \"pmProfile.dtd\">\n\n")
+    outfile.write("<pmProfile name=\"fw-tl1\" version=\"UNCLEAN\" >\n\n")
     for g in read_files:
-        with open(g, "rb") as infile:
+        with open(g, "r") as infile:
             outfile.write(infile.read())
+    outfile.write("\n\n</pmProfile>")
 
