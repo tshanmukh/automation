@@ -11,19 +11,28 @@ import re
 
 class parseexcel():
 
-    def __init__(self, workbookpath,logger):
+    def __init__(self, workbookpath):
         self.worksheet= ''
-        self.logger = logger
         self.workbookpath=workbookpath
         self.montypedict = OrderedDict()
+        logging.basicConfig(filename='debug.log',
+                            filemode='w',
+                            format='%(asctime)s, %(levelname)s \t%(message)s',
+                            datefmt='%H:%M:%S',
+                            level=logging.DEBUG)
+
+        self.logger = logging.getLogger()
+        self.logger.setLevel(logging.DEBUG)
+        self.logger.debug("something")
         try:
             self.worksheet = xlrd.open_workbook(self.workbookpath)
             self.sheetnames = self.worksheet.sheet_names()
             print(self.sheetnames)
         except:
             print("Unable to open excell")
+        # self.getsheetnames()
+        self.checksheet()
 
-        self.getsheetnames()
 
     def getmontypedetails(self,sheetname,rows):
         if self.worksheet is not None:
@@ -33,7 +42,7 @@ class parseexcel():
             try:
                 metric = sheet.col_values(rows.index("Metric"))
             except:
-                self.logger.warning('There is no metric column in the sheet {sheetname}')
+                self.logger.warning('There is no metric column in the sheet {}'.format(sheetname))
                 print("something")
             try:
                 units = sheet.col_values(rows.index("Units"))
@@ -90,12 +99,7 @@ class parseexcel():
         print(json.dumps(self.montypedict))
 
 if __name__ == "__main__":
-    logging.basicConfig()
-
-    logger = logging.getLogger()
-    logger.setLevel(logging.DEBUG)
-    logger.warning("something")
-    sheet = parseexcel("/home/sthummala/Downloads/SmartPlugin-TestSheet-fujitsu-flashwave-9500.xlsx",logger=logger)
+    sheet = parseexcel("/home/sthummala/Downloads/SmartPlugin-TestSheet-fujitsu-flashwave-9500.xlsx")
     sheet.checksheet()
     sheet.printmontypedetails()
 
