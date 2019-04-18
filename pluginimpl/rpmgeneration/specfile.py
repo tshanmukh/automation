@@ -1,6 +1,3 @@
-__author__ = 'shanmukh'
-__status__ = 'Prototype'
-
 class specfile():
     def __init__(self,file="netomnia-plugininfo-util.spec"):
         self.lines = []

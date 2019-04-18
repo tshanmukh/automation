@@ -8,22 +8,15 @@ class profileconfigcsv():
         self.csvFileR = csv.reader(f, delimiter=',')
         self.profilename = []
         self.duplicate = []
-        self.file = OrderedDict()   # dictionary with line numbers
-        self.filedict = OrderedDict()   # dictionary with plugin names as key
-        self.readfile() # creates the file and filedict dictionaries
-        self.updations = OrderedDict() # to store the plugins which got updated and their versions
+        self.file = OrderedDict()
+        self.filedict = OrderedDict()
+        self.readfile()
 
     def readfile(self):
-        """
-        Reads the complete file and returns two dicts first one with profilename as key and second with line numbers
-        """
         for row,value in enumerate(self.csvFileR):
             self.file[row] = value
         for row in self.file.values():
-            try:
-                self.filedict[row[1]] = row
-            except:
-                print(row)
+            self.filedict[row[1]] = row
         return self.file,self.filedict
 
     def findduplicates(self):
@@ -47,7 +40,6 @@ class profileconfigcsv():
         for plugin in pluginNames:
             try:
                 writer.writerow(internal.get(plugin))
-                self.updations[plugin] = internal.get(plugin)[5]
             except:
                 print("Entry not found for the plugin",plugin)
                 exit(1)
@@ -57,20 +49,17 @@ class profileconfigcsv():
                 if i == '' or i == 'name':
                     continue
                 writer.writerow(j)
-
         return True
 
 
 if __name__ == "__main__":
     external = profileconfigcsv("profile-configs.csv")
     data, dict =  external.readfile()
-    # print(json.dumps(data))
-    # print(json.dumps(dict))
+    print(json.dumps(data))
+    print(json.dumps(dict))
     internal = profileconfigcsv("profile-configs-internal.csv")
     dataInternal, dict_Internal = internal.readfile()
-    # print(json.dumps(data))
-    # print(json.dumps(dict))
-    listofplugins = input("Enter the space seperated file names: ").split(" ")
-    external.writeprofileconfigs(dict_Internal,listofplugins)
-    print(json.dumps(external.updations))
+    print(json.dumps(data))
+    print(json.dumps(dict))
+    external.writeprofileconfigs(dict_Internal,["virtuora","turin-traverse"])
 

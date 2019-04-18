@@ -1,6 +1,3 @@
-__author__ = 'shanmukh'
-__status__ = 'Prototype'
-
 import xlrd
 
 """ Script to get values between sheets. Here using the sheet1 col0 and col1 to give values to col1 of sheet3"""

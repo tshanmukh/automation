@@ -1,6 +1,3 @@
-__author__ = 'shanmukh'
-__status__ = 'Prototype'
-
 from pexpect import pxssh
 import re
 

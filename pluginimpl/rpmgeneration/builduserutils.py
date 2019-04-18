@@ -1,8 +1,4 @@
-__author__ = 'shanmukh'
-__status__ = 'Prototype'
-
 from pexpect import pxssh
-import general
 
 class builduser():
     """Class which impliments methods in process to generate the RPMs"""
@@ -33,22 +29,6 @@ class builduser():
         self.s.prompt()
         print(self.s.before.decode('utf-8'))
         self.s.close()
-
-    def prepareutil(self):
-        general.copy(source="rpm.exp", destinaion="builduser@172.31.6.112:/home/builduser/repository/tools/rpmbuild/SPEC/")
-        self.s.sendline("cd /home/builduser/repository/tools/rpmbuild/SPEC/")
-        self.s.prompt()
-        self.s.sendline("chmod +x rpm.exp")
-        self.s.prompt()
-        print(self.s.before.decode('utf-8'))
-        self.s.close()
-
-    def removeexp(self):
-        self.s.sendline("cd /home/builduser/repository/tools/rpmbuild/SPEC/")
-        self.s.prompt()
-        self.s.sendline("rm rpm.exp")
-        self.s.prompt()
-
 
 
         # self.utils = self.s.before.decode('utf-8').split('\r\n')[1:]

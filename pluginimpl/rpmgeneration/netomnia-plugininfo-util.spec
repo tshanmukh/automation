@@ -1,7 +1,7 @@
 Name: vsure-plugininfo-util
 Version: 3.0
 License: none
-Release: 101
+Release: 93
 AutoReq: 0
 Prefix: /centina/sa
 Summary: NetOmnia Plugin Information Utility

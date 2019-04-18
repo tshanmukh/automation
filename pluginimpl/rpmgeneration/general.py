@@ -1,9 +1,5 @@
-__author__ = 'shanmukh'
-__status__ = 'Prototype'
-
 import os
 
-
-def copy(source, destinaion):
-    if ' ' not in (source, destinaion):
-        os.system("scp " + str(source) + " " + str(destinaion))
+def copy(source,destinaion):
+    if ' ' not in (source,destinaion):
+        os.system("scp "+str(source)+" "+str(destinaion))

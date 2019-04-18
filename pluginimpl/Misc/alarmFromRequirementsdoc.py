@@ -12,7 +12,7 @@ from enum import Enum
 
 workbook=''
 try:
-    # worksheet = xlrd.open_workbook('alarms.xlsx')
+    # workbook = xlrd.open_workbook('alarms.xlsx')
     workbook = xlrd.open_workbook('/home/sthummala/Downloads/SmartPlugin-TestSheet-fujitsu-flashwave-9500.xlsx')
 except:
     print("Unable to open excell")
@@ -36,9 +36,9 @@ class classificationEnum(Enum):
     INDETERMINATE = 2200
 
 if workbook is not None:
-    # sheet = worksheet.sheet_by_name("Alarms with classification-raw")
+    # sheet = workbook.sheet_by_name("Alarms with classification-raw")
     sheet = workbook.sheet_by_name("Alarming-NEW")
-    # sheet = worksheet.sheet_by_index(0)
+    # sheet = workbook.sheet_by_index(0)
     specific = sheet.col_values(1)
     classification = sheet.col_values(3)
 
