@@ -1,10 +1,21 @@
-class Person:
-    def __init__(self,name,age):
-        self.name=name
-        self.age=age
+__author__ = 'shanmukh'
+__status__ = 'Prototype'
+
+import os
+import subprocess
+
+print("started the terminal")
 
 
+# proc = subprocess.Popen('gnome-terminal -e \'sh -c "ssh builduser@172.31.6.112 ./test.sh"\'', shell=True,stdout=subprocess.PIPE)
+proc = subprocess.Popen('gnome-terminal -e "ssh builduser@172.31.6.112 ./test.sh"', shell=True,stdout=subprocess.PIPE)
 
-p1=Person("Shanmukh",22)
+proc.wait()
 
-print(p1.name,p1.age)
+print(proc.stdout.read())
+# os.system('gnome-terminal -e \'sh -c "ssh builduser@172.31.6.112 ./test.sh"\'')
+
+# pid = os.getpid()
+
+
+print("printing this after the terminal is closed")

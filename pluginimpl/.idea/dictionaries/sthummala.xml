@@ -3,7 +3,13 @@
     <words>
       <w>Shanmukh</w>
       <w>Thummala</w>
+      <w>classname</w>
+      <w>endtable</w>
+      <w>nodename</w>
       <w>reformated</w>
+      <w>toheader</w>
+      <w>torow</w>
+      <w>writetocsv</w>
     </words>
   </dictionary>
 </component>

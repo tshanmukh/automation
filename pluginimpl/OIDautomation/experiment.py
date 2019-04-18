@@ -1,5 +1,10 @@
-import math
+import tensorflow as tf
 
-b=1/(1+math.exp(14))
+a = tf.constant(5)
+b= tf.constant(6)
 
-print(b)
+c = a *b
+
+with tf.Session() as sess:
+    print(sess.run(c))
+
