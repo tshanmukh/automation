@@ -1,1 +1,7 @@
 *.pickle
+*.xml
+*.log
+*.xlsx
+*.pyc
+*.txt
+
