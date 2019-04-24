@@ -43,7 +43,7 @@ print(sourceId)
 
 for i in sheet.pmsheets:
     sheet.getmontypedetails(i,['Montype', 'Direction', 'Location', 'Binned', 'Nonbinned', '', 'Model', 'Enable', 'Metric', 'Units', 'Type', '', 'Verification Date', 'History PM', 'Live PM', '', 'Verification Date', 'History PM', 'Live PM'])
-    record = sheet.montypedict
+    record = sheet.sheetmontypedict
     del record['Montype']
     del record['']
     print(i)
