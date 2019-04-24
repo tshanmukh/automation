@@ -24,6 +24,7 @@ class parseexcel():
         self.logger = logging.getLogger()
         self.logger.setLevel(logging.DEBUG)
         self.logger.debug("something")
+        self.pmsheets = []
         try:
             self.worksheet = xlrd.open_workbook(self.workbookpath)
             self.sheetnames = self.worksheet.sheet_names()
@@ -45,6 +46,7 @@ class parseexcel():
             sheetname = sheetname
             sheet = self.worksheet.sheet_by_name(sheetname)
             montype = sheet.col_values(rows.index("Montype"))
+            self.temp = montype
 
             try:
                 metric = sheet.col_values(rows.index("Metric"))
@@ -62,6 +64,7 @@ class parseexcel():
             except:
                 self.logger.warning("There is not metrictype tag in the sheet {}".format(sheetname))
                 metrictype = ['COUNTER' for i in sheet.col_values(rows.index("Montype"))]
+
 
         # try:
         for i in zip(montype,metric,units,metrictype):
@@ -89,6 +92,7 @@ class parseexcel():
             rows = sheet.row_values(1)
             if "Montype" in rows:
                 value = self.getmontypedetails(i,rows)
+                self.pmsheets.append(i)
 
 
     # def getmontypes(self):
@@ -106,6 +110,7 @@ class parseexcel():
 
 if __name__ == "__main__":
     sheet = parseexcel("/home/sthummala/Downloads/SmartPlugin-TestSheet-fujitsu-flashwave-9500.xlsx")
-    sheet.checksheet()
-    sheet.printmontypedetails()
+    # sheet.checksheet()
+    # sheet.printmontypedetails()
+    print(sheet.pmsheets)
 
