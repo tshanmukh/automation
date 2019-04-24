@@ -10,12 +10,56 @@ from enum import Enum
 """ Lists the specificProblems in the requirements doc"""
 
 
-workbook=''
-try:
-    # workbook = xlrd.open_workbook('alarms.xlsx')
-    workbook = xlrd.open_workbook('/home/sthummala/Downloads/SmartPlugin-TestSheet-fujitsu-flashwave-9500.xlsx')
-except:
-    print("Unable to open excell")
+class alarmFromRequirementsdoc():
+    def __init__(self,workbookname):
+        try:
+            self.workbook = xlrd.open_workbook(workbookname)
+        except:
+            print("Unable to open excell")
+
+    def readalarmsheet(self,sheetname):
+
+        if self.workbook is not None:
+            # sheet = workbook.sheet_by_name("Alarms with classification-raw")
+            sheet = self.workbook.sheet_by_name(sheetname)
+            header = sheet.row_values(1)
+            specific = header.index("Specific Problem")
+            sever = header.index("Severity")
+            classific = header.index("Classification")
+            self.specificproblem = sheet.col_values(specific)
+            self.classification = sheet.col_values(classific)
+            self.severity = sheet.col_values(sever)
+
+    def formclassificationdict(self):
+        alarmDict = OrderedDict()
+        for _alarm, _class in zip(self.specificproblem[1::],self.classification[1::]):
+            _alarm = re.sub("\<.*", " ", _alarm)
+            _alarm = re.sub(",.*", " ", _alarm)
+            _alarm = re.sub("\..*", " ", _alarm)
+            _alarm = re.sub("\(.*", "", _alarm).strip()
+            _class = re.sub("\(.*", "", _class).strip()
+            if _class in classificationEnum.__members__:
+                alarmDict[_alarm.replace(' ','')] = _class
+            else:
+                print("Classification enum error",_class)
+        return alarmDict
+            # for alarm, value in alarmDict.items():
+            #     # print('<entry tl1="{}"  model="{}"/>'.format(alarm,value))
+            #     print('1-3-E1,100GE:MJ,{},SA,01-02,01-47-25,NEND,RCV:\\"Dummy generated alm responses\\"'.format(alarm,value))
+
+    def formseveritydict(self):
+        alarmDict = OrderedDict()
+        for _alarm, _class in zip(self.specificproblem[1::], self.severity[1::]):
+            _alarm = re.sub("\<.*", " ", _alarm)
+            _alarm = re.sub(",.*", " ", _alarm)
+            _alarm = re.sub("\..*", " ", _alarm)
+            _alarm = re.sub("\(.*", "", _alarm).strip()
+            _class = re.sub("\(.*", "", _class).strip()
+
+            alarmDict[_alarm.replace(' ', '')] = _class
+
+        return alarmDict
+
 
 # Enums for classification
 class classificationEnum(Enum):
@@ -35,26 +79,10 @@ class classificationEnum(Enum):
     INFORMATION = 2150
     INDETERMINATE = 2200
 
-if workbook is not None:
-    # sheet = workbook.sheet_by_name("Alarms with classification-raw")
-    sheet = workbook.sheet_by_name("Alarming-NEW")
-    # sheet = workbook.sheet_by_index(0)
-    specific = sheet.col_values(1)
-    classification = sheet.col_values(3)
-
-    alarmDict = OrderedDict()
-    for _alarm, _class in zip(specific[1::],classification[1::]):
-        _alarm = re.sub("\<.*", " ", _alarm)
-        _alarm = re.sub(",.*", " ", _alarm)
-        _alarm = re.sub("\..*", " ", _alarm)
-        _alarm = re.sub("\(.*", "", _alarm).strip()
-        _class = re.sub("\(.*", "", _class).strip()
-        if _class in classificationEnum.__members__:
-            alarmDict[_alarm.replace(' ','')] = _class
-        else:
-            print("Classification enum error",_class)
-    for alarm, value in alarmDict.items():
-        # print('<entry tl1="{}"  model="{}"/>'.format(alarm,value))
-        print('1-3-E1,100GE:MJ,{},SA,01-02,01-47-25,NEND,RCV:\\"Dummy generated alm responses\\"'.format(alarm,value))
-
-
+if __name__ == "__main__":
+    sheet = alarmFromRequirementsdoc("/home/sthummala/Downloads/SmartPlugin-TestSheet-fujitsu-1finity-S100-reference.xlsx")
+    sheet.readalarmsheet("Alarming S100")
+    classification = sheet.formclassificationdict()
+    for i,j in classification.items():
+        print('<case input="{}" output="{}" />'.format(i,j))
+    severity = sheet.formseveritydict()
