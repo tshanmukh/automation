@@ -15,5 +15,6 @@ for i in sheet.pmsheets:
         if len(j) > 1:
             if not j.startswith('<'):
                 f.write("\t\t<value>{} Statistics.TL1</value>\n".format(re.sub('<.*','',j)))
+                print(j)
     f.write('</pm-metric-groups>\n\n    <pm-threshold-policies type="String">\n    </pm-threshold-policies>\n\n  </perf-template>\n\n</objects>')
     f.close()
