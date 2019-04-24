@@ -9,6 +9,19 @@ import xml.etree.ElementTree as ET
 from typing import List
 import metricsFromRequirementsdoc
 import subprocess
+import json
+
+current_directory=os.getcwd()
+results_directory= os.path.join(current_directory, "results/")
+
+
+#Creating results folder in the location where this script is located. Removing the contents of results folder if it is already existing
+# if self.path.isdir("results/"):
+#     files=os.listdir("results/")
+#     for file in files:
+#         os.remove("results/"+file)
+# else:
+#     os.system("mkdir results")
 
 
 
@@ -16,7 +29,29 @@ class xmlparsing():
     """This class does the job of creating metrics in an xml and formating making it to human readable"""
 
     def __init__(self):
-        self.path = "/home/rupesh/TL1/pm/"
+        self.path = os.getcwd()
+        print(self.path)
+
+        # Creating results folder in the location where this script is located. Removing the contents of results folder if it is already existing
+        if os.path.isdir(self.path+"results/"):
+            files = os.listdir("results/")
+            for file in files:
+                os.remove("results/" + file)
+        else:
+            os.system("mkdir results")
+
+        # To have the results directory without changing the current directory
+        self.results_directory=os.path.join(self.path, "results/")
+
+
+        print(os.getcwd())
+        print(os.path)
+
+        # a=os.path.relpath('results/', start=os.curdir)
+
+
+
+
         # self.xmlname = "pm" + "_tl1_montype.xml"
         # self.path=input("Enter the directory in which you want to generate the pm xml\nFor example: /home/rupesh/TL1/pm/\n")
         # self.xmlname=input("Enter the name of the xml you want to create\nFor example: pm_tl1_2_montypes.xml\n")
@@ -48,20 +83,19 @@ class xmlparsing():
                             desc=montype if not metric else metric,
                             protocol="TL1",
                             units=montype if not units else units,
-                            conversion_function="NONE" if (Type == 'gauge' or 'GAUGE') else "PER_PERIOD",
-                            consolidation_function="AVG" if (Type == 'gauge' or 'GAUGE') else "SUM",
+                            conversion_function="NONE" if (Type.lower() == 'gauge') else "PER_PERIOD",
+                            consolidation_function="AVG" if (Type.lower() == 'gauge') else "SUM",
                             location=la_1[i],
                             direction=da_1[j],
                             min="0",
                             displayType="lineSeries-hist" if (
-                                    (Type == 'gauge') or (Type == 'GAUGE')) else "verticalBar-hist",
+                                    (Type.lower() == 'gauge')) else "verticalBar-hist",
                             displayColor="BLUE" if ( da[j]== 'Tx') else "DARK_GREEN")
 
                 ET.SubElement(doc, "parameter", name=montype,
                       collector="TL1",
-                      Par_Type='COUNTER' if ((Type == 'counter') or (Type == 'COUNTER') or (Type == 'Counter')) else 'GAUGE' if (
-                              (Type == 'gauge') or (Type == 'GAUGE') or (
-                              Type == 'Gauge')) else 'COUNTER',
+                      Par_Type='COUNTER' if ((Type.lower() == 'counter')) else 'GAUGE' if (
+                              (Type.lower() == 'gauge')) else 'COUNTER',
                       oid=montype)
 
                 ET.SubElement(doc, "value", parameter=montype)
@@ -74,9 +108,14 @@ class xmlparsing():
         tree = ET.ElementTree(root)
         print(montype, type(Type))
         cwd = os.getcwd()
-        os.chdir(self.path)
+        os.chdir(self.results_directory)
         if montype != "Montype":
-            tree.write(montype+"."+"xml")
+            try:
+                tree.write(montype+"."+"xml")
+            except IOError:
+                print("File name too long")
+            except:
+                raise
         else:
             pass
         os.chdir(cwd)
@@ -90,8 +129,10 @@ class xmlparsing():
         """This function will format the  generated xml into human readable"""
 
 
-        path = '/home/rupesh/TL1/pm/*.xml'
-        files = glob.glob(path)
+        # path = os.dir('results/*.xml')
+        # path = '/home/rupesh/TL1/pm/*.xml'
+        # files = glob.glob(self.results_directory)
+        files = glob.glob(os.path.join(self.path, "results/*xml"))
         for name in files:
             try:
                 with open(name) as f:
@@ -141,32 +182,79 @@ class xmlparsing():
                 if exc.errno != errno.EISDIR:
                     raise
 
+    def finishing(self):
+        print("finishing",os.getcwd())
+
+        os.chdir(self.results_directory)
+        print(os.getcwd())
+
+        read_files = os.listdir(os.getcwd())
+
+        # read_files = glob.glob(self.results_directory)
+        try:
+            os.chdir(self.path+ "results/")
+            os.remove("result.xml")
+
+        except:
+            pass
+        with open("result.xml", "w") as outfile:
+
+            # writing fixed content to the pm xml
+            #
+            # < ?xml version = "1.0" encoding = "UTF-8"? >
+            # < !DOCTYPE pmProfile PUBLIC "pm/pmProfile.dtd" "pmProfile.dtd" >
+            #
+            # < pmProfile name = "fujitsu-flashwave-tl1" version = "UNCLEAN" >
+            #
+            #
+            outfile.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n")
+            outfile.write("<!DOCTYPE pmProfile PUBLIC \"pm/pmProfile.dtd\" \"pmProfile.dtd\">\n\n")
+            outfile.write("<pmProfile name=\"fw-tl1\" version=\"UNCLEAN\" >\n\n")
+            for g in read_files:
+
+                with open(g, "r") as infile:
+                    outfile.write(infile.read())
+
+            outfile.write("\n\n</pmProfile>")
+
+        os.chdir(self.results_directory)
+        for i, j in data.items():
+            # below condition to ignore the montype if it is already existing
+            if i not in output:
+                xml.montype_result(i, j[0], j[1], j[2])
+                print(i, j[0], j[1], j[2])
+
 
 xml = xmlparsing()
 
 # xml.montype_result("CVL","description","packets","gauge")
 
 
-sheet = metricsFromRequirementsdoc.parseexcel("/home/rupesh/TL1/SmartPlugin-TestSheet-fw-4100.xlsx")
+sheet = metricsFromRequirementsdoc.parseexcel("/home/sthummala/Downloads/SmartPlugin-TestSheet-fujitsu-flashwave-9500.xlsx")
 data = sheet.montypedict
-print(data)
+print(json.dumps(data))
 
 print("dict keys length {}".format(len(data.keys())))
 
 
 
 # removing the files in the below folder before the generation of pm xmls
-directory= "/home/rupesh/TL1/pm/*"
-files = glob.glob(directory)
+# directory= "/home/rupesh/TL1/pm/*"
+
+
+files = glob.glob(results_directory+"*.xml")
 for i in files:
     os.remove(i)
 
 
 
 # gets all the montyeps from the result.xml
-proc=subprocess.Popen('grep -o oid=.* result.xml | awk -F \'"\' \'{print$2}\' | sort -u', shell=True, stdout=subprocess.PIPE )
+proc=subprocess.Popen('grep -o oid=.* /home/sthummala/workspace/repo/centina/sa/profiles/pm/fujitsu-fw-4100.xml | awk -F \'"\' \'{print$2}\' | sort -u', shell=True, stdout=subprocess.PIPE )
 output=proc.communicate()[0].decode().split('\n')
 print(output)
+
+
+os.chdir(results_directory)
 
 for i,j in data.items():
     # below condition to ignore the montype if it is already existing
@@ -177,27 +265,4 @@ for i,j in data.items():
 
 xml.format_xml()
 
-print(os.getcwd())
-os.chdir('/home/rupesh/TL1/pm/')
-
-
-read_files = glob.glob("*.xml")
-
-with open("result.xml", "w",encoding='utf-8') as outfile:
-
-    # writing fixed content to the pm xml
-    #
-    # < ?xml version = "1.0" encoding = "UTF-8"? >
-    # < !DOCTYPE pmProfile PUBLIC "pm/pmProfile.dtd" "pmProfile.dtd" >
-    #
-    # < pmProfile name = "fujitsu-flashwave-tl1" version = "UNCLEAN" >
-    #
-    #
-    outfile.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n")
-    outfile.write("<!DOCTYPE pmProfile PUBLIC \"pm/pmProfile.dtd\" \"pmProfile.dtd\">\n\n")
-    outfile.write("<pmProfile name=\"fw-tl1\" version=\"UNCLEAN\" >\n\n")
-    for g in read_files:
-        with open(g, "r") as infile:
-            outfile.write(infile.read())
-    outfile.write("\n\n</pmProfile>")
-
+xml.finishing()
