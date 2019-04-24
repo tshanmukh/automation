@@ -37,10 +37,8 @@ class parseexcel():
 
     def getmontypedetails(self,sheetname,rows):
         """Gets all the details from a sheet"""
-        # metric = None
-        # units = None
-        # metrictype = None
-        # montype=None
+
+        self.sheetmontypedict = {} # variable used by response generation script to read in montypes per sheet
 
         if self.worksheet is not None:
             sheetname = sheetname
@@ -65,20 +63,35 @@ class parseexcel():
                 self.logger.warning("There is not metrictype tag in the sheet {}".format(sheetname))
                 metrictype = ['COUNTER' for i in sheet.col_values(rows.index("Montype"))]
 
+            # Gets the loaction
+            try:
+                location = sheet.col_values(rows.index("Location"))
+            except:
+                self.logger.warning("There is not metrictype tag in the sheet {}".format(sheetname))
+                location = [None for i in sheet.col_values(rows.index("Montype"))]
 
-        # try:
-        for i in zip(montype,metric,units,metrictype):
-            if None in i:
-                self.logger.error("Null at {} in sheet {}".format(i,sheetname))
-            if "" in i:
-                self.logger.error("Null at {} in sheet {}".format(i,sheetname))
-            if " " in i:
-                self.logger.error("Null at {} in sheet {}".format(i,sheetname))
-            else:
-                temp = re.sub('<.*','',i[0])
-                self.montypedict[temp.strip()] = (i[1].strip(),i[2].strip(),i[3].strip())
-        # except:
-        #     raise
+            # Gets the direction
+            try:
+                direction = sheet.col_values(rows.index("Direction"))
+            except:
+                self.logger.warning("There is not metrictype tag in the sheet {}".format(sheetname))
+                direction = [None for i in sheet.col_values(rows.index("Montype"))]
+
+
+            # try:
+            for i in zip(montype,metric,units,metrictype,location,direction):
+                if None in i:
+                    self.logger.error("Null at {} in sheet {}".format(i,sheetname))
+                if "" in i:
+                    self.logger.error("Null at {} in sheet {}".format(i,sheetname))
+                if " " in i:
+                    self.logger.error("Null at {} in sheet {}".format(i,sheetname))
+                else:
+                    temp = re.sub('<.*','',i[0])
+                    self.montypedict[temp.strip()] = (i[1].strip(),i[2].strip(),i[3].strip(),i[4].strip(),i[5].strip())
+                    self.sheetmontypedict[temp.strip()] = (i[1].strip(),i[2].strip(),i[3].strip(),i[4].strip(),i[5].strip())
+            # except:
+            #     raise
 
     def getsheetnames(self):
         indexPerformance = self.sheetnames.index("Performance")
