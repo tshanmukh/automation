@@ -1,7 +1,12 @@
 *.pickle
+<<<<<<< Updated upstream
 *.xml
 *.log
 *.xlsx
 *.pyc
 *.txt
 
+=======
+.idea/*
+.idea/*
+>>>>>>> Stashed changes
