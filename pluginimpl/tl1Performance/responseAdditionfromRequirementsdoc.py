@@ -38,19 +38,21 @@ def formresponse(rows,sourcename,f):
     Timeperiod = "15-MIN"
 
     value = str(np.random.random_integers(0,100))
-    print(sourcename+":"+rows[0]+","+value+","+"TRUE,"+direction+","+location+","+Timeperiod+",01-22,02-00,1")
+    # print(sourcename+":"+rows[0]+","+value+","+"TRUE,"+direction+","+location+","+Timeperiod+",01-22,02-00,1")
     f.write(sourcename+":"+rows[0]+","+value+","+"TRUE,"+direction+","+location+","+Timeperiod+",01-22,02-00,1\n")
 
 sheet = parseexcel("/home/sthummala/Downloads/SmartPlugin-TestSheet-fujitsu-flashwave-9500.xlsx")
 print(len(sheet.pmsheets))
 
-sourceId = getcsv()
+sourceId = getcsv()  # funtion returns SourceType:SourceId dict read from endpoints.csv
 print(sourceId)
 
 for i in sheet.pmsheets:
+    sheet.clearmontypedict() # function clears the previous sheets data from the dict
     sheet.getmontypedetails(i,['Montype', 'Direction', 'Location', 'Binned', 'Nonbinned', '', 'Model', 'Enable', 'Metric', 'Units', 'Type', '', 'Verification Date', 'History PM', 'Live PM', '', 'Verification Date', 'History PM', 'Live PM'])
-    record = sheet.sheetmontypedict   # gets all the details like the montype direction from the sheet 'i'
-    print(i,record)
+
+    record = sheet.sheetmontypedict   # gets all the details like the montype direction from the sheet 'i' format is Number: (...values...)
+    # print(i,record)
     f = open("response/RTRV-PM-"+i+"-NULL.txt",'w')
 
 
