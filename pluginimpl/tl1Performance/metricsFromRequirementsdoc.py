@@ -15,6 +15,7 @@ class parseexcel():
         self.worksheet= ''
         self.workbookpath=workbookpath
         self.montypedict = OrderedDict()
+        self.sheetmontypedict = OrderedDict()
         logging.basicConfig(filename='debug.log',
                             filemode='w',
                             format='%(asctime)s, %(levelname)s \t%(message)s',
@@ -38,7 +39,7 @@ class parseexcel():
     def getmontypedetails(self,sheetname,rows):
         """Gets all the details from a sheet"""
 
-        self.sheetmontypedict = {} # variable used by response generation script to read in montypes per sheet
+        # self.sheetmontypedict = {} # variable used by response generation script to read in montypes per sheet
 
         if self.worksheet is not None:
             sheetname = sheetname
@@ -96,11 +97,11 @@ class parseexcel():
                     for k in ['0','1','2','2E','3','FLEX']:
                         for I in range(1,7):
                             # print(sheetname,i[0].replace('<k>',k).replace('<i>',str(I)))
-                            self.sheetmontypedict[j] = (i[0].replace('<k>', k).replace('<i>',str(I)).strip(), i[1].strip(), i[2].strip(), i[3].strip(), i[4].strip(),i[5].strip())
+                            self.sheetmontypedict[str(j)+i[0].replace('<k>', k).replace('<i>',str(I)).strip()+k+str(I)] = (i[0].replace('<k>', k).replace('<i>',str(I)).strip(), i[1].strip(), i[2].strip(), i[3].strip(), i[4].strip(),i[5].strip())
                 elif "<k>" in i[0] and not "<i>" in i[0]:
                     for k in ['0', '1', '2', '2E', '3', 'FLEX']:
                         # print(sheetname, i[0].replace('<k>', k))
-                        self.sheetmontypedict[j] = (i[0].replace('<k>', k).strip(), i[1].strip(), i[2].strip(), i[3].strip(), i[4].strip(), i[5].strip())
+                        self.sheetmontypedict[str(j)+i[0].replace('<k>', k).strip()+k] = (i[0].replace('<k>', k).strip(), i[1].strip(), i[2].strip(), i[3].strip(), i[4].strip(), i[5].strip())
                 else:
                     self.sheetmontypedict[j] = (i[0].strip(),i[1].strip(),i[2].strip(),i[3].strip(),i[4].strip(),i[5].strip())
             # except:
@@ -133,6 +134,9 @@ class parseexcel():
 
     def printmontypedetails(self):
         print(json.dumps(self.montypedict))
+
+    def clearmontypedict(self):
+        self.sheetmontypedict = {}
 
 if __name__ == "__main__":
     sheet = parseexcel("/home/sthummala/Downloads/SmartPlugin-TestSheet-fujitsu-flashwave-9500.xlsx")
