@@ -197,11 +197,7 @@ class xmlparsing():
 
         except:
             pass
-<<<<<<< Updated upstream
-        with open("result.xml", "w") as outfile:
-=======
         with open("result.xml", "w",encoding='utf-8') as outfile:
->>>>>>> Stashed changes
 
             # writing fixed content to the pm xml
             #
@@ -224,8 +220,8 @@ class xmlparsing():
         os.chdir(self.results_directory)
         for i, j in data.items():
             # below condition to ignore the montype if it is already existing
-            if i not in output:
-                xml.montype_result(i, j[0], j[1], j[2])
+            if j[0] not in output:
+                xml.montype_result(j[0], j[1], j[2], j[3])
                 print(i, j[0], j[1], j[2])
 
 
@@ -235,7 +231,7 @@ xml = xmlparsing()
 
 
 sheet = metricsFromRequirementsdoc.parseexcel("/home/sthummala/Downloads/SmartPlugin-TestSheet-fujitsu-flashwave-9500.xlsx")
-data = sheet.montypedict
+data = sheet.sheetmontypedict
 print(json.dumps(data))
 
 print("dict keys length {}".format(len(data.keys())))
@@ -246,15 +242,12 @@ print("dict keys length {}".format(len(data.keys())))
 # directory= "/home/rupesh/TL1/pm/*"
 
 
-<<<<<<< Updated upstream
 files = glob.glob(results_directory+"*.xml")
 for i in files:
     os.remove(i)
-=======
 # files = glob.glob(results_directory)
 # for i in files:
 #     os.remove(i)
->>>>>>> Stashed changes
 
 
 
@@ -267,12 +260,13 @@ print(output)
 os.chdir(results_directory)
 
 for i,j in data.items():
+    print(i,j)
     # below condition to ignore the montype if it is already existing
-    if i not in output:
-        xml.montype_result(i,j[0],j[1],j[2])
-        print(i,j[0],j[1],j[2])
+    if j[0] not in output:
+        xml.montype_result(j[0],j[1],j[2],j[3])
+        print(j[0],j[1],j[2],j[3])
 
 
 xml.format_xml()
-
+#
 xml.finishing()
