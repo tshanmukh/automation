@@ -28,7 +28,7 @@ class parseexcel():
         try:
             self.worksheet = xlrd.open_workbook(self.workbookpath)
             self.sheetnames = self.worksheet.sheet_names()
-            print(self.sheetnames)
+            # print(self.sheetnames)
         except:
             print("Unable to open excell")
         # self.getsheetnames()
@@ -89,7 +89,20 @@ class parseexcel():
                 else:
                     temp = re.sub('<.*','',i[0])
                     self.montypedict[temp.strip()] = (i[1].strip(),i[2].strip(),i[3].strip(),i[4].strip(),i[5].strip())
-                    self.sheetmontypedict[temp.strip()] = (i[1].strip(),i[2].strip(),i[3].strip(),i[4].strip(),i[5].strip())
+
+            #code to take in all the data from the sheet as per line numbers
+            for j,i in enumerate(zip(montype, metric, units, metrictype, location, direction)):
+                if "<k>" in i[0] and "<i>" in i[0]:  # creates the metrics in all possible values of k and i
+                    for k in ['0','1','2','2E','3','FLEX']:
+                        for I in range(1,7):
+                            # print(sheetname,i[0].replace('<k>',k).replace('<i>',str(I)))
+                            self.sheetmontypedict[j] = (i[0].replace('<k>', k).replace('<i>',str(I)).strip(), i[1].strip(), i[2].strip(), i[3].strip(), i[4].strip(),i[5].strip())
+                elif "<k>" in i[0] and not "<i>" in i[0]:
+                    for k in ['0', '1', '2', '2E', '3', 'FLEX']:
+                        # print(sheetname, i[0].replace('<k>', k))
+                        self.sheetmontypedict[j] = (i[0].replace('<k>', k).strip(), i[1].strip(), i[2].strip(), i[3].strip(), i[4].strip(), i[5].strip())
+                else:
+                    self.sheetmontypedict[j] = (i[0].strip(),i[1].strip(),i[2].strip(),i[3].strip(),i[4].strip(),i[5].strip())
             # except:
             #     raise
 
