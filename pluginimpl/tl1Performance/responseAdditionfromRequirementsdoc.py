@@ -7,6 +7,12 @@ import numpy as np
 from endpoints import getcsv
 
 def formresponse(rows,sourcename,f):
+    """params:
+        rows = ['Montype', location, dircetion]
+        sourcename = sourceid from the endpoint
+        f = file reference to which the output is to be returned
+
+    """
     if rows[1] == "NEAR_END":
         direction = "NEND"
     elif rows[1] == "FAR_END":
@@ -43,15 +49,17 @@ print(sourceId)
 
 for i in sheet.pmsheets:
     sheet.getmontypedetails(i,['Montype', 'Direction', 'Location', 'Binned', 'Nonbinned', '', 'Model', 'Enable', 'Metric', 'Units', 'Type', '', 'Verification Date', 'History PM', 'Live PM', '', 'Verification Date', 'History PM', 'Live PM'])
-    record = sheet.sheetmontypedict
-    del record['Montype']
-    del record['']
-    print(i)
+    record = sheet.sheetmontypedict   # gets all the details like the montype direction from the sheet 'i'
+    print(i,record)
     f = open("response/RTRV-PM-"+i+"-NULL.txt",'w')
-    for j in record.keys():
-        # print([j,record[j][3],record[j][4]])
-        try:
-            formresponse([j,record[j][3],record[j][4]], sourceId[i],f)
-        except:
-            print("No source type: ",i)
+
+
+    for k,j in record.items():
+        if j[0] == 'Montype':
+            continue
+        elif len(j[0]) > 1:
+            try:
+                formresponse([j[0],j[4],j[5]], sourceId[i],f)
+            except:
+                print("No source type: ",i)
     f.close()
