@@ -197,7 +197,11 @@ class xmlparsing():
 
         except:
             pass
+<<<<<<< Updated upstream
         with open("result.xml", "w") as outfile:
+=======
+        with open("result.xml", "w",encoding='utf-8') as outfile:
+>>>>>>> Stashed changes
 
             # writing fixed content to the pm xml
             #
@@ -242,9 +246,15 @@ print("dict keys length {}".format(len(data.keys())))
 # directory= "/home/rupesh/TL1/pm/*"
 
 
+<<<<<<< Updated upstream
 files = glob.glob(results_directory+"*.xml")
 for i in files:
     os.remove(i)
+=======
+# files = glob.glob(results_directory)
+# for i in files:
+#     os.remove(i)
+>>>>>>> Stashed changes
 
 
 
