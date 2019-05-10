@@ -39,9 +39,12 @@ def printfields(id, templateName):
                         else:
                             # todo if multiple parameters are present
                             for m in metric:
-                                f.write(str(groupId.get("id")) +','+str(m.get('id'))+ "," + str(m.get("name")) + "," + str(
-                                    m.find("parameter").get("oid")) + "," + str(m.get("units"))+","+str(m.get("location")) + "," + str(
-                                    m.get("direction")) + "\n")
+                                # f.write(str(groupId.get("id")) +','+str(m.get('id'))+ "," + str(m.get("name")) + "," + str(
+                                #     m.find("parameter").get("oid")) + "," + str(m.get("units"))+","+str(m.get("location")) + "," + str(
+                                #     m.get("direction")) + "\n")
+                                if len(str(m.get("parmType"))) > 1 and m.get("parmType") is not None:
+                                    f.write(str(
+                                    m.find("parameter").get("oid"))+","+str(m.get("parmType"))+","+str(m.get('id'))+"\n")
                     except:
                         print("Exception while looping through the metricgroup id", str(groupId.get("id")))
                         exit(1)

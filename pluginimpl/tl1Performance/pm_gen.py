@@ -222,7 +222,7 @@ class xmlparsing():
             # below condition to ignore the montype if it is already existing
             if j[0] not in output:
                 xml.montype_result(j[0], j[1], j[2], j[3])
-                print(i, j[0], j[1], j[2])
+                # print(i, j[0], j[1], j[2])
 
 
 xml = xmlparsing()
@@ -254,17 +254,21 @@ for i in files:
 # gets all the montyeps from the result.xml
 proc=subprocess.Popen('grep -o oid=.* /home/sthummala/workspace/repo/centina/sa/profiles/pm/fujitsu-fw-4100.xml | awk -F \'"\' \'{print$2}\' | sort -u', shell=True, stdout=subprocess.PIPE )
 output=proc.communicate()[0].decode().split('\n')
-print(output)
+print("Number Montypes present in the fujitsu-fw-4100",len(output))
 
 
 os.chdir(results_directory)
 
+number = 0
 for i,j in data.items():
-    print(i,j)
+    # print(i,j)
+
     # below condition to ignore the montype if it is already existing
     if j[0] not in output:
+        print(number)
         xml.montype_result(j[0],j[1],j[2],j[3])
-        print(j[0],j[1],j[2],j[3])
+        # print(j[0],j[1],j[2],j[3])
+        number+=1
 
 
 xml.format_xml()

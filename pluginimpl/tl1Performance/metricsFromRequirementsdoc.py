@@ -97,11 +97,11 @@ class parseexcel():
                     for k in ['0','1','2','2E','3','FLEX']:
                         for I in range(1,7):
                             # print(sheetname,i[0].replace('<k>',k).replace('<i>',str(I)))
-                            self.sheetmontypedict[str(j)+i[0].replace('<k>', k).replace('<i>',str(I)).strip()+k+str(I)] = (i[0].replace('<k>', k).replace('<i>',str(I)).strip(), i[1].strip(), i[2].strip(), i[3].strip(), i[4].strip(),i[5].strip())
+                            self.sheetmontypedict[str(j)+i[0].replace('<k>', k).replace('<i>',str(I)).strip()+k+str(I)+ i[4].strip()+i[5].strip()] = (i[0].replace('<k>', k).replace('<i>',str(I)).strip(), i[1].strip(), i[2].strip(), i[3].strip(), i[4].strip(),i[5].strip())
                 elif "<k>" in i[0] and not "<i>" in i[0]:
                     for k in ['0', '1', '2', '2E', '3', 'FLEX']:
                         # print(sheetname, i[0].replace('<k>', k))
-                        self.sheetmontypedict[str(j)+i[0].replace('<k>', k).strip()+k] = (i[0].replace('<k>', k).strip(), i[1].strip(), i[2].strip(), i[3].strip(), i[4].strip(), i[5].strip())
+                        self.sheetmontypedict[str(j)+i[0].replace('<k>', k).strip()+k+i[4].strip()+i[5].strip()] = (i[0].replace('<k>', k).strip(), i[1].strip(), i[2].strip(), i[3].strip(), i[4].strip(), i[5].strip())
                 else:
                     self.sheetmontypedict[j] = (i[0].strip(),i[1].strip(),i[2].strip(),i[3].strip(),i[4].strip(),i[5].strip())
             # except:
@@ -142,5 +142,5 @@ if __name__ == "__main__":
     sheet = parseexcel("/home/sthummala/Downloads/SmartPlugin-TestSheet-fujitsu-flashwave-9500.xlsx")
     # sheet.checksheet()
     # sheet.printmontypedetails()
-    print(sheet.pmsheets)
+    print(json.dumps(sheet.sheetmontypedict))
 

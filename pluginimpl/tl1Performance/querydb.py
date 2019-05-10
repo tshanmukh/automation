@@ -6,6 +6,9 @@ import pymysql
 
 class querydb():
     def __init__(self,host,db,user='centina',password='centina',port=3307):
+        self.user = user
+        self.password= password
+        self.port = 3307
         self.connection = pymysql.connect(host=host, user =user, password =password, port=3307, db=db)
         self.cursor = self.connection.cursor()
 
@@ -18,4 +21,5 @@ class querydb():
 
 if __name__ == "__main__":
     db = querydb(host="172.31.6.133",db='pm')
-    print(db.getpmsourcetypes('MNRGKSXBOS1-RFW95005'))
+    print(len(db.getpmsourcetypes('WILL')))
+    print(db.getpmsourcetypes('WILL'))

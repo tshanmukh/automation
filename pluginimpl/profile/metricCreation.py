@@ -5,7 +5,7 @@ import re
 
 
 class metricCreation():
-    """Takes the metric parms and returns a metric in xml format"""
+    """Takes the metric elements and returns a metric in xml format"""
 
     def __init__(self,metricgroupid,metricgroupname,metricid,metricname,description,metricunits,Type,location,direction,parametername,oid,oidsuffix):
         self.metricgroupid = metricgroupid
