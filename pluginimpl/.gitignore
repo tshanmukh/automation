@@ -5,8 +5,9 @@
 *.xlsx
 *.pyc
 *.txt
-
+*.csv
+*.tar.gz
 =======
 .idea/*
-.idea/*
+.idea/
 >>>>>>> Stashed changes
