@@ -1,8 +1,9 @@
 __author__ = 'Shanmukh'
-__status__ = 'Development'
+__status__ = 'Prototype'
 
 from metricsFromRequirementsdoc import parseexcel
 import re
+import sh
 import numpy as np
 from endpoints import getcsv
 
@@ -41,11 +42,17 @@ def formresponse(rows,sourcename,f):
     # print(sourcename+":"+rows[0]+","+value+","+"TRUE,"+direction+","+location+","+Timeperiod+",01-22,02-00,1")
     f.write(sourcename+":"+rows[0]+","+value+","+"TRUE,"+direction+","+location+","+Timeperiod+",01-22,02-00,1\n")
 
-sheet = parseexcel("/home/sthummala/Downloads/SmartPlugin-TestSheet-fujitsu-flashwave-4100ES_v1-3.xlsx")
+sheet = parseexcel("/home/shanmukh/Downloads/SmartPlugin-TestSheet-fujitsu-flashwave-9500-orig.xlsx")
 print(len(sheet.pmsheets))
 
 sourceId = getcsv()  # funtion returns SourceType:SourceId dict read from endpoints.csv
 print(sourceId)
+
+try:
+    sh.mkdir("response")
+except sh.ErrorReturnCode_1:
+    pass
+
 
 for i in sheet.pmsheets:
     sheet.clearmontypedict() # function clears the previous sheets data from the dict
@@ -54,7 +61,7 @@ for i in sheet.pmsheets:
     record = sheet.sheetmontypedict   # gets all the details like the montype direction from the sheet 'i' format is Number: (...values...)
     # print(i,record)
     try:
-        f = open("response/RTRV-PM-"+i+"-"+sourceId[i]+".txt",'w')
+        f = open("response/RTRV-PM-"+i+"-NULL.txt",'w')
 
 
         for k,j in record.items():
@@ -67,4 +74,4 @@ for i in sheet.pmsheets:
                     print("No source type: ",i)
         f.close()
     except:
-        print('error' + i)
+        raise
