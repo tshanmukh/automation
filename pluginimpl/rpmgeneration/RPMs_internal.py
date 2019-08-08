@@ -6,9 +6,8 @@ import sh
 # from pexpect import pxssh
 import subprocess
 
-import builduserutils
-import externalutils, general, mercurial, profileconfig, specfile
-
+from rpmgeneration import builduserutils
+from rpmgeneration import externalutils, general, mercurial, profileconfig, specfile
 
 print("Copying the profile-configs csv to local")
 copy = general.copy
@@ -52,9 +51,10 @@ build.changetimestamp(profilename)
 print("Time stamp modified")
 build = builduserutils.builduser()
 print("Running RPM generation script")
-build.generateRPM(path="/home/builduser/repository/tools/plugin-automation_37_server_final_backup/", script="createPluginRepository.py")
+# build.generateRPM(path="/home/builduser/repository/tools/plugin-automation_37_server_final_backup/", script="createPluginRepository.py --updateFromPluginPortal=false")
 
-# subprocess.run(['ssh','builduser@172.31.6.112','python','/home/builduser/repository/tools/plugin-automation_37_server_final_backup/createPluginRepository.py'])
+subprocess.run(['ssh','builduser@172.31.6.112','rm','-rf','/home/builduser/tmp/*'])
+subprocess.run(['ssh','builduser@172.31.6.112','python','/home/builduser/repository/tools/plugin-automation_37_server_final_backup/createPluginRepository.py','--updateFromPluginPortal=false'])
 
 copy(source="builduser@172.31.6.112:/home/builduser/profile-configs.csv", destinaion="profile-configs-internal.csv")  # Copying the internal server profile-configs
 
@@ -141,3 +141,4 @@ os.system('gnome-terminal -e \'sh -c "scp ./RPMS/* repouser@172.31.6.112:/var/ww
 
 
 print("copied the RPMS required to repositories")
+
